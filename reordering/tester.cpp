@@ -1,41 +1,113 @@
 #include "DAG.h"
 #include "parser.h"
 #include "scheduler.h"
+#include <cctype>
 #include <cstdio>
+#include <fstream>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
 
-int main()
+// Reads the file produced by rv64i_gen (one 32-bit hex word per line, e.g.
+// "10000093") and converts it into the single string format that the parser
+// expects: "0x10000093 0x20000113 ... " (each word prefixed with 0x and
+// followed by a space).
+static bool load_hexcode(const std::string &path, std::string &hexcode)
 {
+    std::ifstream in(path);
+    if (!in)
+    {
+        std::cerr << "Could not open input file: " << path << "\n";
+        return false;
+    }
 
-    std::string hexcode =
-        "0x10000093 0x20000113 0x0000a183 0x0040a203 0x004182b3 0x0080a303 0x405303b3 0x00c0a403 "
-        "0x003444b3 0x00748513 0x008575b3 0x0075e633 0x003616b3 0x0046d713 0x00e12023 0x00c707b3 "
-        "0x00f3a833 0x00f12223 0x06480893 0x41088933 0x00391993 0x01312423 0x0100aa03 0x013a0ab3 "
-        "0x0ffafb13 0x100b6b93 0x015bcc33 0x01812623 0x402c5c93 0x018cbd33 0x01ac8db3 0x417d8e33 "
-        "0x01c12823 0x0d1e0e93 0x01beef33 0x01e12a23 ";
+    std::string line;
+    size_t line_no = 0;
+
+    while (std::getline(in, line))
+    {
+        ++line_no;
+
+        // allow comments / blank lines in the file
+        size_t first = line.find_first_not_of(" \t\r\n");
+        if (first == std::string::npos)
+            continue;
+        if (line[first] == '#' || line.compare(first, 2, "//") == 0)
+            continue;
+
+        std::istringstream iss(line);
+        std::string token;
+        while (iss >> token)
+        {
+            // strip an existing 0x / 0X prefix so we never double it
+            if (token.size() > 2 && token[0] == '0' && (token[1] == 'x' || token[1] == 'X'))
+                token = token.substr(2);
+
+            // sanity check: must be hex digits only
+            for (char c : token)
+            {
+                if (!std::isxdigit(static_cast<unsigned char>(c)))
+                {
+                    std::cerr << "Invalid hex word '" << token << "' on line " << line_no << "\n";
+                    return false;
+                }
+            }
+
+            hexcode += "0x" + token + " ";
+        }
+    }
+
+    if (hexcode.empty())
+    {
+        std::cerr << "No instructions found in " << path << "\n";
+        return false;
+    }
+
+    return true;
+}
+
+int main(int argc, char **argv)
+{
+    // usage: ./tester [path_to_instruction_file]
+    // default is the file written by rv64i_gen
+    std::string path = (argc > 1) ? argv[1] : "rv64i_instructions.txt";
+
+    std::string hexcode;
+    if (!load_hexcode(path, hexcode))
+        return 1;
 
     parser p(hexcode);
     std::vector<parsed_instruction> instr = p.instructions();
-
-    bool forwarding = 1;
-    DAG dag(instr, forwarding);
-
-    scheduler s(dag.blocks(), dag.depend_matrix_full(), forwarding);
+    int instr_count = static_cast<int>(instr.size());
 
     int before = 0;
     int after = 0;
 
-    std::vector<parsed_instruction> reordered_code = s.code_scheduler(&before, &after);
+    // ---- with forwarding ----
+    bool forwarding = 1;
+    DAG dag_fwd(instr, forwarding);
+    scheduler s_fwd(dag_fwd.blocks(), dag_fwd.depend_matrix_full(), forwarding);
+    std::vector<parsed_instruction> reordered_code = s_fwd.code_scheduler(&before, &after);
 
-    printf("cycles before = %d\n",before);
+    printf("stalls before = %d\n", before - instr_count);
+    printf("with forwarding stalls after reordering  = %d\n", after - instr_count);
 
-    printf("with forwarding cycles after reoredering  = %d\n", after);
+    // ---- without forwarding ----
     forwarding = 0;
+    before = 0;
     after = 0;
-    before  =0;
-    s = scheduler(dag.blocks(),dag.depend_matrix_full(),forwarding);
-    reordered_code = s.code_scheduler(&before, &after);
-    printf("cycles before = %d\n",before);
-    printf("without forwarding cycles after reoredering  = %d", after);
+    DAG dag_nofwd(instr, forwarding);
+    scheduler s_nofwd(dag_nofwd.blocks(), dag_nofwd.depend_matrix_full(), forwarding);
+    reordered_code = s_nofwd.code_scheduler(&before, &after);
+     
+    FILE *fptr = fopen("data.txt", "a");
+    fprintf(fptr , "%d %d\n" , before - instr_count , after - instr_count);
+    fclose(fptr);
+
+   // printf("stalls before = %d\n", before - instr_count);
+   // printf("without forwarding stalls after reordering  = %d\n", after - instr_count);
 
     return 0;
 }
+
