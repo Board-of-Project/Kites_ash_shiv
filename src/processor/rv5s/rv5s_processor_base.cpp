@@ -102,6 +102,7 @@ void RV5StageVM_Base::Reset()
     instructions_retired_ = 0;
     cycle_s_              = 0;
     stall_cycles_         = 0;
+    total_stall_cycles_   = 0;
     pc_redirected_        = false;
     last_breakpoint_pc_.reset(); // Clear breakpoint tracking on reset
 

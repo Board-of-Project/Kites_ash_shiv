@@ -310,6 +310,11 @@ unsigned int ProcessorManager::getStallCycles() const
     return m_currentProcessor->stall_cycles_;
 }
 
+unsigned int ProcessorManager::getTotalStallCycles() const
+{
+    return m_currentProcessor->total_stall_cycles_; // gives the toatl number of stalls in teh code 
+}
+
 unsigned int ProcessorManager::getCycles() const
 {
     return m_currentProcessor->cycle_s_;

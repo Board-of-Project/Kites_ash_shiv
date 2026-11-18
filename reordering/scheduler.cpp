@@ -112,7 +112,7 @@ std::vector<int> scheduler::block_scheduler(const std::vector<parsed_instruction
 
 int scheduler::program_cycles(const std::vector<parsed_instruction> &program)
 {
-    std::vector<int> avail(32, 0); 
+    std::vector<int> avail(32, 0);
     int prev = -1;
     for (const parsed_instruction &x : program)
     {
@@ -146,6 +146,14 @@ int scheduler::block_cycles(std::vector<parsed_instruction> &instrs,
     return cycle + 1;
 }
 
+long long scheduler::weighted_cycles(const std::vector<std::vector<parsed_instruction>> &prog)
+{
+    long long total = 0;
+    for (size_t b = 0; b < prog.size(); ++b)
+        total += (b < weights.size() ? weights[b] : 1) * program_cycles(prog[b]);
+    return total;
+}
+
 std::vector<parsed_instruction> scheduler::code_scheduler(int *cycles_before, int *cycles_after)
 {
 
@@ -163,7 +171,6 @@ std::vector<parsed_instruction> scheduler::code_scheduler(int *cycles_before, in
             current[b][k] = blocks[b][scheduled_order[k]];
         const int after = program_cycles(flatten(current));
 
-        
         if (!(after < before))
             current[b] = original_block;
     }
@@ -175,3 +182,4 @@ std::vector<parsed_instruction> scheduler::code_scheduler(int *cycles_before, in
         *cycles_after = program_cycles(program);
     return program;
 }
+

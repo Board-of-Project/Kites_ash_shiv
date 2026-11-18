@@ -117,6 +117,7 @@ class ProcessorBase : public QObject
     double cpi_{};
     double ipc_{};
     unsigned int stall_cycles_{};
+    unsigned int total_stall_cycles_{}; // counts the total number of stalls
     unsigned int branch_mispredictions_{};
 
     std::string output_status_;

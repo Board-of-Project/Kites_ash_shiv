@@ -234,6 +234,7 @@ void RV5StageProcessorHF::Step()
     // 2. Process Decode/Fetch based on stall status
     if (stalls_needed > 0)
     {
+        total_stall_cycles_++;   // counts the numebr of stalls in whole code
         // STALL: Freeze IF/ID (by preventing its update) and inject NOP into ID/EX
         id_ex_reg_.reset();
         // Skip pipeline_decode() - The instruction in IF/ID stays put.

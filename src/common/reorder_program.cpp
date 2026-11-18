@@ -77,6 +77,10 @@ ReorderResult reorderWords(const std::vector<uint32_t> &text, bool forwarding)
         r.words.push_back(static_cast<uint32_t>(std::stoul(pi.inst, nullptr, 2))); // inst = 32-char binary string
         r.origIndex.push_back(pi.index);
     }
+    const int n = static_cast<int>(r.words.size());
+    r.instrCount   = n;
+    r.stallsBefore = r.cyclesBefore - n;
+    r.stallsAfter  = r.cyclesAfter - n;
     return r;
 }
 
