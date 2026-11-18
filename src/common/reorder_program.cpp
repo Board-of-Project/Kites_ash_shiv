@@ -1,8 +1,5 @@
 #include "reorder_program.h"
 #include "common/instructions.h"      // for disassemble(uint32_t)
-#include "reordering/DAG.h"
-#include "reordering/parser.h"
-#include "reordering/scheduler.h"
 #include <cstdio>
 #include <sstream>
 #include <iomanip>
@@ -63,26 +60,6 @@ AssembledProgram applyReordering(const AssembledProgram &in, const ReorderResult
     return out;
 }
 
-ReorderResult reorderWords(const std::vector<uint32_t> &text, bool forwarding)
-{
-    parser p(toHexString(text));
-    std::vector<parsed_instruction> instrs = p.instructions();
-    DAG dag(instrs, forwarding);
-    scheduler s(dag.blocks(), dag.depend_matrix_full(), forwarding);
-
-    ReorderResult r;
-    std::vector<parsed_instruction> out = s.code_scheduler(&r.cyclesBefore, &r.cyclesAfter);
-    for (const auto &pi : out)
-    {
-        r.words.push_back(static_cast<uint32_t>(std::stoul(pi.inst, nullptr, 2))); // inst = 32-char binary string
-        r.origIndex.push_back(pi.index);
-    }
-    const int n = static_cast<int>(r.words.size());
-    r.instrCount   = n;
-    r.stallsBefore = r.cyclesBefore - n;
-    r.stallsAfter  = r.cyclesAfter - n;
-    return r;
-}
 
 std::string formatReordered(const ReorderResult &r)
 {

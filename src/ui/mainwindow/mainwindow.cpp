@@ -1,4 +1,8 @@
 #include "mainwindow.h"
+#include "common/reorder_program.h"
+#include "ui/reorder_tab/reordertab.h"   // if not already added
+#include <cstdlib>
+#include <numeric>
 #include "assembler/assembler.h"
 #include "common/assembled_program.h"
 #include "common/globals.h"
@@ -83,6 +87,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     // well temporarily disable the toolbar buttons when vm is running
     connect(m_processorManager, &ProcessorManager::runFinishedSignal, this,
             &MainWindow::runFinishedSlot);
+
+    connect(m_processorManager, &ProcessorManager::processorClockedSignal, this,
+            [this](const ProcessorState &s) {
+                const uint64_t idx = s.lastExecutedPC / 4;
+                if (idx < m_execCounts.size())
+                    ++m_execCounts[idx];
+            });
     connect(m_processorManager, &ProcessorManager::runErrorSignal, this,
             [this](const QString &errorMessage, int sourceLine)
             {
@@ -427,6 +438,21 @@ void MainWindow::setUpTabs()
     m_stackedTabs->addWidget(m_tabs[TabIndex::CompilerTabIndex]);
     m_stackedTabs->addWidget(m_tabs[TabIndex::ProfilerTabIndex]);
     m_stackedTabs->addWidget(m_tabs[TabIndex::ReorderTabIndex]); // ui tab for reoredred code
+    connect(static_cast<ReorderTab *>(m_tabs[TabIndex::ReorderTabIndex]),
+            &ReorderTab::exportRequested, this, &MainWindow::exportReorderTestCase);
+}
+
+ReorderResult MainWindow::showReorderModel(const std::vector<uint32_t> &words, ProcessorType t,
+                                           const std::vector<long long> &counts)
+{
+    ReorderResult r = reorderWords(words, t == ProcessorType::RV5Stage_H_F, counts);
+    const QByteArray raw(reinterpret_cast<const char *>(words.data()),
+                         static_cast<int>(words.size() * 4));
+    const QString key = QString::number(static_cast<int>(t)) + ":" + QString::number(qHash(raw));
+    if (auto *tab = dynamic_cast<ReorderTab *>(m_tabs[TabIndex::ReorderTabIndex]))
+        tab->setReordered(QString::fromStdString(formatReordered(r)), key, r.cyclesBefore,
+                          r.cyclesAfter, r.stallsBefore, r.stallsAfter, r.weighted);
+    return r;
 }
 
 bool MainWindow::tryParseAndLoadProgram()
@@ -455,6 +481,11 @@ bool MainWindow::tryParseAndLoadProgram()
             assemble(globals::temporary_assembly_file_path.string());
 
 
+        m_loadedReordered = false;
+        const std::vector<uint32_t> originalWords = assembledProgram.text_buffer;
+        const std::vector<long long> weights =
+            (m_countsUsable && m_countsProgram == originalWords) ? m_execCounts
+                                                                 : std::vector<long long>{};
         if (auto *reorderTab = dynamic_cast<ReorderTab *>(m_tabs[TabIndex::ReorderTabIndex]))
         {
             const ProcessorType t = m_processorManager->getProcessorType();
@@ -462,16 +493,17 @@ bool MainWindow::tryParseAndLoadProgram()
             {
                 try
                 {
-                    ReorderResult r = reorderWords(assembledProgram.text_buffer,
-                                                   t == ProcessorType::RV5Stage_H_F);
-                    reorderTab->setReordered(QString::fromStdString(formatReordered(r)),
-                                             r.origIndex, r.cyclesBefore, r.cyclesAfter);
+                    ReorderResult r = showReorderModel(originalWords, t, weights);
                     if (reorderTab->executeReordered())
+                    {
                         assembledProgram = applyReordering(assembledProgram, r);
+                        m_loadedReordered = true;
+                    }
                 }
                 catch (const std::exception &)
                 {
-                    reorderTab->clear(); // falls back to running the original program
+                    reorderTab->clear();
+                    m_loadedReordered = false;
                 }
             }
             else
@@ -479,6 +511,10 @@ bool MainWindow::tryParseAndLoadProgram()
                 reorderTab->clear();
             }
         }
+
+        m_countsProgram = originalWords;                  // start counting for this run
+        m_execCounts.assign(originalWords.size(), 0);
+        m_countsUsable = false;
 
 
         DumpDisasssembly(globals::disassembly_file_path, assembledProgram);
@@ -618,6 +654,48 @@ void MainWindow::runFinishedSlot()
             action->setDisabled(true);
         }
     }
+
+    const long long total = std::accumulate(m_execCounts.begin(), m_execCounts.end(), 0LL);
+    const long long retired = static_cast<long long>(m_processorManager->getInstructionsRetired());
+    // an ecall stops the run while its older instructions are still in MEM/WB, so allow a small gap
+    m_countsUsable = !m_execCounts.empty() && std::llabs(total - retired) <= 4;
+
+    m_lastMeasured = MeasuredStats{static_cast<long long>(m_processorManager->getCycles()), retired,
+                                   static_cast<long long>(m_processorManager->getTotalStallCycles())};
+    m_lastRanReordered = m_loadedReordered;
+    m_hasMeasured = true;
+
+    const ProcessorType t = m_processorManager->getProcessorType();
+    if (m_countsUsable &&
+        (t == ProcessorType::RV5Stage_H_NF || t == ProcessorType::RV5Stage_H_F))
+        showReorderModel(m_countsProgram, t, m_execCounts);   // model now uses the real counts
+
+    if (auto *reorderTab = dynamic_cast<ReorderTab *>(m_tabs[TabIndex::ReorderTabIndex]))
+        reorderTab->setMeasured(m_lastRanReordered, m_processorManager->getCycles(),
+                                m_processorManager->getTotalStallCycles(), retired);
+}
+
+void MainWindow::exportReorderTestCase()
+{
+    if (m_countsProgram.empty())
+    {
+        QMessageBox::information(this, "Export", "Run a program first.");
+        return;
+    }
+    const QString path = QFileDialog::getSaveFileName(this, "Export reorder test case",
+                                                      "reorder_testcase.txt", "Text (*.txt)");
+    if (path.isEmpty())
+        return;
+    TestCase tc;
+    tc.words = m_countsProgram;
+    tc.forwarding = (m_processorManager->getProcessorType() == ProcessorType::RV5Stage_H_F);
+    if (m_countsUsable)
+        tc.counts = m_execCounts;
+    tc.hasMeasured = m_hasMeasured;
+    tc.measured = m_lastMeasured;
+    tc.ranReordered = m_lastRanReordered;
+    if (!writeTestCase(path.toStdString(), tc))
+        QMessageBox::warning(this, "Export", "Could not write the file.");
 }
 
 void MainWindow::toggleTheme(const QString &themeId)
@@ -687,6 +765,8 @@ void MainWindow::themeChangedSlot([[maybe_unused]] const QString &themeId)
         else if (action->text() == "Advanced Settings")
             action->setIcon(IconManager::getInstance().getIcon(Icon::Settings));
     }
+
+    
 }
 
 MainWindow::~MainWindow()
