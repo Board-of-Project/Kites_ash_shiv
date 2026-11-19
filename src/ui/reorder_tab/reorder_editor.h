@@ -11,7 +11,8 @@ class SyntaxHighlighter;
 // One instruction of the reordered program.
 struct ReorderedLine
 {
-    int from = 0;        // original instruction number (0-based)
+    int from = 0;        // Reordered view: original instruction number (0-based)
+                         // Original view : new position of this instruction in the reordered program
     quint64 address = 0; // address in the reordered program (slot * 4)
     quint32 word = 0;    // machine code
     QString text;        // assembly, e.g. "add x1, x2, x3"
@@ -28,7 +29,18 @@ struct ReorderedLine
 class ReorderEditor : public KitesEditor
 {
   public:
-    explicit ReorderEditor(QWidget *parent = nullptr);
+    // Reordered: row k holds the instruction now in slot k; lines()[k].from is its original number.
+    // Original : row k holds original instruction k; lines()[k].from is where it moved to.
+    enum class Role
+    {
+        Reordered,
+        Original
+    };
+    explicit ReorderEditor(QWidget *parent = nullptr, Role role = Role::Reordered);
+    Role role() const
+    {
+        return m_role;
+    }
 
     void setLines(const std::vector<ReorderedLine> &lines);
     void clearLines();
@@ -50,5 +62,6 @@ class ReorderEditor : public KitesEditor
 
     SyntaxHighlighter *m_syntaxHighlighter = nullptr;
     std::vector<ReorderedLine> m_lines;
+    Role m_role;
 };
 } // namespace Kites

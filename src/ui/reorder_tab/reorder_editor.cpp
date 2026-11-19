@@ -10,7 +10,7 @@
 
 namespace Kites
 {
-ReorderEditor::ReorderEditor(QWidget *parent) : KitesEditor(parent)
+ReorderEditor::ReorderEditor(QWidget *parent, Role role) : KitesEditor(parent), m_role(role)
 {
     m_syntaxHighlighter = new SyntaxHighlighter(document());
     setReadOnly(true);

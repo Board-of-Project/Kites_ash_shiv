@@ -463,8 +463,25 @@ ReorderResult MainWindow::showReorderModel(const std::vector<uint32_t> &words, P
             line.text = QString::fromStdString(instruction_set::disassemble(r.words[k]));
             lines.push_back(line);
         }
+
+        // Original program for the left pane: row k is original instruction k, and "from"
+        // holds the slot it moved to (inverse of origIndex).
+        std::vector<ReorderedLine> original(words.size());
+        for (size_t k = 0; k < words.size(); ++k)
+        {
+            original[k].from = static_cast<int>(k); // unmoved unless overwritten below
+            original[k].address = static_cast<quint64>(k) * 4;
+            original[k].word = words[k];
+            original[k].text = QString::fromStdString(instruction_set::disassemble(words[k]));
+        }
+        for (size_t slot = 0; slot < r.origIndex.size(); ++slot)
+        {
+            const int o = r.origIndex[slot];
+            if (o >= 0 && static_cast<size_t>(o) < original.size())
+                original[static_cast<size_t>(o)].from = static_cast<int>(slot);
+        }
         tab->setReordered(lines, key, r.cyclesBefore, r.cyclesAfter, r.stallsBefore,
-                          r.stallsAfter, r.weighted);
+                          r.stallsAfter, r.weighted, original);
     }
     return r;
 }
