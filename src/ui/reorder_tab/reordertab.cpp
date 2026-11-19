@@ -1,9 +1,11 @@
 #include "reordertab.h"
 #include "reordering/cycle_report.h"
-#include <QFontDatabase>
+#include <QClipboard>
+#include <QGuiApplication>
 #include <QHBoxLayout>
 #include <QHeaderView>
 #include <QLocale>
+#include <QTimer>
 #include <QVBoxLayout>
 
 namespace Kites
@@ -68,11 +70,18 @@ ReorderTab::ReorderTab(QWidget *parent) : KitesTab(parent)
 
     // --- code listing ---
     auto *codeBox = new QGroupBox("Reordered code", this);
-    m_view = new QPlainTextEdit(codeBox);
-    m_view->setReadOnly(true);
-    m_view->setLineWrapMode(QPlainTextEdit::NoWrap);
-    m_view->setFont(QFontDatabase::systemFont(QFontDatabase::FixedFont));
+    m_view = new ReorderEditor(codeBox);
+    m_copy = new QPushButton("Copy code", codeBox);
+    m_copy->setToolTip("Copy the reordered instructions only: no address, hex word or indices");
+    m_copyWithIndices = new QPushButton("Copy with indices", codeBox);
+    m_copyWithIndices->setToolTip("Copy the instructions, each followed by a comment  # orig #5 -> new #2");
+    auto *copyBar = new QHBoxLayout;
+    copyBar->addWidget(new QLabel("Select text to copy part of it, or:", codeBox));
+    copyBar->addStretch();
+    copyBar->addWidget(m_copy);
+    copyBar->addWidget(m_copyWithIndices);
     auto *codeLayout = new QVBoxLayout(codeBox);
+    codeLayout->addLayout(copyBar);
     codeLayout->addWidget(m_view);
 
     // --- page layout ---
@@ -88,10 +97,13 @@ ReorderTab::ReorderTab(QWidget *parent) : KitesTab(parent)
     layout->addWidget(codeBox, 1); // the listing takes the remaining height
 
     connect(m_export, &QPushButton::clicked, this, &ReorderTab::exportRequested);
+    connect(m_copy, &QPushButton::clicked, this, [this] { copyCode(m_copy, false); });
+    connect(m_copyWithIndices, &QPushButton::clicked, this,
+            [this] { copyCode(m_copyWithIndices, true); });
     clear();
 }
 
-void ReorderTab::setReordered(const QString &listing, const QString &key, int cyclesBefore,
+void ReorderTab::setReordered(const std::vector<ReorderedLine> &lines, const QString &key, int cyclesBefore,
                               int cyclesAfter, int stallsBefore, int stallsAfter, bool weighted)
 {
     if (key != m_key) // different program or processor: old measurements no longer apply
@@ -104,7 +116,9 @@ void ReorderTab::setReordered(const QString &listing, const QString &key, int cy
     m_weighted = weighted;
     m_stallsBefore = stallsBefore;
     m_stallsAfter = stallsAfter;
-    m_view->setPlainText(listing);
+    m_view->setLines(lines);
+    m_copy->setEnabled(!lines.empty());
+    m_copyWithIndices->setEnabled(!lines.empty());
     m_model->setText(QString("Cycles %1 → %2 (saved %3)   |   Data stalls %4 → %5   |   %6")
                          .arg(num(cyclesBefore), num(cyclesAfter), num(cyclesBefore - cyclesAfter),
                               num(stallsBefore), num(stallsAfter),
@@ -128,10 +142,20 @@ void ReorderTab::clear()
     m_key.clear();
     m_orig = Measured{};
     m_reord = Measured{};
-    m_view->clear();
+    m_view->clearLines();
+    m_copy->setEnabled(false);
+    m_copyWithIndices->setEnabled(false);
     m_model->setText("Reordering not available for this processor");
     resetTable();
     m_prediction->clear();
+}
+
+void ReorderTab::copyCode(QPushButton *button, bool withIndices)
+{
+    QGuiApplication::clipboard()->setText(m_view->codeText(withIndices));
+    const QString original = button->text(); // brief confirmation on the button itself
+    button->setText("Copied");
+    QTimer::singleShot(1200, button, [button, original] { button->setText(original); });
 }
 
 void ReorderTab::resetTable()

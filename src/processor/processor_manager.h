@@ -42,6 +42,7 @@ public:
     void step();
     void debugRun();
     void stop();
+    bool stepNoStop(); // for tetsing correctness 
     void pause();
     void resume();
     void undo();

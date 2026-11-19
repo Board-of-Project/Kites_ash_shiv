@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_kites_core_FILE /home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/build-cli/libkites_core.a)
+set(__QT_DEPLOY_TARGET_kites_core_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_Kites_FILE /home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/build-cli/Kites)
+set(__QT_DEPLOY_TARGET_Kites_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_kites_cli_FILE /home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/build-cli/kites-cli)
+set(__QT_DEPLOY_TARGET_kites_cli_TYPE EXECUTABLE)

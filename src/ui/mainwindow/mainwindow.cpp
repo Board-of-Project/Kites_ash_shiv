@@ -6,6 +6,7 @@
 #include "assembler/assembler.h"
 #include "common/assembled_program.h"
 #include "common/globals.h"
+#include "common/instructions.h" // instruction_set::disassemble
 #include "common/reorder_program.h" // same as above
 #include "custom_pseudo_manager/custom_pseudo_manager.h"
 #include "processor/processor_manager.h"
@@ -450,8 +451,21 @@ ReorderResult MainWindow::showReorderModel(const std::vector<uint32_t> &words, P
                          static_cast<int>(words.size() * 4));
     const QString key = QString::number(static_cast<int>(t)) + ":" + QString::number(qHash(raw));
     if (auto *tab = dynamic_cast<ReorderTab *>(m_tabs[TabIndex::ReorderTabIndex]))
-        tab->setReordered(QString::fromStdString(formatReordered(r)), key, r.cyclesBefore,
-                          r.cyclesAfter, r.stallsBefore, r.stallsAfter, r.weighted);
+    {
+        std::vector<ReorderedLine> lines;
+        lines.reserve(r.words.size());
+        for (size_t k = 0; k < r.words.size(); ++k)
+        {
+            ReorderedLine line;
+            line.from = k < r.origIndex.size() ? r.origIndex[k] : static_cast<int>(k);
+            line.address = static_cast<quint64>(k) * 4;
+            line.word = r.words[k];
+            line.text = QString::fromStdString(instruction_set::disassemble(r.words[k]));
+            lines.push_back(line);
+        }
+        tab->setReordered(lines, key, r.cyclesBefore, r.cyclesAfter, r.stallsBefore,
+                          r.stallsAfter, r.weighted);
+    }
     return r;
 }
 

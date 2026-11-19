@@ -55,7 +55,7 @@ void PrintInfo(std::ostream &os, ProcessorManager &manager)
        << "Instructions retired:  " << manager.getInstructionsRetired() << "\n"
        << "CPI:                   " << manager.getCPI() << "\n"
        << "IPC:                   " << manager.getIPC() << "\n"
-       << "Stall cycles:          " << manager.getStallCycles() << "\n"
+       << "Stall cycles:          " << manager.getTotalStallCycles() << "\n"
        << "Branch mispredictions: " << manager.getBranchMispredictions() << "\n";
 }
 

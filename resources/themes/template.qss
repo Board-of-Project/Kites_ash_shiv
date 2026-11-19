@@ -199,3 +199,34 @@ QToolButton#collapsibleSectionHeader {
 QToolButton#collapsibleSectionHeader:hover {
     background-color: {{currentLine}};
 }
+
+/* ── Check boxes ───────────────────────────────────────────────── */
+QCheckBox {
+    spacing: 8px;
+}
+QCheckBox:disabled {
+    color: {{mutedForeground}};
+}
+QCheckBox::indicator {
+    width: 14px;
+    height: 14px;
+    border: 1px solid {{mutedForeground}};
+    border-radius: 3px;
+    background-color: {{surface}};
+}
+QCheckBox::indicator:hover {
+    border-color: {{accent}};
+}
+QCheckBox::indicator:checked {
+    background-color: {{accent}};
+    border-color: {{accent}};
+    image: url(:/themes/check.png);
+}
+QCheckBox::indicator:disabled {
+    border-color: {{border}};
+    background-color: {{background}};
+}
+QCheckBox::indicator:checked:disabled {
+    background-color: {{border}};
+    border-color: {{border}};
+}

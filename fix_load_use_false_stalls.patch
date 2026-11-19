@@ -1,0 +1,100 @@
+diff --git a/src/processor/rv5s/rv5s_hdu.cpp b/src/processor/rv5s/rv5s_hdu.cpp
+index d956c40..ad8b8dc 100644
+--- a/src/processor/rv5s/rv5s_hdu.cpp
++++ b/src/processor/rv5s/rv5s_hdu.cpp
+@@ -15,6 +15,69 @@
+ 
+ namespace Kites
+ {
++
++// ---------------------------------------------------------------------------
++// Which source fields does this instruction really read?
++// The rs1/rs2 bit positions (15-19, 20-24) are only register numbers for some
++// formats. In U/J-type and I-type instructions they hold immediate bits, so
++// comparing them with a load's rd gives false load-use stalls.
++// ---------------------------------------------------------------------------
++static bool reads_gpr_rs1(uint32_t instr)
++{
++    const uint32_t opcode = instr & 0x7F;
++    const uint32_t funct7 = (instr >> 25) & 0x7F;
++    switch (opcode)
++    {
++    case 0x37: // LUI
++    case 0x17: // AUIPC
++    case 0x6F: // JAL
++        return false;
++    case 0x53: // OP-FP: rs1 is a GPR only for int->float convert / move
++        return funct7 == 0x68 || funct7 == 0x69 || funct7 == 0x78 || funct7 == 0x79;
++    case 0x43: case 0x47: case 0x4B: case 0x4F: // FMA: all sources are FPRs
++        return false;
++    default: // I-type ALU, loads, JALR, stores (incl. FP load/store base), branches, R-type
++        return true;
++    }
++}
++
++static bool reads_gpr_rs2(uint32_t instr)
++{
++    const uint32_t opcode = instr & 0x7F;
++    switch (opcode)
++    {
++    case 0x33: // OP (R-type)
++    case 0x3B: // OP-32
++    case 0x23: // STORE (data register)
++    case 0x63: // BRANCH
++        return true;
++    default:   // I-type, U, J, loads, FP ops, FP store (rs2 is an FPR)
++        return false;
++    }
++}
++
++static bool reads_fpr(uint32_t instr, bool &rs1, bool &rs2, bool &rs3)
++{
++    const uint32_t opcode = instr & 0x7F;
++    const uint32_t funct7 = (instr >> 25) & 0x7F;
++    rs1 = rs2 = rs3 = false;
++    switch (opcode)
++    {
++    case 0x53: // OP-FP
++        rs1 = !(funct7 == 0x68 || funct7 == 0x69 || funct7 == 0x78 || funct7 == 0x79);
++        rs2 = true; // conservative: unary ops (fsqrt/fcvt) reuse this field as an opcode
++        return true;
++    case 0x43: case 0x47: case 0x4B: case 0x4F: // FMADD/FMSUB/FNMSUB/FNMADD
++        rs1 = rs2 = rs3 = true;
++        return true;
++    case 0x27: // FSW/FSD: data comes from an FPR in rs2
++        rs2 = true;
++        return true;
++    default:
++        return false;
++    }
++}
++
+ // Define stall count constants
+ constexpr int STALL_NONE = 0;
+ constexpr int STALL_ONE_CYCLE = 1;
+@@ -86,13 +149,19 @@ int check_data_hazard(const IF_ID_Register &if_id_reg, const ID_EX_Register &id_
+         // AND the dependent instruction reads that destination register.
+         if (id_ex_reg.mem_read)
+         {
+-            // Check if the load destination matches any source of the dependent instruction
+-            bool gpr_load_use = (id_ex_reg.reg_write && id_ex_reg.rd != 0) &&
+-                                (id_ex_reg.rd == if_id_rs1 || id_ex_reg.rd == if_id_rs2);
+-
++            // Only compare against fields the dependent instruction really reads.
++            const bool use_rs1 = reads_gpr_rs1(instruction);
++            const bool use_rs2 = reads_gpr_rs2(instruction);
++            bool gpr_load_use  = (id_ex_reg.reg_write && id_ex_reg.rd != 0) &&
++                                ((use_rs1 && id_ex_reg.rd == if_id_rs1) ||
++                                 (use_rs2 && id_ex_reg.rd == if_id_rs2));
++
++            bool f1 = false, f2 = false, f3 = false;
++            reads_fpr(instruction, f1, f2, f3);
+             bool fpr_load_use = (id_ex_reg.freg_write) &&
+-                                (id_ex_reg.frd == if_id_frs1 || id_ex_reg.frd == if_id_frs2 ||
+-                                 id_ex_reg.frd == if_id_frs3);
++                                ((f1 && id_ex_reg.frd == if_id_frs1) ||
++                                 (f2 && id_ex_reg.frd == if_id_frs2) ||
++                                 (f3 && id_ex_reg.frd == if_id_frs3));
+ 
+             if (gpr_load_use || fpr_load_use)
+             {
