@@ -22,8 +22,9 @@ struct parsed_instruction
     int imm = -1;
     int memory_add_offset = -1;
     int offset = -1;
-    int index;
+    int index =- 1;
     int index_in_block = -1;
+    int opcode = 0;
 };
 
 class parser
