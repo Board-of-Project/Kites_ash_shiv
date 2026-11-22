@@ -1,6 +1,8 @@
 /home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/build-cli/kites_core_autogen/QV52OD3FJU/moc_reordertab.cpp: /home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/src/ui/reorder_tab/reordertab.h \
   /home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/build-cli/kites_core_autogen/moc_predefs.h \
+  /home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/src/ui/common/kites_editor.h \
   /home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/src/ui/common/kitestab.h \
+  /home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/src/ui/reorder_tab/reorder_editor.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -320,6 +322,8 @@
   /usr/include/qt6/QtCore/QRect \
   /usr/include/qt6/QtCore/QSize \
   /usr/include/qt6/QtCore/QSizeF \
+  /usr/include/qt6/QtCore/QString \
+  /usr/include/qt6/QtCore/QtGlobal \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20functional.h \
   /usr/include/qt6/QtCore/q20iterator.h \

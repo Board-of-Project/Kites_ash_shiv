@@ -41,7 +41,6 @@
 #include "JTTX4EOWWE/moc_profilertab.cpp"
 #include "JYYBYNAWAO/moc_registercontainer.cpp"
 #include "JYYBYNAWAO/moc_registermodel.cpp"
-#include "QV52OD3FJU/moc_reorder_editor.cpp"
 #include "QV52OD3FJU/moc_reordertab.cpp"
 #include "54RVG76HEP/moc_font_manager.cpp"
 #include "54RVG76HEP/moc_theme_manager.cpp"

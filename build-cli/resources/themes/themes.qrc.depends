@@ -1,6 +1,8 @@
 <RCC>
     <qresource prefix="/themes">
         <file>template.qss</file>
+        <file>check.png</file>
+        <file>check@2x.png</file>
         <file>kites_dark.json</file>
         <file>kites_light.json</file>
         <file>tokyo_night.json</file>

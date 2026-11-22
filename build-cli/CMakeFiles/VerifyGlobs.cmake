@@ -52,11 +52,8 @@ set(OLD_GLOB
   "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/reordering/heurestic.cpp"
   "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/reordering/parser.cpp"
   "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/reordering/reorder_core.cpp"
-  "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/reordering/reorder_tool.cpp"
-  "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/reordering/rv64i.cpp"
   "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/reordering/scheduler.cpp"
   "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/reordering/testcase.cpp"
-  "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/reordering/tester.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -172,6 +169,7 @@ set(OLD_GLOB
   "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/src/ui/profiler_tab/profilertab.h"
   "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/src/ui/register_table/registercontainer.h"
   "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/src/ui/register_table/registermodel.h"
+  "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/src/ui/reorder_tab/reorder_address_gutter_column.h"
   "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/src/ui/reorder_tab/reorder_editor.h"
   "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/src/ui/reorder_tab/reorder_map_gutter_column.h"
   "/home/ashwanipratap/Ashwani/PROJECTS/comp_arch/Kites_ash_shiv/src/ui/reorder_tab/reordertab.h"

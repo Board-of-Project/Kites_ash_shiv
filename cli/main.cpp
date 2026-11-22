@@ -6,6 +6,7 @@
 #include "command_handler/command_handler.h"
 #include "common/assembled_program.h"
 #include "common/globals.h"
+#include "common/reorder_program.h"
 #include "processor/processor_manager.h"
 #include "processor/processor_types.h"
 #include "repl.h"
@@ -24,17 +25,19 @@ namespace
 {
 void printUsage(const char *programName)
 {
-    std::cerr
-        << "Usage: " << programName
-        << " [assembly-file] [--vm <name>] [--mem-dump <hex_addr> <row_count>]... [--repl|-i]\n"
-        << "  assembly-file   optional; if given without --repl, assembles, runs to\n"
-        << "                  completion, and dumps state (batch mode)\n"
-        << "  --vm <name>     rvss (default) | rv5-nh-nf | rv5-h-nf | rv5-nh-f | rv5-h-f\n"
-        << "  --mem-dump      dump <row_count> 8-byte rows starting at <hex_addr>; "
-           "repeatable (batch mode only)\n"
-        << "  --repl, -i      drop into the interactive REPL instead of auto-running;\n"
-        << "                  if assembly-file is given it is loaded before the prompt\n"
-        << "  (running with no assembly-file also enters the REPL)\n";
+    std::cerr << "Usage: " << programName
+              << " [assembly-file] [--vm <name>] [--mem-dump <hex_addr> <row_count>]... [--repl|-i]"
+              << " [--reorder] \n" // add to the Usage line
+              << "  assembly-file   optional; if given without --repl, assembles, runs to\n"
+              << "                  completion, and dumps state (batch mode)\n"
+              << "  --vm <name>     rvss (default) | rv5-nh-nf | rv5-h-nf | rv5-nh-f | rv5-h-f\n"
+              << "  --mem-dump      dump <row_count> 8-byte rows starting at <hex_addr>; "
+                 "repeatable (batch mode only)\n"
+              << "  --repl, -i      drop into the interactive REPL instead of auto-running;\n"
+              << "                  if assembly-file is given it is loaded before the prompt\n"
+              << "  (running with no assembly-file also enters the REPL)\n"
+              << "  --reorder       reorder instructions within basic blocks to cut stalls before\n"
+              << "                  running (only with rv5-h-nf / rv5-h-f)\n";
 }
 
 const std::unordered_map<std::string, Kites::ProcessorType> processorTypes = {
@@ -44,6 +47,16 @@ const std::unordered_map<std::string, Kites::ProcessorType> processorTypes = {
     {"rv5-nh-f", Kites::ProcessorType::RV5Stage_NH_F},
     {"rv5-h-f", Kites::ProcessorType::RV5Stage_H_F},
 };
+
+Kites::AssembledProgram maybeReorder(const Kites::AssembledProgram &prog, Kites::ProcessorType type)
+{
+    const bool fwd = (type == Kites::ProcessorType::RV5Stage_H_F);
+    Kites::ReorderResult r = Kites::reorderWords(prog.text_buffer, fwd); // static counts
+    std::cout << "Reorder: cycles " << r.cyclesBefore << " -> " << r.cyclesAfter << " (stalls "
+              << r.stallsBefore << " -> " << r.stallsAfter << ")\n";
+    return Kites::applyReordering(prog, r);
+}
+
 } // namespace
 
 int main(int argc, char *argv[])
@@ -56,6 +69,7 @@ int main(int argc, char *argv[])
     std::string processorTypeStr = "rvss";
     std::vector<std::string> memDumpArgs;
     bool replRequested = false;
+    bool reorder = false;
 
     for (int i = 1; i < argc; ++i)
     {
@@ -85,6 +99,10 @@ int main(int argc, char *argv[])
         {
             replRequested = true;
         }
+        else if (arg == "--reorder")
+        {
+            reorder = true;
+        }
         else if (!arg.empty() && arg[0] == '-')
         {
             std::cerr << "Error: unknown argument '" << arg << "'.\n";
@@ -111,6 +129,14 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    const auto ptype = processorTypeIt->second;
+    if (reorder && ptype != Kites::ProcessorType::RV5Stage_H_NF &&
+        ptype != Kites::ProcessorType::RV5Stage_H_F)
+    {
+        std::cerr << "Error: --reorder needs --vm rv5-h-nf or rv5-h-f.\n";
+        return 1;
+    }
+
     if (replRequested || assemblyFile.empty())
     {
         Kites::ProcessorManager manager(nullptr, processorTypeIt->second);
@@ -122,12 +148,15 @@ int main(int argc, char *argv[])
             try
             {
                 Kites::AssembledProgram program = Kites::assemble(assemblyFile);
+                if (reorder)
+                    program = maybeReorder(program, ptype);
+
                 manager.loadProgram(program);
                 state.currentProgram = program;
                 state.programLoaded = true;
                 std::cout << "Loaded '" << assemblyFile << "': " << program.text_buffer.size()
-                           << " instruction word(s), " << program.data_buffer.size()
-                           << " data item(s).\n";
+                          << " instruction word(s), " << program.data_buffer.size()
+                          << " data item(s).\n";
             }
             catch (const std::exception &e)
             {
@@ -141,7 +170,20 @@ int main(int argc, char *argv[])
     Kites::AssembledProgram program;
     try
     {
+
         program = Kites::assemble(assemblyFile);
+
+        if (reorder)
+        {
+            try
+            {
+                program = maybeReorder(program, ptype);
+            }
+            catch (const std::exception &e)
+            {
+                std::cerr << "Reorder skipped: " << e.what() << "\n";
+            }
+        }
     }
     catch (const std::exception &e)
     {
@@ -154,11 +196,11 @@ int main(int argc, char *argv[])
     bool runFailed = false;
     std::string runErrorMsg;
     QObject::connect(&manager, &Kites::ProcessorManager::runErrorSignal, &manager,
-                      [&](const QString &message, int /*sourceLine*/)
-                      {
-                          runFailed = true;
-                          runErrorMsg = message.toStdString();
-                      });
+                     [&](const QString &message, int /*sourceLine*/)
+                     {
+                         runFailed = true;
+                         runErrorMsg = message.toStdString();
+                     });
 
     // ProcessorBase::step_delay_ defaults to 1000ms and is meant to pace the
     // GUI's per-instruction animation; it must be zeroed here or an N-instruction
@@ -192,11 +234,11 @@ int main(int argc, char *argv[])
     }
 
     std::cout << "Assembled '" << assemblyFile << "': " << program.text_buffer.size()
-               << " instruction word(s), " << program.data_buffer.size() << " data item(s).\n"
-               << "Run " << (runFailed ? "failed" : "completed") << ".\n"
-               << "Registers   -> " << Kites::globals::registers_dump_file_path.string() << "\n"
-               << "Disassembly -> " << Kites::globals::disassembly_file_path.string() << "\n"
-               << "Errors      -> " << Kites::globals::errors_dump_file_path.string();
+              << " instruction word(s), " << program.data_buffer.size() << " data item(s).\n"
+              << "Run " << (runFailed ? "failed" : "completed") << ".\n"
+              << "Registers   -> " << Kites::globals::registers_dump_file_path.string() << "\n"
+              << "Disassembly -> " << Kites::globals::disassembly_file_path.string() << "\n"
+              << "Errors      -> " << Kites::globals::errors_dump_file_path.string();
     if (!memDumpArgs.empty())
     {
         std::cout << "\nMemory      -> " << Kites::globals::memory_dump_file_path.string();
