@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/collapsible_section.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/collapsible_section.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/collapsible_section.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/collapsible_section.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

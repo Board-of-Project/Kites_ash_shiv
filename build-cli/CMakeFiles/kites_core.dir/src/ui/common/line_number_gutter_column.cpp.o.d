@@ -1,8 +1,8 @@
 CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/line_number_gutter_column.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/line_number_gutter_column.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/line_number_gutter_column.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/line_number_gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/gutter_column.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -491,7 +491,7 @@ CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontdatabase.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kites_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kites_editor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
@@ -499,7 +499,7 @@ CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPalette \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
@@ -521,6 +521,6 @@ CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTextCharFormat \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h

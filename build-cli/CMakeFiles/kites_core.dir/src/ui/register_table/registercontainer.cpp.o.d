@@ -1,10 +1,10 @@
 CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registercontainer.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/register_table/registercontainer.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registercontainer.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registermodel.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/display_base_types.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/register_table/registercontainer.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/register_table/registermodel.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/display_base_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/registers.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
@@ -453,7 +453,7 @@ CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/include/ui_registercontainer.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/include/ui_registercontainer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
@@ -499,7 +499,7 @@ CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/collapsible_section.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/collapsible_section.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHeaderView \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qheaderview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \

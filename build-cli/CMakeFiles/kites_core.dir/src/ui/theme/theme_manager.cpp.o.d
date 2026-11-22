@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPalette \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
@@ -471,8 +471,8 @@ CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
- /home/shiv-velnad/Kites_ash_shiv/src/config/app_settings.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/app_settings.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSettings \

@@ -1,5 +1,5 @@
-/home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/6DQYUKT47J/moc_app_settings.cpp: /home/shiv-velnad/Kites_ash_shiv/src/config/app_settings.h \
-  /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/moc_predefs.h \
+/home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/6DQYUKT47J/moc_app_settings.cpp: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/app_settings.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \

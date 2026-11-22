@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/config/app_settings.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/app_settings.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/config/app_settings.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/app_settings.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \

@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/settings_dialog.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/dialogs/settings_dialog.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/settings_dialog.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/dialogs/settings_dialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -449,12 +449,12 @@ CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
- /home/shiv-velnad/Kites_ash_shiv/src/config/app_settings.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/app_settings.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSettings \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsettings.h \
- /home/shiv-velnad/Kites_ash_shiv/src/custom_pseudo_manager/custom_pseudo_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/custom_pseudo_manager/custom_pseudo_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
@@ -470,11 +470,11 @@ CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/addpseudo_dialog.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/font_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/dialogs/addpseudo_dialog.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/font_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPalette \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
@@ -487,8 +487,8 @@ CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/include/ui_settings_dialog.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/include/ui_settings_dialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QAbstractButton \

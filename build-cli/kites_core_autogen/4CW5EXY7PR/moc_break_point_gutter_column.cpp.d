@@ -1,11 +1,11 @@
-/home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/4CW5EXY7PR/moc_break_point_gutter_column.cpp: /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/break_point_gutter_column.h \
-  /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/moc_predefs.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/common/gutter_column.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kites_editor.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/common/syntax_highlighter.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/main_editor.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
+/home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/4CW5EXY7PR/moc_break_point_gutter_column.cpp: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/break_point_gutter_column.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/moc_predefs.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/gutter_column.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kites_editor.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/syntax_highlighter.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/main_editor.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \

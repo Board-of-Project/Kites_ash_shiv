@@ -1,8 +1,8 @@
 CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_scene.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/circuit_scene.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_scene.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/base_component.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/circuit_scene.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/base_component.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPathItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -437,7 +437,7 @@ CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainterPath \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/wire_item.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/wire_item.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
@@ -505,14 +505,14 @@ CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o: \
  /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
  /usr/include/c++/15/bits/fs_path.h /usr/include/c++/15/codecvt \
  /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/alu_item.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/and_gate.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/hori_rect.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/mux_item.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/pipeline_reg.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/rect_item.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/short_alu.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/short_rect.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/alu_item.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/and_gate.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/hori_rect.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/mux_item.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/pipeline_reg.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/rect_item.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/short_alu.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/short_rect.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \

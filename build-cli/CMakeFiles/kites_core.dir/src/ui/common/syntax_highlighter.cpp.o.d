@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/syntax_highlighter.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/syntax_highlighter.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/syntax_highlighter.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/syntax_highlighter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
@@ -480,7 +480,7 @@ CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTextCharFormat \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPalette \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
@@ -514,7 +514,7 @@ CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \

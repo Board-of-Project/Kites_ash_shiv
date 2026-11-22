@@ -1,6 +1,6 @@
-/home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/5J6UDW4OHC/moc_cacheconfigwidget.cpp: /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cacheconfigwidget.h \
-  /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/moc_predefs.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cacheconfig.h \
+/home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/5J6UDW4OHC/moc_cacheconfigwidget.cpp: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/cache_tab/cacheconfigwidget.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/moc_predefs.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/cacheconfig.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \

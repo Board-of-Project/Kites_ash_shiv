@@ -1,8 +1,8 @@
 CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/language_service/language_service.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/language_service.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/language_service/language_service.h \
- /home/shiv-velnad/Kites_ash_shiv/src/language_service/diagnostic.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/language_service.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/diagnostic.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
@@ -434,23 +434,23 @@ CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/assembler.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/lexer.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/tokens.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/assembler.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/lexer.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/tokens.h \
  /usr/include/c++/15/fstream \
  /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
  /usr/include/c++/15/bits/fstream.tcc \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/parser.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/code_generator.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/parser.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/code_generator.h \
  /usr/include/c++/15/iostream \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/errors.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/assembled_program.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/parser.h \
- /home/shiv-velnad/Kites_ash_shiv/src/language_service/completion_provider.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/errors.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/assembled_program.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/parser.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/completion_provider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
- /home/shiv-velnad/Kites_ash_shiv/src/custom_pseudo_manager/custom_pseudo_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/custom_pseudo_manager/custom_pseudo_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \

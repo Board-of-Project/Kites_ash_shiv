@@ -1,6 +1,6 @@
-/home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/54RVG76HEP/moc_theme_manager.cpp: /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.h \
-  /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/moc_predefs.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
+/home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/54RVG76HEP/moc_theme_manager.cpp: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/moc_predefs.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \

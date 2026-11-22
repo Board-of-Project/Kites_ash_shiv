@@ -1,8 +1,9 @@
 CMakeFiles/kites_cli.dir/cli/repl.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/cli/repl.cpp /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/cli/repl.h \
- /home/shiv-velnad/Kites_ash_shiv/src/command_handler/command_handler.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/assembled_program.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/cli/repl.cpp \
+ /usr/include/stdc-predef.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/cli/repl.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/command_handler/command_handler.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/assembled_program.h \
  /usr/include/c++/15/cstdint \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
@@ -143,8 +144,8 @@ CMakeFiles/kites_cli.dir/cli/repl.cpp.o: \
  /usr/include/c++/15/bits/stl_vector.h \
  /usr/include/c++/15/bits/stl_bvector.h \
  /usr/include/c++/15/bits/vector.tcc \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/parser.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/code_generator.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/parser.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/code_generator.h \
  /usr/include/c++/15/array /usr/include/c++/15/cstring \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/15/iomanip \
  /usr/include/c++/15/bits/ios_base.h /usr/include/c++/15/ext/atomicity.h \
@@ -201,11 +202,11 @@ CMakeFiles/kites_cli.dir/cli/repl.cpp.o: \
  /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/bits/ostream.tcc \
  /usr/include/c++/15/bits/istream.tcc \
  /usr/include/c++/15/bits/sstream.tcc /usr/include/c++/15/iostream \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/errors.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/tokens.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_manager.h \
- /home/shiv-velnad/Kites_ash_shiv/src/config/config.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/globals.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/errors.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/tokens.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/config.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/globals.h \
  /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
  /usr/include/c++/15/bits/chrono.h /usr/include/c++/15/ratio \
  /usr/include/c++/15/limits /usr/include/c++/15/bits/fs_path.h \
@@ -219,8 +220,8 @@ CMakeFiles/kites_cli.dir/cli/repl.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
  /usr/include/c++/15/bits/fstream.tcc \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_base.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/alu.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_base.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/alu.h \
  /usr/include/c++/15/cfenv /usr/include/c++/15/fenv.h /usr/include/fenv.h \
  /usr/include/x86_64-linux-gnu/bits/fenv.h /usr/include/c++/15/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -245,8 +246,8 @@ CMakeFiles/kites_cli.dir/cli/repl.cpp.o: \
  /usr/include/c++/15/tr1/poly_hermite.tcc \
  /usr/include/c++/15/tr1/poly_laguerre.tcc \
  /usr/include/c++/15/tr1/riemann_zeta.tcc \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_controller.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cache.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_controller.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/cache.h \
  /usr/include/c++/15/deque /usr/include/c++/15/bits/stl_deque.h \
  /usr/include/c++/15/bits/deque.tcc /usr/include/c++/15/memory \
  /usr/include/c++/15/bits/stl_tempbuf.h \
@@ -280,7 +281,7 @@ CMakeFiles/kites_cli.dir/cli/repl.cpp.o: \
  /usr/include/c++/15/bits/ranges_algobase.h \
  /usr/include/c++/15/pstl/glue_memory_defs.h \
  /usr/include/c++/15/pstl/execution_defs.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cacheconfig.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/cacheconfig.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaType \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
@@ -399,11 +400,11 @@ CMakeFiles/kites_cli.dir/cli/repl.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
  /usr/include/c++/15/list /usr/include/c++/15/bits/stl_list.h \
  /usr/include/c++/15/bits/list.tcc \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/cache_replacement_policy.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/custom_policy.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/main_memory.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_block.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_device.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/policies/cache_replacement_policy.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/policies/custom_policy.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/main_memory.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_block.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_device.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
@@ -416,17 +417,17 @@ CMakeFiles/kites_cli.dir/cli/repl.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
  /usr/include/c++/15/chrono /usr/include/c++/15/bits/chrono_io.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/undo_buffer.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/undo_buffer.h \
  /usr/include/c++/15/cassert \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/main_memory.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_state.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_types.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/main_memory.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_state.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/registers.h \
  /usr/include/c++/15/unordered_set \
  /usr/include/c++/15/bits/unordered_set.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_scene.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/base_component.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/circuit_scene.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/base_component.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPathItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -475,7 +476,7 @@ CMakeFiles/kites_cli.dir/cli/repl.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainterPath \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/wire_item.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/wire_item.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
@@ -540,7 +541,7 @@ CMakeFiles/kites_cli.dir/cli/repl.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_constants.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_constants.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
@@ -566,8 +567,8 @@ CMakeFiles/kites_cli.dir/cli/repl.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h /usr/include/c++/15/mutex \
  /usr/include/c++/15/queue /usr/include/c++/15/bits/stl_queue.h \
  /usr/include/c++/15/stack /usr/include/c++/15/bits/stl_stack.h \
- /home/shiv-velnad/Kites_ash_shiv/src/profiler/profiler.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/profiler/profiler.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/instruction_types.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/utils.h
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/instruction_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/utils.h

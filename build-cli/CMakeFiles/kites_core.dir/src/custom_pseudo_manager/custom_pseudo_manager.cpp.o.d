@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/custom_pseudo_manager/custom_pseudo_manager.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/custom_pseudo_manager/custom_pseudo_manager.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/custom_pseudo_manager/custom_pseudo_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/custom_pseudo_manager/custom_pseudo_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
@@ -423,7 +423,7 @@ CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o:
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/globals.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/globals.h \
  /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
  /usr/include/c++/15/bits/fs_path.h /usr/include/c++/15/codecvt \
  /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h \

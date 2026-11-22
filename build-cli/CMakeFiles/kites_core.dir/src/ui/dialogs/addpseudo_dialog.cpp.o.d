@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/addpseudo_dialog.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/dialogs/addpseudo_dialog.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/addpseudo_dialog.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/dialogs/addpseudo_dialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -447,7 +447,7 @@ CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
- /home/shiv-velnad/Kites_ash_shiv/src/custom_pseudo_manager/custom_pseudo_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/custom_pseudo_manager/custom_pseudo_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
@@ -465,7 +465,7 @@ CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/include/ui_addpseudo_dialog.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/include/ui_addpseudo_dialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \

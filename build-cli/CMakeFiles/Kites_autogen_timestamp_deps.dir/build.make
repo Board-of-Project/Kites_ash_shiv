@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shiv-velnad/Kites_ash_shiv
+CMAKE_SOURCE_DIR = "/home/shiv-velnad/Kites_ash_shiv (Copy)"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shiv-velnad/Kites_ash_shiv/build-cli
+CMAKE_BINARY_DIR = "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli"
 
 # Utility rule file for Kites_autogen_timestamp_deps.
 
@@ -81,6 +81,6 @@ CMakeFiles/Kites_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/Kites_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/Kites_autogen_timestamp_deps.dir/depend:
-	cd /home/shiv-velnad/Kites_ash_shiv/build-cli && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shiv-velnad/Kites_ash_shiv /home/shiv-velnad/Kites_ash_shiv /home/shiv-velnad/Kites_ash_shiv/build-cli /home/shiv-velnad/Kites_ash_shiv/build-cli /home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles/Kites_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)" Kites_autogen_timestamp_deps
+	cd "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/shiv-velnad/Kites_ash_shiv (Copy)" "/home/shiv-velnad/Kites_ash_shiv (Copy)" "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli" "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli" "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles/Kites_autogen_timestamp_deps.dir/DependInfo.cmake" "--color=$(COLOR)" Kites_autogen_timestamp_deps
 .PHONY : CMakeFiles/Kites_autogen_timestamp_deps.dir/depend
 

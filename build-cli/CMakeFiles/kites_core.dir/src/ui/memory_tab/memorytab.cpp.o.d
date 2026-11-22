@@ -1,8 +1,8 @@
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memorytab.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/memory_tab/memorytab.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memorytab.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kitestab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/memory_tab/memorytab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kitestab.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolBar \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtoolbar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -449,11 +449,11 @@ CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memorymodel.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/display_base_types.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_block.h \
- /home/shiv-velnad/Kites_ash_shiv/src/config/config.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/globals.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/memory_tab/memorymodel.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/display_base_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_block.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/config.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/globals.h \
  /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
  /usr/include/c++/15/bits/fs_path.h /usr/include/c++/15/codecvt \
  /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h \
@@ -461,24 +461,24 @@ CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
  /usr/include/c++/15/bits/fstream.tcc /usr/include/c++/15/iostream \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_controller.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cache.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_controller.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/cache.h \
  /usr/include/c++/15/deque /usr/include/c++/15/bits/stl_deque.h \
  /usr/include/c++/15/bits/deque.tcc \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cacheconfig.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/cacheconfig.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaType \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/cache_replacement_policy.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/custom_policy.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/main_memory.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_device.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/policies/cache_replacement_policy.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/policies/custom_policy.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/main_memory.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_device.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/undo_buffer.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/main_memory.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/undo_buffer.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/main_memory.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/include/ui_memorytab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/include/ui_memorytab.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
@@ -537,7 +537,7 @@ CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memory_table_view.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/memory_tab/memory_table_view.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableView \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtableview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QWheelEvent \

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shiv-velnad/Kites_ash_shiv
+CMAKE_SOURCE_DIR = "/home/shiv-velnad/Kites_ash_shiv (Copy)"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shiv-velnad/Kites_ash_shiv/build-cli
+CMAKE_BINARY_DIR = "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/kites_core.dir/depend.make
@@ -75,1528 +75,1528 @@ CMakeFiles/kites_core.dir/codegen:
 CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: CMakeFiles/kites_core.dir/flags.make
 CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: kites_core_autogen/mocs_compilation.cpp
 CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o -MF CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o -MF CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/kites_core_autogen/mocs_compilation.cpp"
 
 CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/mocs_compilation.cpp > CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/kites_core_autogen/mocs_compilation.cpp" > CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/mocs_compilation.cpp -o CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/kites_core_autogen/mocs_compilation.cpp" -o CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/assembler/assembler.cpp
+CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/assembler.cpp
 CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/assembler/assembler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/assembler.cpp"
 
 CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/assembler/assembler.cpp > CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/assembler.cpp" > CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.i
 
 CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/assembler/assembler.cpp -o CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/assembler.cpp" -o CMakeFiles/kites_core.dir/src/assembler/assembler.cpp.s
 
 CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/assembler/code_generator.cpp
+CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/code_generator.cpp
 CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/assembler/code_generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/code_generator.cpp"
 
 CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/assembler/code_generator.cpp > CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/code_generator.cpp" > CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.i
 
 CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/assembler/code_generator.cpp -o CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/code_generator.cpp" -o CMakeFiles/kites_core.dir/src/assembler/code_generator.cpp.s
 
 CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/assembler/errors.cpp
+CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/errors.cpp
 CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/assembler/errors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/errors.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/errors.cpp"
 
 CMakeFiles/kites_core.dir/src/assembler/errors.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/assembler/errors.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/assembler/errors.cpp > CMakeFiles/kites_core.dir/src/assembler/errors.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/errors.cpp" > CMakeFiles/kites_core.dir/src/assembler/errors.cpp.i
 
 CMakeFiles/kites_core.dir/src/assembler/errors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/assembler/errors.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/assembler/errors.cpp -o CMakeFiles/kites_core.dir/src/assembler/errors.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/errors.cpp" -o CMakeFiles/kites_core.dir/src/assembler/errors.cpp.s
 
 CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/assembler/lexer.cpp
+CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/lexer.cpp
 CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/assembler/lexer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/lexer.cpp"
 
 CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/assembler/lexer.cpp > CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/lexer.cpp" > CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.i
 
 CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/assembler/lexer.cpp -o CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/lexer.cpp" -o CMakeFiles/kites_core.dir/src/assembler/lexer.cpp.s
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/csr_formats.cpp
+CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/parse_formats/csr_formats.cpp
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/csr_formats.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/csr_formats.cpp"
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/csr_formats.cpp > CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/csr_formats.cpp" > CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.i
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/csr_formats.cpp -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/csr_formats.cpp" -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/csr_formats.cpp.s
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/f_d_formats.cpp
+CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/parse_formats/f_d_formats.cpp
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/f_d_formats.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/f_d_formats.cpp"
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/f_d_formats.cpp > CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/f_d_formats.cpp" > CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.i
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/f_d_formats.cpp -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/f_d_formats.cpp" -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/f_d_formats.cpp.s
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/i_m_formats.cpp
+CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/parse_formats/i_m_formats.cpp
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/i_m_formats.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/i_m_formats.cpp"
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/i_m_formats.cpp > CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/i_m_formats.cpp" > CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.i
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/i_m_formats.cpp -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/i_m_formats.cpp" -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/i_m_formats.cpp.s
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/pseudo_formats.cpp
+CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/parse_formats/pseudo_formats.cpp
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/pseudo_formats.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/pseudo_formats.cpp"
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/pseudo_formats.cpp > CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/pseudo_formats.cpp" > CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.i
 
 CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/assembler/parse_formats/pseudo_formats.cpp -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parse_formats/pseudo_formats.cpp" -o CMakeFiles/kites_core.dir/src/assembler/parse_formats/pseudo_formats.cpp.s
 
 CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/assembler/parser.cpp
+CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/parser.cpp
 CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/assembler/parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/parser.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parser.cpp"
 
 CMakeFiles/kites_core.dir/src/assembler/parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/assembler/parser.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/assembler/parser.cpp > CMakeFiles/kites_core.dir/src/assembler/parser.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parser.cpp" > CMakeFiles/kites_core.dir/src/assembler/parser.cpp.i
 
 CMakeFiles/kites_core.dir/src/assembler/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/assembler/parser.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/assembler/parser.cpp -o CMakeFiles/kites_core.dir/src/assembler/parser.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/parser.cpp" -o CMakeFiles/kites_core.dir/src/assembler/parser.cpp.s
 
 CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/assembler/tokens.cpp
+CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/tokens.cpp
 CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/assembler/tokens.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o -MF CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o.d -o CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/tokens.cpp"
 
 CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/assembler/tokens.cpp > CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/tokens.cpp" > CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.i
 
 CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/assembler/tokens.cpp -o CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/assembler/tokens.cpp" -o CMakeFiles/kites_core.dir/src/assembler/tokens.cpp.s
 
 CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/command_handler/command_handler.cpp
+CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/command_handler/command_handler.cpp
 CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o -MF CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o.d -o CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/command_handler/command_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o -MF CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o.d -o CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/command_handler/command_handler.cpp"
 
 CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/command_handler/command_handler.cpp > CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/command_handler/command_handler.cpp" > CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.i
 
 CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/command_handler/command_handler.cpp -o CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/command_handler/command_handler.cpp" -o CMakeFiles/kites_core.dir/src/command_handler/command_handler.cpp.s
 
 CMakeFiles/kites_core.dir/src/common/globals.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/common/globals.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/common/globals.cpp
+CMakeFiles/kites_core.dir/src/common/globals.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/globals.cpp
 CMakeFiles/kites_core.dir/src/common/globals.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/kites_core.dir/src/common/globals.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/common/globals.cpp.o -MF CMakeFiles/kites_core.dir/src/common/globals.cpp.o.d -o CMakeFiles/kites_core.dir/src/common/globals.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/common/globals.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/kites_core.dir/src/common/globals.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/common/globals.cpp.o -MF CMakeFiles/kites_core.dir/src/common/globals.cpp.o.d -o CMakeFiles/kites_core.dir/src/common/globals.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/common/globals.cpp"
 
 CMakeFiles/kites_core.dir/src/common/globals.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/common/globals.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/common/globals.cpp > CMakeFiles/kites_core.dir/src/common/globals.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/common/globals.cpp" > CMakeFiles/kites_core.dir/src/common/globals.cpp.i
 
 CMakeFiles/kites_core.dir/src/common/globals.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/common/globals.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/common/globals.cpp -o CMakeFiles/kites_core.dir/src/common/globals.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/common/globals.cpp" -o CMakeFiles/kites_core.dir/src/common/globals.cpp.s
 
 CMakeFiles/kites_core.dir/src/common/instructions.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/common/instructions.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/common/instructions.cpp
+CMakeFiles/kites_core.dir/src/common/instructions.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/instructions.cpp
 CMakeFiles/kites_core.dir/src/common/instructions.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/kites_core.dir/src/common/instructions.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/common/instructions.cpp.o -MF CMakeFiles/kites_core.dir/src/common/instructions.cpp.o.d -o CMakeFiles/kites_core.dir/src/common/instructions.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/common/instructions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/kites_core.dir/src/common/instructions.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/common/instructions.cpp.o -MF CMakeFiles/kites_core.dir/src/common/instructions.cpp.o.d -o CMakeFiles/kites_core.dir/src/common/instructions.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/common/instructions.cpp"
 
 CMakeFiles/kites_core.dir/src/common/instructions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/common/instructions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/common/instructions.cpp > CMakeFiles/kites_core.dir/src/common/instructions.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/common/instructions.cpp" > CMakeFiles/kites_core.dir/src/common/instructions.cpp.i
 
 CMakeFiles/kites_core.dir/src/common/instructions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/common/instructions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/common/instructions.cpp -o CMakeFiles/kites_core.dir/src/common/instructions.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/common/instructions.cpp" -o CMakeFiles/kites_core.dir/src/common/instructions.cpp.s
 
 CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/config/app_settings.cpp
+CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/app_settings.cpp
 CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o -MF CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o.d -o CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/config/app_settings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o -MF CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o.d -o CMakeFiles/kites_core.dir/src/config/app_settings.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/config/app_settings.cpp"
 
 CMakeFiles/kites_core.dir/src/config/app_settings.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/config/app_settings.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/config/app_settings.cpp > CMakeFiles/kites_core.dir/src/config/app_settings.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/config/app_settings.cpp" > CMakeFiles/kites_core.dir/src/config/app_settings.cpp.i
 
 CMakeFiles/kites_core.dir/src/config/app_settings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/config/app_settings.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/config/app_settings.cpp -o CMakeFiles/kites_core.dir/src/config/app_settings.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/config/app_settings.cpp" -o CMakeFiles/kites_core.dir/src/config/app_settings.cpp.s
 
 CMakeFiles/kites_core.dir/src/config/config.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/config/config.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/config/config.cpp
+CMakeFiles/kites_core.dir/src/config/config.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/config.cpp
 CMakeFiles/kites_core.dir/src/config/config.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/kites_core.dir/src/config/config.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/config/config.cpp.o -MF CMakeFiles/kites_core.dir/src/config/config.cpp.o.d -o CMakeFiles/kites_core.dir/src/config/config.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/config/config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/kites_core.dir/src/config/config.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/config/config.cpp.o -MF CMakeFiles/kites_core.dir/src/config/config.cpp.o.d -o CMakeFiles/kites_core.dir/src/config/config.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/config/config.cpp"
 
 CMakeFiles/kites_core.dir/src/config/config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/config/config.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/config/config.cpp > CMakeFiles/kites_core.dir/src/config/config.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/config/config.cpp" > CMakeFiles/kites_core.dir/src/config/config.cpp.i
 
 CMakeFiles/kites_core.dir/src/config/config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/config/config.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/config/config.cpp -o CMakeFiles/kites_core.dir/src/config/config.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/config/config.cpp" -o CMakeFiles/kites_core.dir/src/config/config.cpp.s
 
 CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/custom_pseudo_manager/custom_pseudo_manager.cpp
+CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/custom_pseudo_manager/custom_pseudo_manager.cpp
 CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o -MF CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o.d -o CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/custom_pseudo_manager/custom_pseudo_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o -MF CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o.d -o CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/custom_pseudo_manager/custom_pseudo_manager.cpp"
 
 CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/custom_pseudo_manager/custom_pseudo_manager.cpp > CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/custom_pseudo_manager/custom_pseudo_manager.cpp" > CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.i
 
 CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/custom_pseudo_manager/custom_pseudo_manager.cpp -o CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/custom_pseudo_manager/custom_pseudo_manager.cpp" -o CMakeFiles/kites_core.dir/src/custom_pseudo_manager/custom_pseudo_manager.cpp.s
 
 CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/elf_util/elf_util.cpp
+CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/elf_util/elf_util.cpp
 CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o -MF CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o.d -o CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/elf_util/elf_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o -MF CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o.d -o CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/elf_util/elf_util.cpp"
 
 CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/elf_util/elf_util.cpp > CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/elf_util/elf_util.cpp" > CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.i
 
 CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/elf_util/elf_util.cpp -o CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/elf_util/elf_util.cpp" -o CMakeFiles/kites_core.dir/src/elf_util/elf_util.cpp.s
 
 CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/language_service/completion_provider.cpp
+CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/completion_provider.cpp
 CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o -MF CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o.d -o CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/language_service/completion_provider.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o -MF CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o.d -o CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/language_service/completion_provider.cpp"
 
 CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/language_service/completion_provider.cpp > CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/language_service/completion_provider.cpp" > CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.i
 
 CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/language_service/completion_provider.cpp -o CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/language_service/completion_provider.cpp" -o CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.s
 
 CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/language_service/language_service.cpp
+CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/language_service.cpp
 CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o -MF CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o.d -o CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/language_service/language_service.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o -MF CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o.d -o CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/language_service/language_service.cpp"
 
 CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/language_service/language_service.cpp > CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/language_service/language_service.cpp" > CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.i
 
 CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/language_service/language_service.cpp -o CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/language_service/language_service.cpp" -o CMakeFiles/kites_core.dir/src/language_service/language_service.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/alu.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/alu.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/alu.cpp
+CMakeFiles/kites_core.dir/src/processor/alu.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/alu.cpp
 CMakeFiles/kites_core.dir/src/processor/alu.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/kites_core.dir/src/processor/alu.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/alu.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/alu.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/alu.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/alu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/kites_core.dir/src/processor/alu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/alu.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/alu.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/alu.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/alu.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/alu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/alu.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/alu.cpp > CMakeFiles/kites_core.dir/src/processor/alu.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/alu.cpp" > CMakeFiles/kites_core.dir/src/processor/alu.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/alu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/alu.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/alu.cpp -o CMakeFiles/kites_core.dir/src/processor/alu.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/alu.cpp" -o CMakeFiles/kites_core.dir/src/processor/alu.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cache.cpp
+CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/cache.cpp
 CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cache.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/cache.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cache.cpp > CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/cache.cpp" > CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cache.cpp -o CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/cache.cpp" -o CMakeFiles/kites_core.dir/src/processor/cache/cache.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/custom_policy_engine.cpp
+CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/custom_policy_engine.cpp
 CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/custom_policy_engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/custom_policy_engine.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/custom_policy_engine.cpp > CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/custom_policy_engine.cpp" > CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/custom_policy_engine.cpp -o CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/custom_policy_engine.cpp" -o CMakeFiles/kites_core.dir/src/processor/cache/custom_policy_engine.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/custom_policy.cpp
+CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/policies/custom_policy.cpp
 CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/custom_policy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/policies/custom_policy.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/custom_policy.cpp > CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/policies/custom_policy.cpp" > CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/custom_policy.cpp -o CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/policies/custom_policy.cpp" -o CMakeFiles/kites_core.dir/src/processor/cache/policies/custom_policy.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/fifo.cpp
+CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/policies/fifo.cpp
 CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/fifo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/policies/fifo.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/fifo.cpp > CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/policies/fifo.cpp" > CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/fifo.cpp -o CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/policies/fifo.cpp" -o CMakeFiles/kites_core.dir/src/processor/cache/policies/fifo.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/lru.cpp
+CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/policies/lru.cpp
 CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/lru.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/policies/lru.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/lru.cpp > CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/policies/lru.cpp" > CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/lru.cpp -o CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/cache/policies/lru.cpp" -o CMakeFiles/kites_core.dir/src/processor/cache/policies/lru.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/control_unit_base.cpp
+CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/control_unit_base.cpp
 CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/control_unit_base.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/control_unit_base.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/control_unit_base.cpp > CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/control_unit_base.cpp" > CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/control_unit_base.cpp -o CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/control_unit_base.cpp" -o CMakeFiles/kites_core.dir/src/processor/control_unit_base.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/main_memory.cpp
+CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/main_memory.cpp
 CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/main_memory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/main_memory.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/main_memory.cpp > CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/main_memory.cpp" > CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/main_memory.cpp -o CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/main_memory.cpp" -o CMakeFiles/kites_core.dir/src/processor/main_memory.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_controller.cpp
+CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_controller.cpp
 CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/memory_controller.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_controller.cpp > CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/memory_controller.cpp" > CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_controller.cpp -o CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/memory_controller.cpp" -o CMakeFiles/kites_core.dir/src/processor/memory_controller.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_base.cpp
+CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_base.cpp
 CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_base.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/processor_base.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_base.cpp > CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/processor_base.cpp" > CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_base.cpp -o CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/processor_base.cpp" -o CMakeFiles/kites_core.dir/src/processor/processor_base.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_factory.cpp
+CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_factory.cpp
 CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/processor_factory.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_factory.cpp > CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/processor_factory.cpp" > CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_factory.cpp -o CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/processor_factory.cpp" -o CMakeFiles/kites_core.dir/src/processor/processor_factory.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_manager.cpp
+CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_manager.cpp
 CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/processor_manager.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_manager.cpp > CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/processor_manager.cpp" > CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_manager.cpp -o CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/processor_manager.cpp" -o CMakeFiles/kites_core.dir/src/processor/processor_manager.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/registers.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/registers.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.cpp
+CMakeFiles/kites_core.dir/src/processor/registers.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/registers.cpp
 CMakeFiles/kites_core.dir/src/processor/registers.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/kites_core.dir/src/processor/registers.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/registers.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/registers.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/registers.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/kites_core.dir/src/processor/registers.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/registers.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/registers.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/registers.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/registers.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/registers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/registers.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.cpp > CMakeFiles/kites_core.dir/src/processor/registers.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/registers.cpp" > CMakeFiles/kites_core.dir/src/processor/registers.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/registers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/registers.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.cpp -o CMakeFiles/kites_core.dir/src/processor/registers.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/registers.cpp" -o CMakeFiles/kites_core.dir/src/processor/registers.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_control_unit.cpp
+CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/rv5s/rv5s_control_unit.cpp
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_control_unit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_control_unit.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_control_unit.cpp > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_control_unit.cpp" > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_control_unit.cpp -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_control_unit.cpp" -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_control_unit.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_hdu.cpp
+CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/rv5s/rv5s_hdu.cpp
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_hdu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_hdu.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_hdu.cpp > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_hdu.cpp" > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_hdu.cpp -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_hdu.cpp" -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_hdu.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_base.cpp
+CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/rv5s/rv5s_processor_base.cpp
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_base.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_base.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_base.cpp > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_base.cpp" > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_base.cpp -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_base.cpp" -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_base.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_h_f.cpp
+CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/rv5s/rv5s_processor_h_f.cpp
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_h_f.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_h_f.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_h_f.cpp > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_h_f.cpp" > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_h_f.cpp -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_h_f.cpp" -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_f.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_h_nf.cpp
+CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/rv5s/rv5s_processor_h_nf.cpp
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_h_nf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_h_nf.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_h_nf.cpp > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_h_nf.cpp" > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_h_nf.cpp -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_h_nf.cpp" -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_h_nf.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_nh_f.cpp
+CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/rv5s/rv5s_processor_nh_f.cpp
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_nh_f.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_nh_f.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_nh_f.cpp > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_nh_f.cpp" > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_nh_f.cpp -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_nh_f.cpp" -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_f.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_nh_nf.cpp
+CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/rv5s/rv5s_processor_nh_nf.cpp
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_nh_nf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_nh_nf.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_nh_nf.cpp > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_nh_nf.cpp" > CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/rv5s/rv5s_processor_nh_nf.cpp -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rv5s/rv5s_processor_nh_nf.cpp" -o CMakeFiles/kites_core.dir/src/processor/rv5s/rv5s_processor_nh_nf.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/rvss/rvss_control_unit.cpp
+CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/rvss/rvss_control_unit.cpp
 CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/rvss/rvss_control_unit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rvss/rvss_control_unit.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/rvss/rvss_control_unit.cpp > CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rvss/rvss_control_unit.cpp" > CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/rvss/rvss_control_unit.cpp -o CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rvss/rvss_control_unit.cpp" -o CMakeFiles/kites_core.dir/src/processor/rvss/rvss_control_unit.cpp.s
 
 CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/processor/rvss/rvss_processor.cpp
+CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/rvss/rvss_processor.cpp
 CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/processor/rvss/rvss_processor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o -MF CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o.d -o CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rvss/rvss_processor.cpp"
 
 CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/processor/rvss/rvss_processor.cpp > CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rvss/rvss_processor.cpp" > CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.i
 
 CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/processor/rvss/rvss_processor.cpp -o CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/processor/rvss/rvss_processor.cpp" -o CMakeFiles/kites_core.dir/src/processor/rvss/rvss_processor.cpp.s
 
 CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/profiler/profiler.cpp
+CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/profiler/profiler.cpp
 CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o -MF CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o.d -o CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/profiler/profiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o -MF CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o.d -o CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/profiler/profiler.cpp"
 
 CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/profiler/profiler.cpp > CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/profiler/profiler.cpp" > CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.i
 
 CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/profiler/profiler.cpp -o CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/profiler/profiler.cpp" -o CMakeFiles/kites_core.dir/src/profiler/profiler.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cacheconfigwidget.cpp
+CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/cache_tab/cacheconfigwidget.cpp
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cacheconfigwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/cache_tab/cacheconfigwidget.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cacheconfigwidget.cpp > CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/cache_tab/cacheconfigwidget.cpp" > CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cacheconfigwidget.cpp -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/cache_tab/cacheconfigwidget.cpp" -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cachemodel.cpp
+CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/cache_tab/cachemodel.cpp
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cachemodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/cache_tab/cachemodel.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cachemodel.cpp > CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/cache_tab/cachemodel.cpp" > CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cachemodel.cpp -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/cache_tab/cachemodel.cpp" -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cachemodel.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cachetab.cpp
+CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/cache_tab/cachetab.cpp
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cachetab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/cache_tab/cachetab.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cachetab.cpp > CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/cache_tab/cachetab.cpp" > CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cachetab.cpp -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/cache_tab/cachetab.cpp" -o CMakeFiles/kites_core.dir/src/ui/cache_tab/cachetab.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/common/collapsible_section.cpp
+CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/collapsible_section.cpp
 CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/common/collapsible_section.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/collapsible_section.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/common/collapsible_section.cpp > CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/collapsible_section.cpp" > CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/common/collapsible_section.cpp -o CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/collapsible_section.cpp" -o CMakeFiles/kites_core.dir/src/ui/common/collapsible_section.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kites_editor.cpp
+CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kites_editor.cpp
 CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kites_editor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/kites_editor.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kites_editor.cpp > CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/kites_editor.cpp" > CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kites_editor.cpp -o CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/kites_editor.cpp" -o CMakeFiles/kites_core.dir/src/ui/common/kites_editor.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kitestab.cpp
+CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kitestab.cpp
 CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kitestab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/kitestab.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kitestab.cpp > CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/kitestab.cpp" > CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kitestab.cpp -o CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/kitestab.cpp" -o CMakeFiles/kites_core.dir/src/ui/common/kitestab.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/common/line_number_gutter_column.cpp
+CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/line_number_gutter_column.cpp
 CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/common/line_number_gutter_column.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/line_number_gutter_column.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/common/line_number_gutter_column.cpp > CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/line_number_gutter_column.cpp" > CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/common/line_number_gutter_column.cpp -o CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/line_number_gutter_column.cpp" -o CMakeFiles/kites_core.dir/src/ui/common/line_number_gutter_column.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/common/syntax_highlighter.cpp
+CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/syntax_highlighter.cpp
 CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/common/syntax_highlighter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/syntax_highlighter.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/common/syntax_highlighter.cpp > CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/syntax_highlighter.cpp" > CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/common/syntax_highlighter.cpp -o CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/common/syntax_highlighter.cpp" -o CMakeFiles/kites_core.dir/src/ui/common/syntax_highlighter.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/compiler_tab/compilertab.cpp
+CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/compiler_tab/compilertab.cpp
 CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/compiler_tab/compilertab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/compiler_tab/compilertab.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/compiler_tab/compilertab.cpp > CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/compiler_tab/compilertab.cpp" > CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/compiler_tab/compilertab.cpp -o CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/compiler_tab/compilertab.cpp" -o CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/addpseudo_dialog.cpp
+CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/dialogs/addpseudo_dialog.cpp
 CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/addpseudo_dialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/dialogs/addpseudo_dialog.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/addpseudo_dialog.cpp > CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/dialogs/addpseudo_dialog.cpp" > CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/addpseudo_dialog.cpp -o CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/dialogs/addpseudo_dialog.cpp" -o CMakeFiles/kites_core.dir/src/ui/dialogs/addpseudo_dialog.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/processor_dialog.cpp
+CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/dialogs/processor_dialog.cpp
 CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/processor_dialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/dialogs/processor_dialog.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/processor_dialog.cpp > CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/dialogs/processor_dialog.cpp" > CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/processor_dialog.cpp -o CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/dialogs/processor_dialog.cpp" -o CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/settings_dialog.cpp
+CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/dialogs/settings_dialog.cpp
 CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/settings_dialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/dialogs/settings_dialog.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/settings_dialog.cpp > CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/dialogs/settings_dialog.cpp" > CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/settings_dialog.cpp -o CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/dialogs/settings_dialog.cpp" -o CMakeFiles/kites_core.dir/src/ui/dialogs/settings_dialog.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/editortab.cpp
+CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/editortab.cpp
 CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/editortab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/editor_tab/editortab.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/editortab.cpp > CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/editor_tab/editortab.cpp" > CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/editortab.cpp -o CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/editor_tab/editortab.cpp" -o CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/main_editor.cpp
+CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/main_editor.cpp
 CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/main_editor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/editor_tab/main_editor.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/main_editor.cpp > CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/editor_tab/main_editor.cpp" > CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/main_editor.cpp -o CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/editor_tab/main_editor.cpp" -o CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/log_panel/log_panel.cpp
+CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/log_panel/log_panel.cpp
 CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/log_panel/log_panel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/log_panel/log_panel.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/log_panel/log_panel.cpp > CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/log_panel/log_panel.cpp" > CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/log_panel/log_panel.cpp -o CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/log_panel/log_panel.cpp" -o CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/mainwindow/mainwindow.cpp
+CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/mainwindow/mainwindow.cpp
 CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/mainwindow/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/mainwindow/mainwindow.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/mainwindow/mainwindow.cpp > CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/mainwindow/mainwindow.cpp" > CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/mainwindow/mainwindow.cpp -o CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/mainwindow/mainwindow.cpp" -o CMakeFiles/kites_core.dir/src/ui/mainwindow/mainwindow.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memory_table_view.cpp
+CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/memory_tab/memory_table_view.cpp
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memory_table_view.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/memory_tab/memory_table_view.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memory_table_view.cpp > CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/memory_tab/memory_table_view.cpp" > CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memory_table_view.cpp -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/memory_tab/memory_table_view.cpp" -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memorymodel.cpp
+CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/memory_tab/memorymodel.cpp
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memorymodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/memory_tab/memorymodel.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memorymodel.cpp > CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/memory_tab/memorymodel.cpp" > CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memorymodel.cpp -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/memory_tab/memorymodel.cpp" -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memorymodel.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memorytab.cpp
+CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/memory_tab/memorytab.cpp
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memorytab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/memory_tab/memorytab.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memorytab.cpp > CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/memory_tab/memorytab.cpp" > CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memorytab.cpp -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/memory_tab/memorytab.cpp" -o CMakeFiles/kites_core.dir/src/ui/memory_tab/memorytab.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_scene.cpp
+CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/circuit_scene.cpp
 CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/circuit_scene.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_scene.cpp > CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/circuit_scene.cpp" > CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_scene.cpp -o CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/circuit_scene.cpp" -o CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_scene.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_view.cpp
+CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/circuit_view.cpp
 CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_view.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/circuit_view.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_view.cpp > CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/circuit_view.cpp" > CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_view.cpp -o CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/circuit_view.cpp" -o CMakeFiles/kites_core.dir/src/ui/processor_tab/circuit_view.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/base_component.cpp
+CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/base_component.cpp
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/base_component.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/processor_designs/components/base_component.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/base_component.cpp > CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/processor_designs/components/base_component.cpp" > CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/base_component.cpp -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/processor_designs/components/base_component.cpp" -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/base_component.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/wire_item.cpp
+CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/wire_item.cpp
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/wire_item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/processor_designs/components/wire_item.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/wire_item.cpp > CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/processor_designs/components/wire_item.cpp" > CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/wire_item.cpp -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/processor_designs/components/wire_item.cpp" -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processor_designs/components/wire_item.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processortab.cpp
+CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processortab.cpp
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processortab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/processortab.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processortab.cpp > CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/processortab.cpp" > CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processortab.cpp -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/processortab.cpp" -o CMakeFiles/kites_core.dir/src/ui/processor_tab/processortab.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/vm_state_table_model.cpp
+CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/vm_state_table_model.cpp
 CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/vm_state_table_model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/vm_state_table_model.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/vm_state_table_model.cpp > CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/vm_state_table_model.cpp" > CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/vm_state_table_model.cpp -o CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/processor_tab/vm_state_table_model.cpp" -o CMakeFiles/kites_core.dir/src/ui/processor_tab/vm_state_table_model.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/instruction_type_count_model.cpp
+CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/profiler_tab/instruction_type_count_model.cpp
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/instruction_type_count_model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/profiler_tab/instruction_type_count_model.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/instruction_type_count_model.cpp > CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/profiler_tab/instruction_type_count_model.cpp" > CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/instruction_type_count_model.cpp -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/profiler_tab/instruction_type_count_model.cpp" -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/profiler_editor.cpp
+CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/profiler_tab/profiler_editor.cpp
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/profiler_editor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/profiler_tab/profiler_editor.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/profiler_editor.cpp > CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/profiler_tab/profiler_editor.cpp" > CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/profiler_editor.cpp -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/profiler_tab/profiler_editor.cpp" -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/profilertab.cpp
+CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/profiler_tab/profilertab.cpp
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/profilertab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/profiler_tab/profilertab.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/profilertab.cpp > CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/profiler_tab/profilertab.cpp" > CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/profilertab.cpp -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/profiler_tab/profilertab.cpp" -o CMakeFiles/kites_core.dir/src/ui/profiler_tab/profilertab.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registercontainer.cpp
+CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/register_table/registercontainer.cpp
 CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registercontainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/register_table/registercontainer.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registercontainer.cpp > CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/register_table/registercontainer.cpp" > CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registercontainer.cpp -o CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/register_table/registercontainer.cpp" -o CMakeFiles/kites_core.dir/src/ui/register_table/registercontainer.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registermodel.cpp
+CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/register_table/registermodel.cpp
 CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registermodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/register_table/registermodel.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registermodel.cpp > CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/register_table/registermodel.cpp" > CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registermodel.cpp -o CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/register_table/registermodel.cpp" -o CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/font_manager.cpp
+CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/font_manager.cpp
 CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/font_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/theme/font_manager.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/font_manager.cpp > CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/theme/font_manager.cpp" > CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/font_manager.cpp -o CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/theme/font_manager.cpp" -o CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/icon_manager.cpp
+CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/icon_manager.cpp
 CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/icon_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/theme/icon_manager.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/icon_manager.cpp > CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/theme/icon_manager.cpp" > CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/icon_manager.cpp -o CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/theme/icon_manager.cpp" -o CMakeFiles/kites_core.dir/src/ui/theme/icon_manager.cpp.s
 
 CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.cpp
+CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.cpp
 CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o -MF CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o.d -o CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/theme/theme_manager.cpp"
 
 CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.cpp > CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/theme/theme_manager.cpp" > CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.i
 
 CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.cpp -o CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/ui/theme/theme_manager.cpp" -o CMakeFiles/kites_core.dir/src/ui/theme/theme_manager.cpp.s
 
 CMakeFiles/kites_core.dir/src/utils/utils.cpp.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/src/utils/utils.cpp.o: /home/shiv-velnad/Kites_ash_shiv/src/utils/utils.cpp
+CMakeFiles/kites_core.dir/src/utils/utils.cpp.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/utils.cpp
 CMakeFiles/kites_core.dir/src/utils/utils.cpp.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/kites_core.dir/src/utils/utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/utils/utils.cpp.o -MF CMakeFiles/kites_core.dir/src/utils/utils.cpp.o.d -o CMakeFiles/kites_core.dir/src/utils/utils.cpp.o -c /home/shiv-velnad/Kites_ash_shiv/src/utils/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/kites_core.dir/src/utils/utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/kites_core.dir/src/utils/utils.cpp.o -MF CMakeFiles/kites_core.dir/src/utils/utils.cpp.o.d -o CMakeFiles/kites_core.dir/src/utils/utils.cpp.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/utils/utils.cpp"
 
 CMakeFiles/kites_core.dir/src/utils/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/kites_core.dir/src/utils/utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shiv-velnad/Kites_ash_shiv/src/utils/utils.cpp > CMakeFiles/kites_core.dir/src/utils/utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/utils/utils.cpp" > CMakeFiles/kites_core.dir/src/utils/utils.cpp.i
 
 CMakeFiles/kites_core.dir/src/utils/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/kites_core.dir/src/utils/utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shiv-velnad/Kites_ash_shiv/src/utils/utils.cpp -o CMakeFiles/kites_core.dir/src/utils/utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/src/utils/utils.cpp" -o CMakeFiles/kites_core.dir/src/utils/utils.cpp.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lapi.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lapi.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lapi.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lapi.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lapi.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lapi.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lapi.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lapi.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lauxlib.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lauxlib.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lauxlib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lauxlib.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lauxlib.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lauxlib.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lauxlib.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lauxlib.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lauxlib.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lbaselib.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lbaselib.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lbaselib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lbaselib.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lbaselib.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lbaselib.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lbaselib.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lbaselib.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lbaselib.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lcode.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lcode.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lcode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lcode.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lcode.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lcode.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lcode.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lcode.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcode.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lcorolib.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lcorolib.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lcorolib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lcorolib.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lcorolib.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lcorolib.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lcorolib.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lcorolib.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lcorolib.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lctype.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lctype.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lctype.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lctype.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lctype.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lctype.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lctype.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lctype.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lctype.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldblib.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/ldblib.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldblib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldblib.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldblib.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldblib.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldblib.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldblib.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldblib.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldebug.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/ldebug.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldebug.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldebug.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldebug.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldebug.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldebug.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldebug.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldebug.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldo.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/ldo.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldo.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldo.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldo.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldo.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldo.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldo.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldump.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/ldump.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldump.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldump.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldump.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldump.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ldump.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ldump.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ldump.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lfunc.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lfunc.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lfunc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lfunc.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lfunc.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lfunc.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lfunc.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lfunc.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lfunc.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lgc.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lgc.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lgc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lgc.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lgc.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lgc.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lgc.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lgc.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lgc.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/linit.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/linit.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/linit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/linit.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/linit.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/linit.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/linit.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/linit.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/linit.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/liolib.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/liolib.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/liolib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/liolib.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/liolib.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/liolib.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/liolib.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/liolib.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/liolib.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/llex.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/llex.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/llex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/llex.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/llex.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/llex.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/llex.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/llex.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/llex.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lmathlib.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lmathlib.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lmathlib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lmathlib.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lmathlib.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lmathlib.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lmathlib.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lmathlib.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmathlib.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lmem.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lmem.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lmem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lmem.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lmem.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lmem.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lmem.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lmem.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lmem.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/loadlib.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/loadlib.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/loadlib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/loadlib.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/loadlib.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/loadlib.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/loadlib.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/loadlib.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loadlib.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lobject.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lobject.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lobject.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lobject.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lobject.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lobject.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lobject.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lobject.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lobject.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lopcodes.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lopcodes.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lopcodes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lopcodes.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lopcodes.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lopcodes.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lopcodes.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lopcodes.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lopcodes.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/loslib.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/loslib.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/loslib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/loslib.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/loslib.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/loslib.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/loslib.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/loslib.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/loslib.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lparser.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lparser.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lparser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lparser.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lparser.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lparser.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lparser.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lparser.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lparser.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstate.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lstate.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lstate.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstate.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lstate.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstate.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lstate.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstate.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstring.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lstring.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstring.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lstring.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstring.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lstring.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstring.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lstring.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstring.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstrlib.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lstrlib.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstrlib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lstrlib.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstrlib.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lstrlib.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lstrlib.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lstrlib.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lstrlib.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltable.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/ltable.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltable.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ltable.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltable.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ltable.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltable.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ltable.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltable.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltablib.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/ltablib.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltablib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ltablib.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltablib.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ltablib.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltablib.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ltablib.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltablib.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltm.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/ltm.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ltm.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltm.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ltm.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/ltm.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/ltm.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/ltm.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lundump.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lundump.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lundump.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lundump.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lundump.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lundump.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lundump.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lundump.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lundump.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lutf8lib.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lutf8lib.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lutf8lib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lutf8lib.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lutf8lib.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lutf8lib.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lutf8lib.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lutf8lib.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lutf8lib.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lvm.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lvm.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lvm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lvm.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lvm.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lvm.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lvm.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lvm.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.s
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o: CMakeFiles/kites_core.dir/flags.make
-CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o: /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lzio.c
+CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/external/lua-5.5.0/src/lzio.c
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o: CMakeFiles/kites_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o -c /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lzio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -MD -MT CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o -MF CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o.d -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o -c "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lzio.c"
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lzio.c > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -E "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lzio.c" > CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.i
 
 CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S /home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src/lzio.c -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -Wno-pedantic -S "/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src/lzio.c" -o CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.s
 
 # Object files for target kites_core
 kites_core_OBJECTS = \
@@ -1824,7 +1824,7 @@ libkites_core.a: CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lvm.c.o
 libkites_core.a: CMakeFiles/kites_core.dir/external/lua-5.5.0/src/lzio.c.o
 libkites_core.a: CMakeFiles/kites_core.dir/build.make
 libkites_core.a: CMakeFiles/kites_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Linking CXX static library libkites_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_110) "Linking CXX static library libkites_core.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/kites_core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kites_core.dir/link.txt --verbose=$(VERBOSE)
 
@@ -1837,6 +1837,6 @@ CMakeFiles/kites_core.dir/clean:
 .PHONY : CMakeFiles/kites_core.dir/clean
 
 CMakeFiles/kites_core.dir/depend:
-	cd /home/shiv-velnad/Kites_ash_shiv/build-cli && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shiv-velnad/Kites_ash_shiv /home/shiv-velnad/Kites_ash_shiv /home/shiv-velnad/Kites_ash_shiv/build-cli /home/shiv-velnad/Kites_ash_shiv/build-cli /home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles/kites_core.dir/DependInfo.cmake "--color=$(COLOR)" kites_core
+	cd "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/shiv-velnad/Kites_ash_shiv (Copy)" "/home/shiv-velnad/Kites_ash_shiv (Copy)" "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli" "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli" "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles/kites_core.dir/DependInfo.cmake" "--color=$(COLOR)" kites_core
 .PHONY : CMakeFiles/kites_core.dir/depend
 

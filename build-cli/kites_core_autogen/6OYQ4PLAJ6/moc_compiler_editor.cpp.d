@@ -1,8 +1,8 @@
-/home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/6OYQ4PLAJ6/moc_compiler_editor.cpp: /home/shiv-velnad/Kites_ash_shiv/src/ui/compiler_tab/compiler_editor.h \
-  /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/moc_predefs.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/common/gutter_column.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kites_editor.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/common/line_number_gutter_column.h \
+/home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/6OYQ4PLAJ6/moc_compiler_editor.cpp: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/compiler_tab/compiler_editor.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/moc_predefs.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/gutter_column.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kites_editor.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/line_number_gutter_column.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \

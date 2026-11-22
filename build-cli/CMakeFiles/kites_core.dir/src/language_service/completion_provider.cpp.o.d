@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/language_service/completion_provider.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/completion_provider.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/language_service/completion_provider.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/completion_provider.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
@@ -347,8 +347,8 @@ CMakeFiles/kites_core.dir/src/language_service/completion_provider.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/register_names.h \
- /home/shiv-velnad/Kites_ash_shiv/src/custom_pseudo_manager/custom_pseudo_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/register_names.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/custom_pseudo_manager/custom_pseudo_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \

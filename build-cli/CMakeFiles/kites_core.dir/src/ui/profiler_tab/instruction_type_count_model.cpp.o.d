@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/instruction_type_count_model.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/profiler_tab/instruction_type_count_model.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/instruction_type_count_model.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/profiler_tab/instruction_type_count_model.h \
  /usr/include/c++/15/array /usr/include/c++/15/compare \
  /usr/include/c++/15/bits/version.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
@@ -407,5 +407,5 @@ CMakeFiles/kites_core.dir/src/ui/profiler_tab/instruction_type_count_model.cpp.o
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/instruction_types.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/instruction_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h

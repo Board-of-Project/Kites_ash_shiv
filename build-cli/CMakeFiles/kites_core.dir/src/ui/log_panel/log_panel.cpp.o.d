@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/ui/log_panel/log_panel.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/log_panel/log_panel.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/log_panel/log_panel.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/log_panel/log_panel.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/log_panel/log_panel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

@@ -1,8 +1,8 @@
 CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/compiler_tab/compilertab.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/compiler_tab/compilertab.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/compiler_tab/compilertab.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kitestab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/compiler_tab/compilertab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kitestab.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolBar \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtoolbar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -449,14 +449,14 @@ CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /home/shiv-velnad/Kites_ash_shiv/src/config/app_settings.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/app_settings.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSettings \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsettings.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/include/ui_compilertab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/include/ui_compilertab.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
@@ -528,15 +528,15 @@ CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplitter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/compiler_tab/compiler_editor.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kites_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/compiler_tab/compiler_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kites_editor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/line_number_gutter_column.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/line_number_gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/gutter_column.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTextBlock \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextobject.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/main_editor.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/syntax_highlighter.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/main_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/syntax_highlighter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QSyntaxHighlighter \
@@ -544,7 +544,7 @@ CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTextCharFormat \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPalette \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
@@ -562,7 +562,7 @@ CMakeFiles/kites_core.dir/src/ui/compiler_tab/compilertab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCompleter \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcompleter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \

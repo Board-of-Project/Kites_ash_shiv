@@ -1,6 +1,6 @@
-/home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/6OYQ4PLAJ6/moc_compilertab.cpp: /home/shiv-velnad/Kites_ash_shiv/src/ui/compiler_tab/compilertab.h \
-  /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/moc_predefs.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kitestab.h \
+/home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/6OYQ4PLAJ6/moc_compilertab.cpp: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/compiler_tab/compilertab.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/moc_predefs.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kitestab.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \

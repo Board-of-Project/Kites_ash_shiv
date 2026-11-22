@@ -1,8 +1,8 @@
-/home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/JYYBYNAWAO/moc_registercontainer.cpp: /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registercontainer.h \
-  /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/moc_predefs.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/common/display_base_types.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registermodel.h \
+/home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/JYYBYNAWAO/moc_registercontainer.cpp: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/register_table/registercontainer.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/moc_predefs.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/registers.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/display_base_types.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/register_table/registermodel.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \

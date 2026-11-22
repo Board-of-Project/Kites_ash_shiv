@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shiv-velnad/Kites_ash_shiv
+CMAKE_SOURCE_DIR = "/home/shiv-velnad/Kites_ash_shiv (Copy)"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shiv-velnad/Kites_ash_shiv/build-cli
+CMAKE_BINARY_DIR = "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli"
 
 # Utility rule file for Kites_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/Kites_autogen: Kites_autogen/timestamp
 Kites_autogen/timestamp: /usr/lib/qt6/libexec/moc
 Kites_autogen/timestamp: /usr/lib/qt6/libexec/uic
 Kites_autogen/timestamp: CMakeFiles/Kites_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Kites"
-	/usr/bin/cmake -E cmake_autogen /home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles/Kites_autogen.dir/AutogenInfo.json ""
-	/usr/bin/cmake -E touch /home/shiv-velnad/Kites_ash_shiv/build-cli/Kites_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Kites"
+	/usr/bin/cmake -E cmake_autogen "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles/Kites_autogen.dir/AutogenInfo.json" ""
+	/usr/bin/cmake -E touch "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/Kites_autogen/timestamp"
 
 CMakeFiles/Kites_autogen.dir/codegen:
 .PHONY : CMakeFiles/Kites_autogen.dir/codegen
@@ -92,6 +92,6 @@ CMakeFiles/Kites_autogen.dir/clean:
 .PHONY : CMakeFiles/Kites_autogen.dir/clean
 
 CMakeFiles/Kites_autogen.dir/depend:
-	cd /home/shiv-velnad/Kites_ash_shiv/build-cli && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shiv-velnad/Kites_ash_shiv /home/shiv-velnad/Kites_ash_shiv /home/shiv-velnad/Kites_ash_shiv/build-cli /home/shiv-velnad/Kites_ash_shiv/build-cli /home/shiv-velnad/Kites_ash_shiv/build-cli/CMakeFiles/Kites_autogen.dir/DependInfo.cmake "--color=$(COLOR)" Kites_autogen
+	cd "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/shiv-velnad/Kites_ash_shiv (Copy)" "/home/shiv-velnad/Kites_ash_shiv (Copy)" "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli" "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli" "/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/CMakeFiles/Kites_autogen.dir/DependInfo.cmake" "--color=$(COLOR)" Kites_autogen
 .PHONY : CMakeFiles/Kites_autogen.dir/depend
 

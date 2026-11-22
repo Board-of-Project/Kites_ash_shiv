@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB
 
-C_INCLUDES = -I/home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/include -I/home/shiv-velnad/Kites_ash_shiv/build-cli/Kites_autogen/include -I/home/shiv-velnad/Kites_ash_shiv/src -I/home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtConcurrent
+C_INCLUDES = -I"/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/kites_core_autogen/include" -I"/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/Kites_autogen/include" -I"/home/shiv-velnad/Kites_ash_shiv (Copy)/src" -I"/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src" -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtConcurrent
 
 C_FLAGS = -Wall -Wextra -pedantic -frounding-math -ffloat-store
 
 CXX_DEFINES = -DQT_CONCURRENT_LIB -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/include -I/home/shiv-velnad/Kites_ash_shiv/build-cli/Kites_autogen/include -I/home/shiv-velnad/Kites_ash_shiv/src -I/home/shiv-velnad/Kites_ash_shiv/external/lua-5.5.0/src -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtConcurrent
+CXX_INCLUDES = -I"/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/kites_core_autogen/include" -I"/home/shiv-velnad/Kites_ash_shiv (Copy)/build-cli/Kites_autogen/include" -I"/home/shiv-velnad/Kites_ash_shiv (Copy)/src" -I"/home/shiv-velnad/Kites_ash_shiv (Copy)/external/lua-5.5.0/src" -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtNetwork -isystem /usr/include/x86_64-linux-gnu/qt6/QtConcurrent
 
 CXX_FLAGS = -std=gnu++20 -Wall -Wextra -pedantic -frounding-math -ffloat-store
 

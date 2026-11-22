@@ -1,9 +1,9 @@
 CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/editortab.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/editortab.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/editortab.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/main_editor.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/syntax_highlighter.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/editortab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/main_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/syntax_highlighter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
@@ -482,7 +482,7 @@ CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTextCharFormat \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPalette \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
@@ -516,8 +516,8 @@ CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kites_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kites_editor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
@@ -537,11 +537,11 @@ CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/disassembly_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/disassembly_editor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
- /home/shiv-velnad/Kites_ash_shiv/src/language_service/diagnostic.h \
- /home/shiv-velnad/Kites_ash_shiv/src/language_service/language_service.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/diagnostic.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/language_service.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFutureWatcher \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuturewatcher.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuture.h \
@@ -566,15 +566,15 @@ CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qexception.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpromise.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_manager.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/assembled_program.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/parser.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/code_generator.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/assembled_program.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/parser.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/code_generator.h \
  /usr/include/c++/15/iostream \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/errors.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/tokens.h \
- /home/shiv-velnad/Kites_ash_shiv/src/config/config.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/globals.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/errors.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/tokens.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/config.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/globals.h \
  /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
  /usr/include/c++/15/bits/fs_path.h /usr/include/c++/15/codecvt \
  /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h \
@@ -582,35 +582,35 @@ CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
  /usr/include/c++/15/bits/fstream.tcc \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_base.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/alu.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_base.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/alu.h \
  /usr/include/c++/15/cfenv /usr/include/c++/15/fenv.h /usr/include/fenv.h \
  /usr/include/x86_64-linux-gnu/bits/fenv.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_controller.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cache.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_controller.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/cache.h \
  /usr/include/c++/15/deque /usr/include/c++/15/bits/stl_deque.h \
  /usr/include/c++/15/bits/deque.tcc \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cacheconfig.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/cacheconfig.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaType \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/cache_replacement_policy.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/policies/custom_policy.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/main_memory.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_block.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_device.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/undo_buffer.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/main_memory.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_state.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_types.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_scene.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/base_component.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/policies/cache_replacement_policy.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/policies/custom_policy.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/main_memory.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_block.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_device.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/undo_buffer.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/main_memory.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_state.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/registers.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/circuit_scene.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/base_component.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPathItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainterPath \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/wire_item.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/wire_item.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPen \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPolygonF \
@@ -636,7 +636,7 @@ CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_constants.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_constants.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMutex \
@@ -647,18 +647,18 @@ CMakeFiles/kites_core.dir/src/ui/editor_tab/editortab.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
  /usr/include/c++/15/queue /usr/include/c++/15/bits/stl_queue.h \
  /usr/include/c++/15/stack /usr/include/c++/15/bits/stl_stack.h \
- /home/shiv-velnad/Kites_ash_shiv/src/profiler/profiler.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/profiler/profiler.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
- /home/shiv-velnad/Kites_ash_shiv/src/common/instruction_types.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kitestab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/instruction_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kitestab.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolBar \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtoolbar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
- /home/shiv-velnad/Kites_ash_shiv/src/custom_pseudo_manager/custom_pseudo_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/custom_pseudo_manager/custom_pseudo_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/include/ui_editortab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/include/ui_editortab.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGridLayout \

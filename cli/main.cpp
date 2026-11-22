@@ -290,7 +290,7 @@ int main(int argc, char *argv[])
         uint64_t start_pc = current_pc;
         bool is_running = !instrs.empty();
         size_t step_count = 0;
-        const size_t max_steps = 5000;
+        const size_t max_steps = 70000;
 
         while (is_running && !runFailed)
         {

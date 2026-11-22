@@ -1,8 +1,8 @@
 CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/profiler_editor.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/profiler_tab/profiler_editor.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/profiler_editor.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/syntax_highlighter.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/profiler_tab/profiler_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/syntax_highlighter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
@@ -481,7 +481,7 @@ CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTextCharFormat \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPalette \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
@@ -515,8 +515,8 @@ CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kites_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kites_editor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
@@ -524,21 +524,21 @@ CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h \
- /home/shiv-velnad/Kites_ash_shiv/src/profiler/profiler.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/profiler/profiler.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/assembled_program.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/parser.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/code_generator.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/assembled_program.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/parser.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/code_generator.h \
  /usr/include/c++/15/iostream \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/errors.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/tokens.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/instruction_types.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_state.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/errors.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/tokens.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/instruction_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_state.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_types.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFontDatabase \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontdatabase.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
@@ -552,7 +552,7 @@ CMakeFiles/kites_core.dir/src/ui/profiler_tab/profiler_editor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTextEdit \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/line_number_gutter_column.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/gutter_column.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/instruction_type_gutter_column.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/profiler_tab/execution_count_gutter_column.h
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/line_number_gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/profiler_tab/instruction_type_gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/profiler_tab/execution_count_gutter_column.h

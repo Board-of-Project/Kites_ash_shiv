@@ -1,7 +1,7 @@
-/home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/RRVYB7HD3J/moc_circuit_scene.cpp: /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_scene.h \
-  /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/moc_predefs.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/base_component.h \
-  /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/wire_item.h \
+/home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/RRVYB7HD3J/moc_circuit_scene.cpp: /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/circuit_scene.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/moc_predefs.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/base_component.h \
+  /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/wire_item.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \

@@ -1,9 +1,9 @@
 CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registermodel.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/register_table/registermodel.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registermodel.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/display_base_types.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/register_table/registermodel.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/display_base_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/registers.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
@@ -411,7 +411,7 @@ CMakeFiles/kites_core.dir/src/ui/register_table/registermodel.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/register_names.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/register_names.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

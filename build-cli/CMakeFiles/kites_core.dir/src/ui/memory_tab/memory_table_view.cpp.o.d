@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/ui/memory_tab/memory_table_view.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memory_table_view.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/memory_tab/memory_table_view.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/memory_tab/memory_table_view.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/memory_tab/memory_table_view.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableView \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtableview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \

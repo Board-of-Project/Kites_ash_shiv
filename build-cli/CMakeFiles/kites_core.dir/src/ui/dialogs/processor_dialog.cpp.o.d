@@ -1,8 +1,8 @@
 CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/processor_dialog.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/dialogs/processor_dialog.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/dialogs/processor_dialog.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/dialogs/processor_dialog.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_types.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -469,7 +469,7 @@ CMakeFiles/kites_core.dir/src/ui/dialogs/processor_dialog.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtreewidgetitemiterator.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/include/ui_processor_dialog.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/include/ui_processor_dialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QAbstractButton \

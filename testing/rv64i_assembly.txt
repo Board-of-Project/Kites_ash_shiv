@@ -1,1086 +1,386 @@
-lui x1, 0xa7c17
-addi x1, x1, -1322
-lui x2, 0x6516b
-addi x2, x2, -589
-lui x3, 0x6ac4e
-addi x3, x3, 991
-lui x4, 0x4ffaf
-addi x4, x4, -1260
-lui x5, 0x568c1
-addi x5, x5, 1207
-lui x6, 0x5f664
-addi x6, x6, 1918
-lui x7, 0x3553e
-addi x7, x7, -1210
-lui x8, 0x3ffe2
-addi x8, x8, 717
-lui x9, 0xe1410
-addi x9, x9, 196
-lui x10, 0x295e2
-addi x10, x10, 109
-lui x11, 0xc9c40
-addi x11, x11, 1283
-lui x12, 0x570ce
-addi x12, x12, 746
-lui x13, 0x7f895
-addi x13, x13, 1294
-lui x14, 0x10ef7
-addi x14, x14, -891
-lui x15, 0xc74eb
-addi x15, x15, -455
-lui x16, 0xcdcf5
-addi x16, x16, 1691
-lui x17, 0xb235d
-addi x17, x17, -77
-lui x18, 0x9731f
-addi x18, x18, 573
-lui x19, 0xd4817
-addi x19, x19, 755
-lui x20, 0x9cad6
-addi x20, x20, -1920
-lui x21, 0xcad7d
-addi x21, x21, -1711
-lui x22, 0x90e68
-addi x22, x22, -552
-lui x23, 0x294b
-addi x23, x23, -1992
-lui x24, 0x10002
-addi x24, x24, 512
-lui x25, 0x10012
-addi x25, x25, 1000
-lui x26, 0x10022
-addi x26, x26, 192
-lui x27, 0x10031
-addi x27, x27, 1696
-sd x19, 0(x24)
-sd x23, 8(x24)
-sd x13, 16(x24)
-sd x21, 24(x24)
-sd x12, 32(x24)
-sd x22, 40(x24)
-sd x21, 48(x24)
-sd x16, 56(x24)
-sd x12, 0(x25)
-sd x2, 8(x25)
-sd x22, 16(x25)
-sd x1, 24(x25)
-sd x12, 32(x25)
-sd x17, 40(x25)
-sd x9, 48(x25)
-sd x1, 56(x25)
-sd x18, 0(x26)
-sd x20, 8(x26)
-sd x17, 16(x26)
-sd x21, 24(x26)
-sd x21, 32(x26)
-sd x7, 40(x26)
-sd x12, 48(x26)
-sd x15, 56(x26)
-sd x19, 0(x27)
-sd x9, 8(x27)
-sd x7, 16(x27)
-sd x21, 24(x27)
-sd x14, 32(x27)
-sd x17, 40(x27)
-sd x12, 48(x27)
-sd x5, 56(x27)
-andi x1, x17, 1272
-sd x8, 32(x24)
-sd x1, 16(x27)
-slli x13, x21, 1
-srai x16, x15, 1
-sltiu x19, x11, -1
-sltiu x16, x14, 1377
-sltu x21, x22, x18
-sra x21, x13, x13
-srai x1, x6, 32
-slt x23, x19, x22
-ld x22, 0(x27)
-addi x7, x13, -2048
-sub x5, x7, x11
-addiw x8, x21, -998
-srlw x5, x12, x16
-sw x13, 48(x25)
-xor x14, x17, x13
-srai x9, x23, 63
-lw x16, 16(x25)
-sllw x14, x10, x11
-xori x14, x10, 986
-ori x5, x12, -120
-sra x5, x8, x19
-xor x1, x16, x21
-xori x14, x19, -8
-andi x11, x2, -1951
-xori x1, x6, -8
-addiw x8, x9, -1785
-slli x2, x18, 40
-srlw x11, x9, x18
-addiw x2, x20, 1687
-srlw x0, x8, x5
-slli x1, x21, 31
-slliw x18, x2, 14
-subw x1, x5, x15
-sltiu x16, x10, -1750
-srai x23, x3, 31
-srai x4, x17, 55
-srai x23, x5, 32
-srai x5, x12, 49
-slti x9, x8, -832
-ori x12, x16, 1106
-sd x15, 56(x26)
-slti x16, x10, -1363
-sllw x5, x6, x18
-sraw x10, x12, x18
-ori x15, x8, 1281
-addw x20, x18, x11
-sltiu x20, x2, 153
-slliw x15, x17, 7
-slliw x4, x11, 31
-srl x5, x16, x16
-addiw x4, x15, 1716
-andi x8, x2, -1359
-ori x2, x4, 47
-slti x5, x21, -1
-ld x9, 8(x26)
-srl x18, x22, x1
-sb x20, 15(x27)
-lh x16, 26(x26)
-srai x14, x6, 1
-srli x14, x12, 63
-sd x18, 48(x27)
-and x22, x17, x19
-ld x14, 24(x25)
-sd x2, 16(x26)
-slliw x13, x17, 26
-sll x13, x18, x13
-srli x15, x22, 31
-slliw x23, x5, 18
-slti x21, x6, 1716
-sd x20, 24(x27)
-ld x2, 16(x27)
-srliw x22, x22, 28
-srliw x1, x9, 27
-sltu x22, x5, x6
-slli x12, x0, 6
-addiw x20, x1, 374
-ld x13, 48(x26)
-sraw x1, x21, x8
-sll x15, x11, x6
-srai x13, x6, 43
-ld x17, 48(x24)
-srai x23, x18, 5
-ld x10, 8(x26)
-sh x6, 0(x26)
-andi x12, x10, 368
-addiw x10, x8, 1476
-srai x21, x19, 12
-srlw x22, x23, x2
-srai x1, x12, 1
-slliw x13, x13, 4
-lb x17, 36(x26)
-add x12, x11, x10
-sll x3, x16, x19
-sllw x12, x15, x7
-andi x16, x7, 204
-sub x20, x13, x22
-srlw x7, x19, x4
-xori x7, x14, -1808
-slli x1, x4, 10
-slliw x8, x18, 15
-addw x22, x20, x4
-subw x18, x3, x8
-sd x20, 40(x27)
-slliw x7, x10, 25
-ld x7, 40(x24)
-sb x22, 21(x25)
-srai x2, x7, 33
-sub x10, x2, x5
-sw x12, 32(x27)
-slli x11, x18, 32
-sra x5, x8, x12
-addw x12, x2, x10
-xori x15, x21, 1385
-ld x5, 8(x24)
-srli x6, x21, 1
-addi x20, x3, -722
-slliw x3, x6, 31
-srai x14, x0, 0
-sll x10, x16, x15
-slli x15, x5, 40
-lb x6, 40(x24)
-addi x9, x3, 388
-sllw x11, x17, x1
-slli x16, x18, 5
-addi x20, x17, -852
-ld x4, 32(x27)
-slt x8, x20, x16
-slliw x2, x15, 25
-andi x18, x3, -1152
-sub x13, x10, x17
-sd x22, 0(x26)
-sltiu x7, x11, 8
-slli x6, x4, 48
-slti x13, x3, -517
-sd x4, 40(x24)
-srli x9, x18, 55
-andi x6, x8, 8
-ld x21, 48(x24)
-sh x2, 44(x25)
-sd x4, 8(x26)
-sltu x4, x2, x0
-srai x13, x8, 2
-xori x11, x8, -1719
-sb x23, 4(x24)
-sllw x9, x6, x14
-slli x4, x22, 0
-addi x13, x7, 1951
-srli x17, x13, 0
-srl x22, x3, x6
-srliw x18, x23, 26
-sd x22, 16(x24)
-sd x0, 8(x27)
-slti x6, x19, -1350
-andi x0, x21, -1304
-sltiu x8, x18, -1725
-addw x22, x15, x13
-sub x9, x19, x13
-sraiw x21, x16, 15
-srl x5, x2, x12
-slti x17, x10, -1522
-ld x13, 32(x27)
-srai x2, x6, 61
-addi x23, x17, -1877
-srai x11, x15, 53
-andi x16, x10, 2047
-slti x13, x20, 223
-ld x0, 0(x27)
-slli x23, x11, 34
-sb x2, 31(x26)
-andi x16, x23, 1474
-ld x13, 40(x24)
-andi x16, x14, -746
-slli x6, x17, 39
-sd x7, 48(x25)
-lw x6, 8(x24)
-slli x18, x15, 31
-ori x10, x7, 659
-sltu x22, x23, x3
-subw x3, x12, x3
-sd x21, 24(x27)
-sub x7, x4, x12
-lh x0, 56(x26)
-ld x12, 56(x26)
-slti x2, x15, -1434
-addw x2, x11, x15
-xor x4, x0, x6
-xor x21, x1, x16
-sw x19, 40(x27)
-slliw x17, x6, 31
-slli x5, x11, 58
-srli x4, x11, 31
-sraw x10, x20, x1
-sh x1, 22(x25)
-slti x0, x22, -28
-srlw x8, x14, x18
-sd x5, 24(x25)
-srai x10, x12, 28
-sltiu x11, x17, 1301
-srl x2, x5, x17
-sraiw x18, x18, 28
-sub x3, x18, x23
-sb x11, 45(x24)
-and x7, x13, x3
-subw x10, x4, x20
-and x6, x11, x5
-andi x4, x23, 1117
-srlw x1, x12, x8
-srliw x13, x12, 31
-srliw x1, x0, 7
-srai x10, x18, 48
-srl x23, x15, x9
-addi x22, x14, -742
-srai x22, x15, 52
-sraw x20, x21, x14
-and x5, x22, x0
-srai x0, x23, 10
-srli x1, x0, 23
-add x23, x0, x10
-andi x22, x6, 625
-slli x9, x17, 1
-slliw x20, x18, 12
-srli x3, x12, 63
-slli x0, x23, 31
-sd x23, 16(x27)
-lh x3, 46(x26)
-xori x1, x20, -1
-slt x23, x23, x10
-srlw x23, x23, x15
-xor x16, x14, x23
-slli x17, x10, 28
-xor x0, x13, x16
-or x13, x5, x14
-slli x3, x14, 32
-srai x22, x7, 29
-srai x9, x12, 32
-ori x0, x8, 23
-slli x12, x18, 61
-srli x7, x17, 31
-slti x3, x14, 1642
-addi x4, x5, 161
-srai x11, x3, 15
-sllw x18, x3, x7
-sd x0, 16(x24)
-ori x3, x22, 319
-or x2, x7, x9
-srli x9, x0, 32
-sd x13, 56(x27)
-srliw x0, x0, 19
-sraiw x23, x4, 22
-add x1, x5, x14
-slli x7, x7, 60
-sraiw x20, x13, 10
-slti x2, x3, -748
-slti x4, x17, -48
-addi x10, x8, 1010
-slliw x6, x19, 16
-srli x4, x11, 32
-srlw x12, x16, x2
-sll x1, x12, x17
-sllw x15, x20, x4
-andi x4, x9, 1082
-slli x19, x5, 39
-slti x12, x16, 1935
-sraiw x9, x9, 31
-ld x12, 8(x25)
-srai x7, x9, 29
-sd x21, 8(x24)
-sd x11, 56(x26)
-sllw x19, x8, x20
-sll x10, x20, x18
-xori x4, x10, -510
-ld x23, 0(x27)
-srai x0, x16, 3
-sub x7, x9, x22
-addiw x19, x19, 790
-sd x9, 8(x24)
-or x23, x13, x1
-ld x22, 16(x24)
-srlw x1, x17, x2
-ori x17, x16, -1276
-andi x14, x23, 1383
-ld x16, 40(x24)
-slt x23, x20, x16
-add x2, x3, x1
-sub x7, x20, x21
-ld x18, 56(x25)
-sub x14, x22, x1
-xori x5, x13, -775
-slli x16, x8, 1
-srai x6, x7, 50
-or x15, x16, x2
-slt x17, x9, x11
-sw x23, 16(x27)
-slt x16, x14, x13
-slliw x5, x4, 30
-andi x16, x11, -967
-sd x18, 48(x26)
-srai x13, x2, 48
-and x22, x19, x14
-sltiu x6, x12, 684
-lb x10, 5(x26)
-sd x9, 24(x27)
-sd x5, 16(x26)
-sd x8, 48(x25)
-ld x18, 0(x26)
-ld x12, 16(x26)
-slli x5, x23, 59
-srai x12, x6, 37
-slti x17, x3, 1334
-addi x12, x8, -939
-sltu x21, x5, x11
-lw x4, 56(x24)
-sd x1, 48(x25)
-slli x0, x10, 30
-sd x22, 8(x26)
-lw x6, 24(x24)
-lb x10, 43(x24)
-sw x22, 20(x24)
-addi x10, x18, -7
-srli x19, x2, 61
-srli x16, x17, 62
-addw x20, x9, x8
-srai x17, x10, 32
-xori x19, x2, -1450
-srlw x20, x16, x10
-sd x17, 0(x26)
-slt x20, x2, x14
-sltiu x21, x10, 767
-slli x1, x17, 45
-srli x20, x0, 1
-srl x8, x19, x21
-srliw x17, x6, 6
-slli x14, x23, 19
-ori x1, x14, -76
-sub x23, x0, x1
-or x19, x9, x22
-srl x10, x1, x16
-srlw x17, x3, x20
-sllw x18, x21, x4
-ld x14, 40(x25)
-srli x3, x3, 0
-andi x18, x4, 1
-sll x7, x18, x15
-addiw x7, x17, -1596
-slli x21, x22, 5
-srai x4, x8, 17
-addw x21, x7, x15
-lb x18, 50(x27)
-slli x17, x10, 39
-srlw x8, x7, x17
-ori x8, x11, 972
-sd x11, 0(x25)
-ori x17, x15, 1459
-xor x3, x4, x20
-sra x0, x18, x11
-sd x10, 32(x27)
-sllw x1, x23, x5
-slliw x22, x8, 22
-slti x4, x17, -1744
-srliw x22, x10, 0
-srai x12, x2, 59
-addi x21, x2, 1730
-and x16, x12, x18
-sd x23, 24(x26)
-sd x20, 48(x24)
-ld x7, 32(x25)
-sraiw x16, x12, 26
-subw x12, x12, x20
-lb x14, 19(x24)
-slliw x11, x4, 1
-sraw x8, x5, x3
-ld x10, 0(x24)
-sllw x10, x16, x23
-subw x23, x12, x1
-sd x16, 0(x24)
-srl x1, x15, x0
-slliw x2, x2, 15
-subw x1, x21, x12
-sllw x20, x23, x2
-sraw x2, x20, x5
-slti x11, x13, -1764
-srai x3, x17, 2
-xori x11, x18, -8
-xori x10, x19, 1958
-slli x21, x15, 55
-ori x1, x4, 630
-srai x13, x23, 63
-sltu x13, x0, x15
-ori x13, x13, 1947
-andi x13, x3, -801
-srai x12, x14, 48
-subw x10, x21, x13
-slti x8, x10, 985
-lw x9, 28(x26)
-srl x21, x2, x19
-and x15, x6, x22
-sraiw x16, x3, 26
-srai x20, x16, 13
-srl x14, x12, x2
-lh x17, 38(x26)
-srli x15, x9, 54
-ld x9, 40(x25)
-ori x8, x15, 1084
-xori x19, x10, 1844
-sra x5, x23, x2
-addi x7, x12, 1582
-sw x17, 36(x24)
-andi x15, x19, -1822
-slli x22, x3, 34
-addi x23, x19, -8
-ld x1, 32(x27)
-srlw x20, x12, x13
-srli x21, x5, 43
-srli x15, x4, 45
-sllw x11, x21, x2
-sll x3, x19, x1
-sra x22, x5, x3
-sltiu x17, x11, -1010
-srli x13, x4, 27
-and x11, x12, x13
-addiw x14, x18, 1989
-addi x15, x22, 1220
-subw x0, x17, x7
-sh x15, 0(x26)
-sb x13, 29(x26)
-ld x7, 8(x27)
-slt x7, x3, x12
-slt x15, x14, x5
-sraiw x21, x14, 18
-and x20, x3, x1
-slli x9, x13, 51
-srli x20, x0, 19
-srl x1, x22, x9
-sllw x0, x21, x14
-xori x17, x23, 2047
-ld x18, 56(x26)
-andi x19, x12, -1827
-srli x1, x7, 32
-srai x17, x15, 61
-srli x20, x12, 45
-sw x1, 36(x25)
-or x6, x22, x16
-srli x17, x6, 32
-sllw x19, x0, x7
-ld x10, 0(x27)
-slli x6, x18, 61
-srai x19, x16, 50
-srli x10, x1, 33
-srliw x20, x3, 0
-srai x21, x2, 57
-sraiw x14, x3, 1
-add x8, x4, x0
-or x9, x6, x19
-ld x13, 32(x25)
-ld x23, 40(x27)
-sd x23, 0(x25)
-ld x14, 32(x25)
-srai x20, x10, 17
-srai x22, x0, 1
-sb x9, 36(x24)
-srai x14, x20, 31
-addiw x3, x2, -1166
-lh x16, 14(x26)
-ld x11, 24(x26)
-sraiw x21, x11, 21
-xor x6, x3, x17
-sltu x19, x0, x7
-slti x23, x7, 1370
-andi x0, x8, -1
-srai x5, x3, 16
-ori x12, x6, -1499
-and x5, x21, x4
-add x12, x22, x7
-ld x22, 48(x27)
-srai x10, x9, 0
-ld x18, 32(x27)
-xori x6, x8, -965
-sd x9, 0(x25)
-srli x8, x11, 17
-sraw x6, x5, x4
-srai x0, x21, 37
-sll x10, x3, x9
-xori x21, x3, 1
-sd x11, 32(x25)
-ld x6, 56(x26)
-lw x3, 56(x24)
-and x5, x11, x14
-and x21, x10, x22
-ld x2, 0(x25)
-sd x13, 8(x27)
-addiw x14, x5, 1574
-slli x9, x15, 38
-sd x8, 32(x27)
-subw x1, x5, x15
-slti x8, x19, 0
-ori x12, x1, 1244
-ld x10, 0(x24)
-sll x18, x8, x1
-slliw x18, x8, 0
-srai x23, x13, 0
-slliw x18, x13, 6
-sd x14, 8(x25)
-slli x13, x6, 30
-sll x9, x4, x10
-add x6, x1, x10
-srl x12, x16, x11
-sd x23, 24(x25)
-sll x6, x8, x19
-sd x16, 0(x25)
-addi x16, x15, -906
-sd x22, 0(x24)
-sraw x22, x15, x16
-srai x14, x18, 20
-srli x9, x0, 2
-sd x8, 8(x25)
-xori x2, x15, -1218
-add x22, x15, x6
-srliw x12, x12, 6
-slli x13, x17, 22
-add x7, x15, x0
-add x2, x2, x0
-srliw x5, x3, 19
-lb x8, 27(x24)
-sra x5, x1, x15
-or x17, x11, x5
-xori x15, x13, 1058
-slliw x6, x2, 29
-srai x16, x12, 25
-ld x14, 32(x24)
-srli x6, x14, 11
-srai x7, x17, 17
-sraw x11, x14, x17
-lb x7, 38(x24)
-ori x21, x17, 1255
-ld x9, 8(x24)
-sllw x20, x13, x5
-srli x17, x20, 17
-slli x19, x7, 37
-slli x22, x4, 50
-ori x12, x10, 2019
-xori x12, x14, -1429
-sra x11, x17, x13
-slli x17, x16, 1
-xor x7, x16, x11
-srai x21, x22, 60
-ld x3, 32(x27)
-slliw x1, x11, 24
-slt x18, x2, x14
-andi x20, x21, -1
-lw x5, 16(x25)
-sltu x23, x6, x10
-addi x13, x12, 2047
-ld x18, 0(x25)
-sra x0, x21, x2
-sd x14, 0(x25)
-srli x2, x1, 47
-sd x3, 8(x24)
-slli x4, x3, 35
-srai x17, x16, 36
-srli x21, x15, 37
-ld x18, 32(x27)
-sd x10, 0(x26)
-sraiw x19, x5, 0
-slliw x4, x12, 23
-sd x16, 0(x27)
-sraiw x3, x5, 23
-and x12, x10, x18
-ori x17, x19, -1028
-ori x16, x7, -1724
-sd x9, 16(x24)
-srai x17, x11, 4
-slli x5, x15, 0
-andi x13, x14, -1040
-slliw x0, x19, 4
-sd x12, 40(x25)
-ld x0, 24(x25)
-srliw x12, x11, 21
-sw x7, 8(x25)
-sllw x20, x11, x10
-add x17, x8, x8
-sd x22, 56(x24)
-srai x6, x21, 48
-slliw x21, x5, 3
-lh x23, 30(x27)
-addi x21, x18, -2048
-slliw x4, x3, 9
-xori x7, x14, 1253
-lb x8, 20(x25)
-srl x15, x18, x11
-srliw x4, x19, 29
-addiw x23, x12, 171
-xori x15, x2, 643
-sraiw x5, x18, 5
-srai x5, x13, 63
-srai x16, x13, 36
-subw x16, x2, x15
-ld x15, 0(x26)
-srli x1, x23, 40
-andi x10, x20, 1937
-srai x0, x16, 63
-xori x1, x2, 2047
-sltu x19, x7, x11
-slt x21, x18, x18
-srli x6, x13, 25
-or x16, x22, x22
-srli x9, x2, 31
-ld x18, 0(x25)
-slli x9, x0, 59
-sraw x12, x14, x1
-sraw x3, x17, x8
-ld x23, 24(x26)
-srli x17, x15, 32
-slti x2, x13, 349
-srliw x1, x20, 31
-sltiu x5, x20, -942
-sd x23, 56(x27)
-ld x22, 0(x26)
-srl x22, x7, x15
-sra x6, x20, x0
-and x10, x19, x8
-slliw x13, x3, 22
-sltu x21, x19, x6
-xori x5, x21, 8
-ld x23, 48(x26)
-add x10, x21, x0
-slt x5, x1, x7
-slti x15, x18, 4
-addw x8, x14, x20
-lw x6, 16(x24)
-sw x4, 48(x26)
-addi x0, x23, -1923
-ld x9, 40(x25)
-srl x17, x18, x22
-sd x22, 48(x26)
-andi x21, x5, -1368
-addw x11, x17, x14
-sra x23, x16, x16
-sltiu x0, x22, -1072
-slt x8, x17, x8
-sd x6, 8(x27)
-lb x10, 41(x27)
-srli x23, x22, 18
-srai x17, x6, 46
-slli x20, x8, 28
-sltiu x2, x22, -576
-sraiw x4, x23, 24
-ori x19, x3, 751
-ori x20, x19, -2048
-lw x11, 16(x26)
-slt x6, x23, x21
-sraiw x0, x11, 28
-lw x8, 36(x26)
-srli x14, x9, 57
-ld x10, 16(x26)
-sw x5, 48(x26)
-lh x11, 0(x25)
-srliw x20, x16, 30
-ld x17, 8(x27)
-and x21, x14, x22
-slli x10, x15, 63
-srai x20, x16, 52
-slti x11, x13, -488
-sd x5, 16(x25)
-sraw x6, x3, x4
-slli x7, x5, 55
-andi x22, x14, -673
-ld x3, 56(x25)
-ori x16, x11, 1
-sh x9, 46(x25)
-slli x14, x10, 10
-ld x10, 32(x24)
-slti x9, x17, 628
-sraiw x1, x20, 7
-or x15, x9, x17
-sd x3, 40(x24)
-srlw x19, x5, x11
-andi x14, x21, 1640
-srl x2, x3, x4
-ld x0, 8(x27)
-sra x3, x4, x16
-srai x6, x14, 32
-srlw x13, x1, x9
-lh x22, 40(x27)
-sraw x17, x14, x15
-addw x18, x16, x20
-lw x23, 4(x25)
-sraiw x12, x22, 0
-andi x17, x16, 8
-sd x20, 0(x27)
-addi x8, x23, -1328
-sltu x6, x4, x7
-sltu x10, x3, x5
-slliw x12, x11, 24
-sd x20, 48(x24)
-ld x1, 0(x25)
-sub x10, x0, x9
-xori x7, x17, -1793
-sub x2, x10, x16
-ld x0, 56(x24)
-subw x9, x15, x9
-sd x14, 24(x24)
-sllw x5, x3, x11
-xori x17, x22, 1629
-srli x14, x12, 1
-sd x5, 0(x25)
-srli x11, x4, 31
-sraw x20, x12, x12
-andi x6, x8, 542
-xor x17, x19, x1
-sd x19, 24(x26)
-srai x9, x12, 0
-sraw x7, x0, x2
-sd x7, 24(x26)
-add x14, x13, x5
-lb x12, 60(x27)
-andi x2, x16, 39
-srai x18, x19, 63
-ld x18, 56(x24)
-slt x12, x11, x3
+lui x1, 0x30e5c
+addi x1, x1, -511
+lui x2, 0x4a5e7
+addi x2, x2, 1568
+lui x3, 0x88126
+addi x3, x3, 386
+lui x4, 0x79cef
+addi x4, x4, -264
+lui x5, 0x1f82d
+addi x5, x5, -1976
+lui x6, 0xaf166
+addi x6, x6, 2012
+lui x7, 0xacb53
+addi x7, x7, -1133
+lui x8, 0x66a04
+addi x8, x8, -1757
+lui x9, 0xfcdc3
+addi x9, x9, -334
+lui x10, 0x8483b
+addi x10, x10, 169
+lui x11, 0xe8587
+addi x11, x11, -391
+lui x12, 0xa249b
+addi x12, x12, -1119
+lui x13, 0xc6350
+addi x13, x13, -796
+lui x14, 0xf7e59
+addi x14, x14, -1522
+lui x15, 0x835d2
+addi x15, x15, 401
+lui x16, 0x93236
+addi x16, x16, -1990
+lui x17, 0xa45b
+addi x17, x17, -2011
+lui x18, 0xd58d3
+addi x18, x18, -1565
+lui x19, 0x20101
+addi x19, x19, 264
+lui x20, 0x89510
+addi x20, x20, 1550
+lui x21, 0x4f3d5
+addi x21, x21, 1323
+lui x22, 0x28ca3
+addi x22, x22, -1437
+lui x23, 0xfd892
+addi x23, x23, 194
+lui x24, 0x1000a
+addi x24, x24, 232
+lui x25, 0x10014
+addi x25, x25, 1600
+lui x26, 0x10020
+addi x26, x26, 1568
+lui x27, 0x1003b
+addi x27, x27, 1392
+sd x9, 0(x24)
+sd x7, 8(x24)
+sd x5, 16(x24)
+sd x17, 24(x24)
+sd x6, 32(x24)
+sd x10, 40(x24)
+sd x22, 48(x24)
+sd x18, 56(x24)
+sd x17, 0(x25)
+sd x21, 8(x25)
+sd x15, 16(x25)
+sd x10, 24(x25)
+sd x9, 32(x25)
+sd x18, 40(x25)
+sd x11, 48(x25)
+sd x12, 56(x25)
+sd x13, 0(x26)
+sd x5, 8(x26)
 sd x22, 16(x26)
-ld x7, 16(x27)
-sll x21, x11, x3
-sb x20, 31(x26)
-or x7, x10, x21
-and x5, x5, x7
-ld x17, 48(x27)
-sd x3, 8(x25)
-ld x14, 0(x27)
-sraiw x10, x7, 0
-slt x23, x21, x18
-slli x2, x2, 0
-sd x2, 0(x26)
-xor x9, x17, x11
-ori x15, x0, -557
-srliw x22, x16, 19
-addw x2, x8, x3
-addw x19, x13, x0
-addiw x9, x12, 401
-slli x1, x3, 6
-sd x17, 16(x25)
-ld x13, 8(x25)
-xor x20, x0, x2
-srliw x16, x6, 3
-slli x23, x16, 2
-or x9, x3, x8
-sd x21, 48(x26)
-sd x9, 24(x25)
-addw x19, x8, x3
-xor x8, x10, x7
-sltiu x2, x6, 457
-sd x3, 0(x26)
-ld x9, 24(x27)
-srai x7, x23, 14
-ld x14, 56(x24)
-slliw x4, x5, 25
-ld x1, 40(x24)
-ld x9, 16(x27)
-addiw x2, x0, -758
-sd x14, 24(x27)
-slli x22, x10, 31
-slli x13, x22, 32
-slt x16, x7, x7
-sd x8, 16(x26)
-srli x3, x11, 27
-addi x1, x21, -8
-srli x19, x10, 50
-slt x7, x5, x6
-add x21, x13, x14
-srli x5, x8, 21
-slliw x6, x9, 14
-srli x7, x22, 50
-srli x13, x13, 32
-srli x17, x22, 23
-sd x4, 40(x24)
-or x23, x19, x9
-srai x7, x17, 45
-ori x19, x23, -1990
-srli x21, x15, 47
-subw x2, x7, x1
-sraw x3, x14, x19
-sd x1, 40(x27)
-sltiu x15, x6, -897
-sd x19, 40(x26)
-srli x14, x6, 58
-ld x16, 8(x24)
+sd x12, 24(x26)
+sd x10, 32(x26)
+sd x22, 40(x26)
+sd x15, 48(x26)
+sd x4, 56(x26)
+sd x12, 0(x27)
+sd x15, 8(x27)
+sd x15, 16(x27)
+sd x4, 24(x27)
+sd x17, 32(x27)
+sd x4, 40(x27)
+sd x18, 48(x27)
+sd x2, 56(x27)
+ld x12, 0(x27)
+sltu x7, x16, x15
+sub x16, x9, x17
+slliw x15, x0, 15
+sltiu x5, x17, -2048
+xor x3, x11, x21
+and x12, x13, x11
+and x9, x8, x14
+or x6, x6, x10
+srai x5, x15, 31
+slti x5, x19, 1000
+xor x8, x18, x11
+addiw x18, x21, 1550
+srli x5, x16, 43
+srliw x15, x7, 30
+sraw x19, x20, x16
+srli x1, x20, 22
+srli x1, x4, 32
+slliw x10, x18, 15
+ld x7, 32(x27)
+srlw x17, x3, x22
+andi x15, x11, 1289
+slti x9, x20, -949
+srai x7, x2, 0
+xori x9, x5, -331
+or x23, x0, x19
+sd x21, 24(x24)
+lw x19, 48(x27)
+srli x14, x11, 59
+slliw x18, x6, 27
+srai x5, x8, 57
+srai x12, x23, 26
+sb x13, 33(x24)
+slli x16, x15, 54
+srai x8, x1, 0
+addi x0, x5, 1014
+ori x2, x12, -890
+addiw x0, x11, 399
+sw x3, 44(x26)
+ld x1, 24(x24)
+slliw x8, x6, 20
+addiw x13, x19, -1011
+slli x21, x12, 28
+srli x1, x19, 35
+ld x13, 24(x27)
+sltiu x8, x17, -63
+slli x5, x11, 19
+srli x3, x0, 41
+slti x3, x13, 891
+or x2, x23, x2
+slli x22, x6, 12
+ori x2, x18, 1053
+srli x9, x7, 7
+slt x14, x6, x6
+addi x19, x20, 474
+addiw x0, x8, 675
+srli x21, x4, 11
+srli x22, x14, 13
+slli x2, x10, 27
+sltiu x17, x11, -1520
+sraiw x3, x0, 17
+sltiu x18, x13, -640
+sltu x6, x15, x0
+lh x23, 42(x27)
+sltiu x5, x19, 1003
+ori x23, x2, -776
+sub x10, x10, x21
+srai x10, x6, 33
+srliw x20, x2, 31
+ld x21, 48(x24)
+sllw x1, x2, x10
+sltu x0, x4, x0
+slti x22, x14, -1
+sd x12, 32(x26)
+srl x18, x0, x7
+add x17, x8, x1
+addiw x4, x12, 1001
+ld x8, 8(x25)
+sd x5, 32(x26)
+xori x6, x7, 2047
+sraw x11, x1, x1
+lw x4, 52(x27)
+slt x2, x9, x10
+sraiw x1, x2, 15
+slli x10, x13, 8
+srli x20, x12, 35
+srai x22, x13, 31
+ld x14, 40(x25)
+ori x2, x22, 1093
+lh x1, 18(x27)
+addi x11, x22, -1769
+slliw x22, x0, 4
+subw x0, x17, x21
+ld x11, 0(x26)
+xori x0, x22, 453
+slli x23, x8, 46
+xori x5, x2, 2019
+lw x12, 36(x27)
+sltu x10, x20, x9
+addiw x14, x21, 56
+srl x6, x20, x6
+sd x17, 32(x27)
+ld x10, 40(x27)
+add x7, x23, x23
+sltiu x23, x10, -2048
+addi x23, x12, 2047
+sh x0, 28(x24)
+ori x22, x8, 813
+srli x0, x18, 37
+lh x23, 58(x27)
+sltu x2, x1, x13
+sra x23, x3, x19
+addw x8, x18, x19
+slli x23, x3, 32
+ld x23, 56(x26)
+xori x3, x20, -296
+sraiw x4, x9, 28
+lw x2, 44(x26)
+slti x8, x23, 1
+sd x16, 40(x26)
+slt x1, x15, x8
+sd x23, 48(x25)
+addiw x21, x7, -1064
+sll x8, x17, x3
+addw x15, x23, x0
+slliw x22, x10, 6
+sd x22, 32(x24)
+slli x15, x19, 31
+addi x20, x15, -1402
+addi x9, x9, -1228
+addi x11, x5, -441
+slti x13, x21, -1636
+srli x14, x8, 63
+lh x8, 36(x25)
+sd x7, 0(x26)
+slli x3, x7, 52
+sra x16, x0, x11
+andi x19, x19, 1
+sll x21, x16, x7
+srai x13, x14, 22
+lw x22, 36(x25)
+sd x13, 0(x25)
+ld x2, 0(x25)
+srli x6, x10, 5
+sraiw x5, x14, 6
+sllw x1, x10, x7
+sra x12, x8, x0
+addi x22, x5, 226
+sraw x13, x18, x7
+lb x15, 16(x25)
+slti x20, x10, -1785
+slli x14, x8, 1
+and x17, x19, x6
+srli x23, x14, 31
+sd x9, 48(x26)
+sltu x1, x1, x21
+sd x13, 40(x25)
+srli x22, x22, 61
+sb x10, 54(x24)
+ld x13, 48(x25)
+slliw x9, x21, 7
+sw x13, 40(x26)
+sd x3, 24(x25)
+sraiw x12, x13, 28
+addi x10, x14, 0
+srlw x6, x23, x2
+sltu x6, x9, x4
+srlw x11, x14, x18
+or x8, x20, x11
+lw x14, 4(x24)
+xor x6, x6, x13
+srliw x11, x15, 4
+srli x15, x8, 36
+lw x7, 28(x27)
+srai x23, x4, 16
+addiw x19, x0, -676
+ld x9, 56(x26)
+slli x4, x19, 11
+lb x5, 47(x26)
+slti x17, x23, 1068
+sd x2, 56(x27)
+slt x2, x15, x5
+lw x6, 28(x25)
+sll x7, x14, x17
+slli x11, x4, 10
+sw x11, 32(x25)
+sllw x1, x18, x2
+ld x8, 32(x25)
+slli x5, x12, 31
+srai x5, x2, 51
+sltiu x19, x8, 958
+subw x2, x3, x18
+srli x11, x18, 41
+subw x16, x5, x21
+xor x13, x17, x10
+sh x15, 62(x25)
+sraw x20, x5, x6
+slli x5, x18, 1
+ld x3, 48(x26)
+ld x11, 40(x25)
+sltu x20, x12, x10
+sltiu x12, x13, 512
+sd x7, 48(x24)
+lw x22, 20(x27)
+andi x19, x18, -1925
+srai x18, x18, 8
+srli x11, x20, 8
+slli x7, x8, 55
+sd x8, 0(x27)
+sd x14, 24(x24)
+and x12, x23, x11
+xori x17, x3, 1253
+sd x21, 40(x25)
+ld x0, 8(x27)
+subw x7, x10, x6
+ld x0, 32(x26)
+lh x22, 0(x27)
+sllw x2, x19, x4
+subw x9, x13, x0
+slti x10, x9, -1695
+ld x16, 24(x26)
+andi x0, x8, 1591
+srlw x0, x13, x7
+sltu x15, x2, x16
+slliw x13, x4, 25
+sllw x23, x9, x3
+slli x18, x15, 15
+ld x5, 32(x25)
+addw x23, x6, x18
+sllw x0, x2, x2
+slti x10, x3, -1080
+ld x1, 8(x24)
+ld x12, 8(x24)
+sraw x3, x6, x4
+slli x1, x14, 10
+andi x20, x2, 8
+slti x14, x7, 576
+sllw x23, x20, x18
+sw x17, 8(x24)
+slli x23, x20, 1
+srlw x3, x1, x23
+slliw x20, x7, 18
+add x15, x16, x19
+addi x10, x9, -1018
+ld x3, 48(x27)
+slt x3, x8, x20
+srli x1, x21, 34
+or x14, x2, x22
+sltiu x20, x0, -673
+sltiu x18, x8, -1473
 ld x0, 40(x26)
-srl x7, x11, x0
-sd x14, 16(x27)
-srl x16, x13, x15
-andi x8, x9, -1585
-slliw x1, x8, 1
-addiw x6, x8, -2048
-srai x3, x3, 30
-ori x23, x22, -1344
-srli x15, x4, 12
-sllw x7, x2, x13
-addi x12, x13, 2003
-sra x14, x15, x14
-add x18, x23, x13
-addiw x7, x4, -525
-slliw x16, x1, 14
-srai x10, x15, 27
-xor x22, x20, x2
-srai x2, x23, 48
-ld x21, 0(x25)
-srliw x3, x13, 29
-ld x0, 16(x25)
-addw x0, x9, x5
-andi x8, x23, -154
-srli x7, x9, 56
-slli x21, x11, 39
-ld x16, 48(x27)
-sra x9, x16, x9
-sra x16, x19, x3
-addiw x17, x16, -1727
-sw x13, 4(x25)
-sra x5, x19, x19
-sltiu x14, x14, 1852
-sllw x4, x23, x17
-addw x6, x0, x15
-addiw x1, x9, 1
-srai x7, x16, 30
-subw x10, x18, x8
-addiw x6, x23, -1
-srli x6, x12, 0
-sra x21, x18, x16
-srli x21, x17, 51
-ld x0, 48(x24)
-srai x6, x5, 48
-sd x10, 8(x26)
-sd x15, 32(x26)
-addi x18, x20, -235
-lh x0, 30(x26)
-sraiw x11, x21, 5
-sd x9, 0(x27)
-slt x12, x9, x13
-ld x5, 56(x27)
-srlw x3, x6, x11
-ld x10, 56(x25)
-and x19, x2, x3
-addi x6, x18, -1332
-ld x20, 24(x24)
-xor x11, x2, x1
-ld x1, 48(x24)
-slli x10, x11, 30
-sraiw x2, x22, 31
-addiw x19, x12, -321
-add x11, x10, x0
-slli x14, x23, 5
-sd x6, 16(x25)
-sltiu x2, x16, 623
-addi x2, x10, -410
-and x8, x6, x0
-slliw x0, x23, 11
-andi x17, x19, 1459
-ld x4, 40(x26)
-sraiw x4, x22, 0
-sh x20, 52(x24)
-srli x5, x15, 31
-srli x9, x3, 36
-sra x2, x3, x17
-ld x17, 16(x27)
-slli x16, x7, 28
-srai x6, x17, 51
-slli x6, x22, 53
-lb x15, 7(x25)
-subw x5, x16, x22
-ld x12, 56(x25)
-srliw x18, x0, 14
-sltu x3, x14, x12
-srliw x13, x19, 23
-andi x4, x6, -1
-sb x9, 29(x27)
-addiw x13, x0, -2014
-ld x22, 56(x24)
-add x9, x22, x3
-addi x13, x21, -1
-ld x1, 40(x27)
-sd x10, 48(x27)
-addi x6, x20, 406
-xori x1, x12, 0
-or x9, x21, x1
-xori x19, x23, 1130
-slt x10, x5, x1
-srai x0, x11, 22
-slli x2, x23, 6
-or x7, x4, x4
-sltu x9, x12, x7
-sraw x16, x4, x8
-sub x17, x22, x17
-srai x19, x1, 0
-sw x23, 0(x25)
-srliw x4, x15, 11
-sd x22, 16(x25)
-slliw x3, x9, 0
-sd x11, 16(x27)
-andi x21, x3, -1663
-subw x13, x11, x2
-sltiu x19, x5, -1193
-slliw x19, x14, 31
-slli x1, x23, 37
-srliw x0, x11, 29
-xori x16, x5, -1250
-srai x2, x14, 6
-ori x14, x6, -1602
-sd x7, 32(x24)
-andi x18, x16, -976
-sw x15, 12(x25)
-andi x4, x14, -597
-andi x1, x13, 1
-srli x9, x5, 58
-srli x13, x10, 51
-lh x7, 46(x25)
-ld x20, 8(x24)
-xori x3, x8, -1
-sb x4, 23(x26)
-sllw x10, x20, x18
-srli x0, x19, 32
-sd x20, 16(x26)
-ld x12, 56(x27)
-slti x1, x0, 1261
-sd x10, 56(x27)
-lh x6, 62(x26)
-addi x5, x7, -20
-addi x1, x7, -8
-xori x1, x4, 774
-slti x12, x21, -278
-sb x1, 40(x27)
-srai x18, x21, 19
-sw x10, 24(x25)
-srai x17, x2, 8
-slli x6, x8, 26
-sraiw x19, x7, 5
-or x6, x8, x14
-slti x8, x22, 0
-sltu x2, x1, x12
-ori x13, x3, 0
-sll x18, x11, x17
-sd x16, 0(x26)
-addw x21, x6, x7
-sd x2, 24(x26)
-sw x23, 32(x25)
-xori x19, x21, 1
-ld x12, 8(x25)
-slli x6, x6, 8
-sraw x9, x10, x15
-srl x0, x23, x9
-slliw x5, x18, 19
-sd x13, 8(x24)
-andi x13, x3, -339
-srli x10, x20, 22
-srli x16, x11, 43
-ld x9, 32(x25)
-xori x9, x21, 8
-slli x0, x7, 0
-add x5, x2, x19
-sraw x12, x6, x5
-sltiu x15, x3, 424
-sll x6, x0, x5
-sd x22, 48(x27)
-srai x11, x2, 49
-andi x4, x17, -8
-slli x12, x22, 21
-addi x12, x22, -330
-slti x23, x18, -1228
-ld x12, 40(x25)
-srai x3, x2, 4
-andi x22, x22, 1360
-sd x8, 56(x27)
-and x9, x13, x11
-ori x0, x17, -1311
-srli x6, x22, 26
-sub x17, x9, x1
-sd x23, 56(x24)
-sub x9, x5, x14
-srliw x22, x3, 1
-slli x10, x23, 33
-srli x21, x0, 57
-sd x4, 16(x25)
-ori x23, x18, 1121
-ld x11, 24(x26)
-sraw x2, x21, x23
-sll x12, x14, x1
-addi x19, x3, -1891
-xori x11, x5, 1
-sraiw x13, x16, 25
-sd x8, 24(x25)
-sd x2, 24(x26)
-srli x18, x14, 49
-sraiw x1, x3, 6
-ld x7, 40(x26)
-lh x17, 0(x27)
-sraiw x1, x19, 24
-sd x8, 48(x24)
-srliw x6, x5, 10
-andi x15, x6, -1249
-ori x10, x15, 114
+ori x6, x6, 1622
+addi x4, x14, -537
+srli x14, x20, 57
+srai x19, x7, 48
+srli x22, x9, 31
+srli x8, x22, 31
+sd x16, 24(x26)
+srli x20, x22, 1
+srl x6, x17, x10
+sltiu x16, x10, -1946
+slliw x21, x17, 26
+and x14, x11, x17
+slli x10, x4, 60
+sw x10, 20(x27)
+addiw x9, x2, -1327
+sltiu x22, x5, -337
+srai x5, x2, 0
+subw x12, x23, x6
+srlw x21, x18, x2
+addiw x9, x2, -1573
+add x4, x9, x7
+srai x16, x16, 19
+srai x14, x5, 3
+addw x18, x8, x20
+sraw x9, x8, x15
+xor x16, x13, x6
+srli x12, x6, 8
+addiw x17, x6, 590
+slti x3, x14, 1288
+sd x23, 56(x27)
+sd x6, 0(x26)
+addiw x12, x2, -1437
+sw x22, 44(x26)
+addiw x3, x7, 1366
+sub x14, x13, x11
+ld x23, 40(x26)
+sub x9, x12, x8
+slli x5, x6, 7
+slliw x10, x16, 20
+sll x2, x13, x7
+or x15, x23, x22
+addw x8, x22, x17
+addiw x23, x8, 269
+srli x8, x6, 55
+xori x15, x5, 2047
+slti x23, x17, -587
+srai x2, x1, 21
+ld x11, 48(x26)
+lb x19, 33(x27)

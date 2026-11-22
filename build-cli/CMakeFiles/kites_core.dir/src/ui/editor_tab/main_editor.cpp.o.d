@@ -1,8 +1,8 @@
 CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/main_editor.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/main_editor.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/main_editor.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/syntax_highlighter.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/main_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/syntax_highlighter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
@@ -481,7 +481,7 @@ CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTextCharFormat \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPalette \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
@@ -515,8 +515,8 @@ CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kites_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kites_editor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
@@ -536,8 +536,8 @@ CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /home/shiv-velnad/Kites_ash_shiv/src/language_service/language_service.h \
- /home/shiv-velnad/Kites_ash_shiv/src/language_service/diagnostic.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/language_service.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/language_service/diagnostic.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFutureWatcher \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuturewatcher.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuture.h \
@@ -590,9 +590,9 @@ CMakeFiles/kites_core.dir/src/ui/editor_tab/main_editor.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolTip \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtooltip.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/line_number_gutter_column.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/gutter_column.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/font_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/line_number_gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/font_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/editor_tab/break_point_gutter_column.h
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/editor_tab/break_point_gutter_column.h

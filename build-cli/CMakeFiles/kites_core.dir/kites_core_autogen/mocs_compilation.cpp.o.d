@@ -1,8 +1,8 @@
 CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/mocs_compilation.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/6DQYUKT47J/moc_app_settings.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/6DQYUKT47J/../../../src/config/app_settings.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/6DQYUKT47J/moc_app_settings.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/6DQYUKT47J/../../../src/config/app_settings.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
@@ -415,9 +415,9 @@ CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmochelpers.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmocconstants.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/LFSQQ5TNBW/moc_language_service.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/LFSQQ5TNBW/../../../src/language_service/language_service.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/LFSQQ5TNBW/../../../src/language_service/diagnostic.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/LFSQQ5TNBW/moc_language_service.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/LFSQQ5TNBW/../../../src/language_service/language_service.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/LFSQQ5TNBW/../../../src/language_service/diagnostic.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFutureWatcher \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuturewatcher.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuture.h \
@@ -446,18 +446,18 @@ CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/ESUEHDE67Q/moc_cache.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/ESUEHDE67Q/../../../src/processor/cache/cache.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/ESUEHDE67Q/moc_cache.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/ESUEHDE67Q/../../../src/processor/cache/cache.h \
  /usr/include/c++/15/deque /usr/include/c++/15/bits/stl_deque.h \
  /usr/include/c++/15/bits/deque.tcc \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/ESUEHDE67Q/../../../src/processor/cache/cacheconfig.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/ESUEHDE67Q/../../../src/processor/cache/cacheconfig.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaType \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/ESUEHDE67Q/../../../src/processor/cache/policies/cache_replacement_policy.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/ESUEHDE67Q/../../../src/processor/cache/policies/custom_policy.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/main_memory.h \
- /home/shiv-velnad/Kites_ash_shiv/src/config/config.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/globals.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/ESUEHDE67Q/../../../src/processor/cache/policies/cache_replacement_policy.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/ESUEHDE67Q/../../../src/processor/cache/policies/custom_policy.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/main_memory.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/config.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/globals.h \
  /usr/include/c++/15/filesystem /usr/include/c++/15/bits/fs_fwd.h \
  /usr/include/c++/15/bits/fs_path.h /usr/include/c++/15/codecvt \
  /usr/include/c++/15/bits/fs_dir.h /usr/include/c++/15/bits/fs_ops.h \
@@ -465,30 +465,30 @@ CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/15/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++io.h \
  /usr/include/c++/15/bits/fstream.tcc /usr/include/c++/15/iostream \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_block.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_device.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/undo_buffer.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_block.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_device.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/undo_buffer.h \
  /usr/include/c++/15/cassert \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/HL54M2HNYE/moc_memory_controller.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/memory_controller.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/main_memory.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/HL54M2HNYE/moc_processor_base.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/processor_base.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/alu.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/HL54M2HNYE/moc_memory_controller.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/memory_controller.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/main_memory.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/HL54M2HNYE/moc_processor_base.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/processor_base.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/alu.h \
  /usr/include/c++/15/cfenv /usr/include/c++/15/fenv.h /usr/include/fenv.h \
  /usr/include/x86_64-linux-gnu/bits/fenv.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/assembled_program.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/parser.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/code_generator.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/errors.h \
- /home/shiv-velnad/Kites_ash_shiv/src/assembler/tokens.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/memory_controller.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_state.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_types.h \
- /home/shiv-velnad/Kites_ash_shiv/src/utils/to_index.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/circuit_scene.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/base_component.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/assembled_program.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/parser.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/code_generator.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/errors.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/assembler/tokens.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/memory_controller.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_state.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/utils/to_index.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/registers.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/circuit_scene.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/base_component.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPathItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -519,7 +519,7 @@ CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainterPath \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/processor_tab/processor_designs/components/wire_item.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/processor_tab/processor_designs/components/wire_item.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
@@ -583,7 +583,7 @@ CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_constants.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_constants.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
@@ -597,37 +597,37 @@ CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/c++/15/queue /usr/include/c++/15/bits/stl_queue.h \
  /usr/include/c++/15/stack /usr/include/c++/15/bits/stl_stack.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/HL54M2HNYE/moc_processor_manager.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/processor_manager.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/processor_base.h \
- /home/shiv-velnad/Kites_ash_shiv/src/profiler/profiler.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/HL54M2HNYE/moc_processor_manager.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/processor_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/processor_base.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/profiler/profiler.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
- /home/shiv-velnad/Kites_ash_shiv/src/common/instruction_types.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/HL54M2HNYE/moc_registers.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/registers.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/ESWRQEWE6S/moc_profiler.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/5J6UDW4OHC/moc_cache_grid_delegate.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/5J6UDW4OHC/../../../src/ui/cache_tab/cache_grid_delegate.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/common/instruction_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/HL54M2HNYE/moc_registers.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/HL54M2HNYE/../../../src/processor/registers.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/ESWRQEWE6S/moc_profiler.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/5J6UDW4OHC/moc_cache_grid_delegate.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/5J6UDW4OHC/../../../src/ui/cache_tab/cache_grid_delegate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStyledItemDelegate \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleditemdelegate.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/5J6UDW4OHC/moc_cacheconfigwidget.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/5J6UDW4OHC/../../../src/ui/cache_tab/cacheconfigwidget.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/5J6UDW4OHC/moc_cachemodel.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/5J6UDW4OHC/../../../src/ui/cache_tab/cachemodel.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/5J6UDW4OHC/moc_cacheconfigwidget.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/5J6UDW4OHC/../../../src/ui/cache_tab/cacheconfigwidget.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/5J6UDW4OHC/moc_cachemodel.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/5J6UDW4OHC/../../../src/ui/cache_tab/cachemodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QAbstractTableModel \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/5J6UDW4OHC/moc_cachetab.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/5J6UDW4OHC/../../../src/ui/cache_tab/cachetab.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/5J6UDW4OHC/../../../src/ui/cache_tab/cacheconfigwidget.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/kitestab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/5J6UDW4OHC/moc_cachetab.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/5J6UDW4OHC/../../../src/ui/cache_tab/cachetab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/5J6UDW4OHC/../../../src/ui/cache_tab/cacheconfigwidget.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/kitestab.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QToolBar \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtoolbar.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/memory_controller.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/B6WHKBFDXJ/moc_collapsible_section.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/B6WHKBFDXJ/../../../src/ui/common/collapsible_section.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/B6WHKBFDXJ/moc_gutter_column.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/B6WHKBFDXJ/../../../src/ui/common/gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/memory_controller.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/B6WHKBFDXJ/moc_collapsible_section.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/B6WHKBFDXJ/../../../src/ui/common/collapsible_section.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/B6WHKBFDXJ/moc_gutter_column.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/B6WHKBFDXJ/../../../src/ui/common/gutter_column.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTextBlock \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
@@ -660,16 +660,16 @@ CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontdatabase.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/B6WHKBFDXJ/../../../src/ui/common/kites_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/B6WHKBFDXJ/../../../src/ui/common/kites_editor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/B6WHKBFDXJ/moc_kites_editor.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/B6WHKBFDXJ/moc_line_number_gutter_column.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/B6WHKBFDXJ/../../../src/ui/common/line_number_gutter_column.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/B6WHKBFDXJ/moc_syntax_highlighter.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/B6WHKBFDXJ/../../../src/ui/common/syntax_highlighter.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/B6WHKBFDXJ/moc_kites_editor.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/B6WHKBFDXJ/moc_line_number_gutter_column.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/B6WHKBFDXJ/../../../src/ui/common/line_number_gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/B6WHKBFDXJ/moc_syntax_highlighter.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/B6WHKBFDXJ/../../../src/ui/common/syntax_highlighter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRegularExpression \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QSyntaxHighlighter \
@@ -677,30 +677,30 @@ CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTextCharFormat \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/theme_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/theme_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPalette \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/6OYQ4PLAJ6/moc_compiler_editor.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/6OYQ4PLAJ6/../../../src/ui/compiler_tab/compiler_editor.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/6OYQ4PLAJ6/moc_compilertab.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/6OYQ4PLAJ6/../../../src/ui/compiler_tab/compilertab.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/IYECXEJARV/moc_addpseudo_dialog.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/IYECXEJARV/../../../src/ui/dialogs/addpseudo_dialog.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/6OYQ4PLAJ6/moc_compiler_editor.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/6OYQ4PLAJ6/../../../src/ui/compiler_tab/compiler_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/6OYQ4PLAJ6/moc_compilertab.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/6OYQ4PLAJ6/../../../src/ui/compiler_tab/compilertab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/IYECXEJARV/moc_addpseudo_dialog.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/IYECXEJARV/../../../src/ui/dialogs/addpseudo_dialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/IYECXEJARV/moc_processor_dialog.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/IYECXEJARV/../../../src/ui/dialogs/processor_dialog.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/IYECXEJARV/moc_processor_dialog.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/IYECXEJARV/../../../src/ui/dialogs/processor_dialog.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTreeWidgetItem \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtreewidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtreeview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtreewidgetitemiterator.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/IYECXEJARV/moc_settings_dialog.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/IYECXEJARV/../../../src/ui/dialogs/settings_dialog.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/4CW5EXY7PR/moc_break_point_gutter_column.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/4CW5EXY7PR/../../../src/ui/editor_tab/break_point_gutter_column.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/4CW5EXY7PR/../../../src/ui/editor_tab/main_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/IYECXEJARV/moc_settings_dialog.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/IYECXEJARV/../../../src/ui/dialogs/settings_dialog.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/4CW5EXY7PR/moc_break_point_gutter_column.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/4CW5EXY7PR/../../../src/ui/editor_tab/break_point_gutter_column.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/4CW5EXY7PR/../../../src/ui/editor_tab/main_editor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCompleter \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcompleter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
@@ -712,18 +712,18 @@ CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMenu \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmenu.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/4CW5EXY7PR/moc_editortab.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/4CW5EXY7PR/../../../src/ui/editor_tab/editortab.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/4CW5EXY7PR/../../../src/ui/editor_tab/disassembly_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/4CW5EXY7PR/moc_editortab.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/4CW5EXY7PR/../../../src/ui/editor_tab/editortab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/4CW5EXY7PR/../../../src/ui/editor_tab/disassembly_editor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/UDCITJVJLS/moc_log_panel.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/UDCITJVJLS/../../../src/ui/log_panel/log_panel.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/U4N2I235NK/moc_mainwindow.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/U4N2I235NK/../../../src/ui/mainwindow/mainwindow.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registercontainer.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/register_table/registermodel.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/common/display_base_types.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/UDCITJVJLS/moc_log_panel.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/UDCITJVJLS/../../../src/ui/log_panel/log_panel.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/U4N2I235NK/moc_mainwindow.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/U4N2I235NK/../../../src/ui/mainwindow/mainwindow.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/register_table/registercontainer.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/register_table/registermodel.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/common/display_base_types.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h \
@@ -733,19 +733,19 @@ CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstackedwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QThread \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qthread.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/PEGDXJHQBL/moc_memory_table_view.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/PEGDXJHQBL/../../../src/ui/memory_tab/memory_table_view.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/PEGDXJHQBL/moc_memory_table_view.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/PEGDXJHQBL/../../../src/ui/memory_tab/memory_table_view.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableView \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtableview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QWheelEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/PEGDXJHQBL/moc_memorymodel.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/PEGDXJHQBL/../../../src/ui/memory_tab/memorymodel.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/PEGDXJHQBL/moc_memorytab.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/PEGDXJHQBL/../../../src/ui/memory_tab/memorytab.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/RRVYB7HD3J/moc_circuit_scene.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/RRVYB7HD3J/moc_circuit_view.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/RRVYB7HD3J/../../../src/ui/processor_tab/circuit_view.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/PEGDXJHQBL/moc_memorymodel.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/PEGDXJHQBL/../../../src/ui/memory_tab/memorymodel.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/PEGDXJHQBL/moc_memorytab.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/PEGDXJHQBL/../../../src/ui/memory_tab/memorytab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/RRVYB7HD3J/moc_circuit_scene.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/RRVYB7HD3J/moc_circuit_view.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/RRVYB7HD3J/../../../src/ui/processor_tab/circuit_view.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QDragEnterEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QDragMoveEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QDropEvent \
@@ -754,29 +754,29 @@ CMakeFiles/kites_core.dir/kites_core_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/FNPDC6ASES/moc_rv5s_processor_h_f_circuit_scene.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/FNPDC6ASES/../../../src/ui/processor_tab/processor_designs/rv5s_processor_h_f_circuit_scene.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/FNPDC6ASES/moc_rv5s_processor_h_nf_circuit_scene.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/FNPDC6ASES/../../../src/ui/processor_tab/processor_designs/rv5s_processor_h_nf_circuit_scene.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/FNPDC6ASES/moc_rv5s_processor_nh_f_circuit_scene.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/FNPDC6ASES/../../../src/ui/processor_tab/processor_designs/rv5s_processor_nh_f_circuit_scene.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/FNPDC6ASES/moc_rv5s_processor_nh_nf_circuit_scene.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/FNPDC6ASES/../../../src/ui/processor_tab/processor_designs/rv5s_processor_nh_nf_circuit_scene.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/FNPDC6ASES/moc_rvss_processor_circuit_scene.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/FNPDC6ASES/../../../src/ui/processor_tab/processor_designs/rvss_processor_circuit_scene.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/RRVYB7HD3J/moc_processortab.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/RRVYB7HD3J/../../../src/ui/processor_tab/processortab.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/RRVYB7HD3J/../../../src/ui/processor_tab/vm_state_table_model.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/RRVYB7HD3J/moc_vm_state_table_model.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/JTTX4EOWWE/moc_profiler_editor.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/JTTX4EOWWE/../../../src/ui/profiler_tab/profiler_editor.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/JTTX4EOWWE/moc_profilertab.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/JTTX4EOWWE/../../../src/ui/profiler_tab/profilertab.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/JYYBYNAWAO/moc_registercontainer.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/JYYBYNAWAO/../../../src/ui/register_table/registercontainer.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/JYYBYNAWAO/moc_registermodel.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/54RVG76HEP/moc_font_manager.cpp \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/54RVG76HEP/../../../src/ui/theme/font_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/FNPDC6ASES/moc_rv5s_processor_h_f_circuit_scene.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/FNPDC6ASES/../../../src/ui/processor_tab/processor_designs/rv5s_processor_h_f_circuit_scene.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/FNPDC6ASES/moc_rv5s_processor_h_nf_circuit_scene.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/FNPDC6ASES/../../../src/ui/processor_tab/processor_designs/rv5s_processor_h_nf_circuit_scene.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/FNPDC6ASES/moc_rv5s_processor_nh_f_circuit_scene.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/FNPDC6ASES/../../../src/ui/processor_tab/processor_designs/rv5s_processor_nh_f_circuit_scene.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/FNPDC6ASES/moc_rv5s_processor_nh_nf_circuit_scene.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/FNPDC6ASES/../../../src/ui/processor_tab/processor_designs/rv5s_processor_nh_nf_circuit_scene.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/FNPDC6ASES/moc_rvss_processor_circuit_scene.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/FNPDC6ASES/../../../src/ui/processor_tab/processor_designs/rvss_processor_circuit_scene.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/RRVYB7HD3J/moc_processortab.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/RRVYB7HD3J/../../../src/ui/processor_tab/processortab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/RRVYB7HD3J/../../../src/ui/processor_tab/vm_state_table_model.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/RRVYB7HD3J/moc_vm_state_table_model.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/JTTX4EOWWE/moc_profiler_editor.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/JTTX4EOWWE/../../../src/ui/profiler_tab/profiler_editor.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/JTTX4EOWWE/moc_profilertab.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/JTTX4EOWWE/../../../src/ui/profiler_tab/profilertab.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/JYYBYNAWAO/moc_registercontainer.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/JYYBYNAWAO/../../../src/ui/register_table/registercontainer.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/JYYBYNAWAO/moc_registermodel.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/54RVG76HEP/moc_font_manager.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/54RVG76HEP/../../../src/ui/theme/font_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/54RVG76HEP/moc_theme_manager.cpp
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/54RVG76HEP/moc_theme_manager.cpp

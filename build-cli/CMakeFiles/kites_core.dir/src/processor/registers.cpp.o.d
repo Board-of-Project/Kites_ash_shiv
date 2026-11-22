@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/processor/registers.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/registers.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/registers.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/registers.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \

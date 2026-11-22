@@ -1,7 +1,7 @@
 CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/font_manager.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/font_manager.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/theme/font_manager.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/theme/font_manager.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
@@ -396,7 +396,7 @@ CMakeFiles/kites_core.dir/src/ui/theme/font_manager.cpp.o: \
  /usr/include/c++/15/bits/quoted_string.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
- /home/shiv-velnad/Kites_ash_shiv/src/config/app_settings.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/config/app_settings.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSettings \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsettings.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \

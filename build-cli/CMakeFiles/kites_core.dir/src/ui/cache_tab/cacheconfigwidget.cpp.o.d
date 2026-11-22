@@ -1,8 +1,8 @@
 CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o: \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cacheconfigwidget.cpp \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/cache_tab/cacheconfigwidget.cpp \
  /usr/include/stdc-predef.h \
- /home/shiv-velnad/Kites_ash_shiv/src/ui/cache_tab/cacheconfigwidget.h \
- /home/shiv-velnad/Kites_ash_shiv/src/processor/cache/cacheconfig.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/ui/cache_tab/cacheconfigwidget.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/src/processor/cache/cacheconfig.h \
  /usr/include/c++/15/cstddef \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
@@ -449,7 +449,7 @@ CMakeFiles/kites_core.dir/src/ui/cache_tab/cacheconfigwidget.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
- /home/shiv-velnad/Kites_ash_shiv/build-cli/kites_core_autogen/include/ui_cacheconfigwidget.h \
+ /home/shiv-velnad/Kites_ash_shiv\ (Copy)/build-cli/kites_core_autogen/include/ui_cacheconfigwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
