@@ -2,34 +2,38 @@
 #
 # Parallel differential fuzzing & metrics collection loop for Kites + reorder_tool.
 #
-# Usage:   ./tester.sh [iterations] [--branch] [--loop] [--ctrl <pct>] [--no-subword] [--no-w]
-# Example: env JOBS=8 FWD=1 ITER_LEN=500 MEM_PCT=25 TIMEOUT=30 ./tester.sh 500 --branch
+# Usage:   ./tester.sh [iterations] [--branch] [--loop] [--ctrl <pct>] [--no-subword] [--no-w] [--with-profile|--no-profile]
+# Example: env JOBS=8 FWD=1 PROFILE=1 ITER_LEN=500 MEM_PCT=25 TIMEOUT=30 ./tester.sh 500 --branch
 #
 # Settings (environment variables or CLI flags, all optional):
-#   --branch      enable random forward branches & jal (sets CTRL_PCT=15 if unset)
-#   --loop        enable jump-isolated bounded countdown loops (sets CTRL_PCT=15 if unset)
-#   --ctrl <pct>  set percentage of control-flow instructions (0-100, default 0)
-#   --no-subword  disable sub-word loads/stores (lw/sw/lh/sh/lb/sb) in generator
-#   --no-w        disable RV64I 32-bit *W ALU ops (addw/subw/addiw/etc.) in generator
-#   JOBS          parallel worker processes            default: all logical CPUs
-#   KITES         kites-cli binary                     default: auto-detected ../build-cli/kites-cli or ../../build-cli/kites-cli
-#   GEN           random generator binary              default: $SCRIPT_DIR/rv64i_gen
-#   GEN_CMD       custom generator command             default: unset
-#   REORDER       reordering tool binary               default: $SCRIPT_DIR/reorder_tool
-#   COMB          data_collector binary                default: $SCRIPT_DIR/data_collector
-#   FAIL_DIR      failing test artifacts directory     default: /tmp/comp_arch/fail
-#   WORK_DIR      per-worker scratch directory         default: /tmp/comp_arch/work
-#   CYCLES1/2     cycle logs for data_collector        default: /tmp/comp_arch/cycles1.txt, cycles2.txt
-#   FULL_CSV      full architectural metrics CSV       default: /tmp/comp_arch/full_metrics.csv
-#   FWD           forwarding mode (1=on, 0=off)        default: 1
-#   STATS_VM      VM for cycle/IPC/stall measurement   default: rv5-h-f (if FWD=1) or rv5-h-nf (if FWD=0)
-#   VM            VM for functional oracle check       default: matches STATS_VM
-#   ITER_LEN      random instructions per program      default: 300
-#   MEM_PCT       percentage of load/store instrs      default: 25
-#   CTRL_PCT      percentage of branch/jal/loop instrs default: 0 (15 when --branch or --loop is passed)
-#   SEED          base random seed                     default: random
-#   TIMEOUT       seconds per tool run (0=disabled)    default: 0
-#   STOP_ON_FAIL  stop all workers on first failure    default: 0
+#   --branch        enable random forward branches & jal (sets CTRL_PCT=15 if unset)
+#   --loop          enable jump-isolated bounded countdown loops (sets CTRL_PCT=15 if unset)
+#   --ctrl <pct>    set percentage of control-flow instructions (0-100, default 0)
+#   --no-subword    disable sub-word loads/stores (lw/sw/lh/sh/lb/sb) in generator
+#   --no-w          disable RV64I 32-bit *W ALU ops (addw/subw/addiw/etc.) in generator
+#   --with-profile  profile on rvss to detect independent ld/sd pairs before reordering (PROFILE=1, default)
+#   --no-profile    disable ld/sd profiling and keep all ld/sd pairs dependent (PROFILE=0)
+#   JOBS            parallel worker processes            default: all logical CPUs
+#   KITES           kites-cli binary                     default: auto-detected ../build-cli/kites-cli or ../../build-cli/kites-cli
+#   GEN             random generator binary              default: $SCRIPT_DIR/rv64i_gen
+#   GEN_CMD         custom generator command             default: unset
+#   REORDER         reordering tool binary               default: $SCRIPT_DIR/reorder_tool
+#   COMB            data_collector binary                default: $SCRIPT_DIR/data_collector
+#   FAIL_DIR        failing test artifacts directory     default: /tmp/comp_arch/fail
+#   WORK_DIR        per-worker scratch directory         default: /tmp/comp_arch/work
+#   CYCLES1/2       cycle logs for data_collector        default: /tmp/comp_arch/cycles1.txt, cycles2.txt
+#   FULL_CSV        full architectural metrics CSV       default: /tmp/comp_arch/full_metrics.csv
+#   FWD             forwarding mode (1=on, 0=off)        default: 1
+#   PROFILE         ld/sd dependency profiling (1=on, 0=off) default: 1
+#   STATS_VM        VM for cycle/IPC/stall measurement   default: rv5-h-f (if FWD=1) or rv5-h-nf (if FWD=0)
+#   VM              VM for functional oracle check       default: matches STATS_VM
+#   ITER_LEN        random instructions per program      default: 300
+#   MEM_PCT         percentage of load/store instrs      default: 25
+#   CTRL_PCT        percentage of branch/jal/loop instrs default: 0 (15 when --branch or --loop is passed)
+#   SEED            base random seed                     default: random
+#   TIMEOUT         seconds per tool run (0=disabled)    default: 0
+#   STOP_ON_FAIL    stop all workers on first failure    default: 0
+#   SAVE_REGRESSIONS save cases where cycle2 > cycle1   default: 0
 
 set -u
 
@@ -38,6 +42,7 @@ REORDER_DIR="$SCRIPT_DIR/../reordering"
 ITERATIONS=""
 BRANCH="${BRANCH:-0}"
 CTRL_PCT="${CTRL_PCT:-}"
+PROFILE="${PROFILE:-1}"
 GEN_EXTRA_FLAGS="${GEN_EXTRA_FLAGS:-}"
 
 while [ $# -gt 0 ]; do
@@ -57,6 +62,14 @@ while [ $# -gt 0 ]; do
             CTRL_PCT="${1#*=}"
             shift
             ;;
+        --with-profile|--profile)
+            PROFILE=1
+            shift
+            ;;
+        --no-profile|--static)
+            PROFILE=0
+            shift
+            ;;
         --loop|--no-subword|--no-w)
             if [ "$1" = "--loop" ]; then
                 BRANCH=1
@@ -65,14 +78,14 @@ while [ $# -gt 0 ]; do
             shift
             ;;
         -h|--help)
-            echo "usage: $0 [iterations] [--branch] [--loop] [--ctrl <pct>] [--no-subword] [--no-w]" >&2; exit 0
+            echo "usage: $0 [iterations] [--branch] [--loop] [--ctrl <pct>] [--no-subword] [--no-w] [--with-profile|--no-profile]" >&2; exit 0
             ;;
         *)
             if [[ "$1" =~ ^[0-9]+$ ]] && [ -z "$ITERATIONS" ]; then
                 ITERATIONS="$1"
                 shift
             else
-                echo "usage: $0 [iterations] [--branch] [--loop] [--ctrl <pct>] [--no-subword] [--no-w]" >&2; exit 2
+                echo "usage: $0 [iterations] [--branch] [--loop] [--ctrl <pct>] [--no-subword] [--no-w] [--with-profile|--no-profile]" >&2; exit 2
             fi
             ;;
     esac
@@ -122,7 +135,7 @@ STOP_ON_FAIL="${STOP_ON_FAIL:-0}"
 SEED="${SEED:-$(( (RANDOM << 15 | RANDOM) ))}"
 
 if ! [[ "$ITERATIONS" =~ ^[0-9]+$ ]] || [ "$ITERATIONS" -lt 1 ]; then
-    echo "usage: $0 [iterations] [--branch] [--loop] [--ctrl <pct>]" >&2; exit 2
+    echo "usage: $0 [iterations] [--branch] [--loop] [--ctrl <pct>] [--with-profile|--no-profile]" >&2; exit 2
 fi
 [ "$JOBS" -lt 1 ] && JOBS=1
 [ "$JOBS" -gt "$ITERATIONS" ] && JOBS="$ITERATIONS"
@@ -142,7 +155,21 @@ if [ -z "$GEN_CMD" ] && [ -f "$SCRIPT_DIR/rv64i.cpp" ] && { [ ! -x "$GEN" ] || [
 fi
 
 # Build reorder_tool on demand against sources/headers in ../reordering.
-if [ -f "$SCRIPT_DIR/reorder_tool.cpp" ] && { [ ! -x "$REORDER" ] || [ "$SCRIPT_DIR/reorder_tool.cpp" -nt "$REORDER" ]; }; then
+need_reorder_build=0
+if [ -f "$SCRIPT_DIR/reorder_tool.cpp" ]; then
+    if [ ! -x "$REORDER" ] || [ "$SCRIPT_DIR/reorder_tool.cpp" -nt "$REORDER" ]; then
+        need_reorder_build=1
+    else
+        for src in "$REORDER_DIR"/*.cpp "$REORDER_DIR"/*.h; do
+            if [ -f "$src" ] && [ "$src" -nt "$REORDER" ]; then
+                need_reorder_build=1
+                break
+            fi
+        done
+    fi
+fi
+
+if [ "$need_reorder_build" = "1" ]; then
     echo "building reorder tool from $SCRIPT_DIR/reorder_tool.cpp -> $REORDER"
     g++ -std=c++17 -O2 -I"$REORDER_DIR" \
         "$SCRIPT_DIR/reorder_tool.cpp" \
@@ -283,6 +310,8 @@ run_worker() {
         local reason="" detail=""
         local mem_bases="0x10000000"
         local first_base="0x10000000"
+        local dep_file="$wdir/load_store_dep.txt"
+        rm -f "$dep_file"
 
         # 1. generator
         if [ -n "$GEN_CMD" ]; then
@@ -314,12 +343,38 @@ $(tail -n 5 "$run1/stderr")"
             fi
         fi
 
+        # 2.5. dynamic LD-SD dependency profiling on rvss (when PROFILE=1)
+        local indep_pairs=0
+        local profile_ms="0.000"
+        if [ -z "$reason" ]; then
+            if [ "$PROFILE" = "1" ]; then
+                local p_start p_end
+                p_start=$(now_ns)
+                $TIMEOUT_CMD "$KITES" "$code1" --vm rvss --profile --profile-out "$dep_file" >"$wdir/profile.stdout" 2>"$wdir/profile.stderr"
+                local prc=$?
+                p_end=$(now_ns)
+                if [ "$p_start" -gt 0 ] && [ "$p_end" -ge "$p_start" ]; then
+                    profile_ms=$(awk -v s="$p_start" -v e="$p_end" 'BEGIN { printf "%.3f", (e - s) / 1000000.0 }')
+                fi
+                if [ $prc -ne 0 ] || [ ! -f "$dep_file" ]; then
+                    reason="kites_profile_error"
+                    detail="kites-cli --profile exited with code $prc (124 = timeout)
+$(tail -n 5 "$wdir/profile.stderr")"
+                else
+                    indep_pairs=$(wc -l < "$dep_file" | tr -d ' ')
+                fi
+            else
+                # Prevent DAG.cpp from falling back to a stale ../load_store_dep.txt
+                dep_file="/dev/null"
+            fi
+        fi
+
         # 3. reordering tool (timed) + strict permutation check
         local reorder_ms="0.000"
         if [ -z "$reason" ]; then
             local t_start t_end
             t_start=$(now_ns)
-            $TIMEOUT_CMD "$REORDER" "${code1}.hex" "$FWD" "$wdir/order.txt" >"$wdir/reorder.stdout" 2>"$wdir/reorder.stderr"
+            KITES_LD_SD_FILE="$dep_file" $TIMEOUT_CMD "$REORDER" "${code1}.hex" "$FWD" "$wdir/order.txt" >"$wdir/reorder.stdout" 2>"$wdir/reorder.stderr"
             local rrc=$?
             t_end=$(now_ns)
             if [ "$t_start" -gt 0 ] && [ "$t_end" -ge "$t_start" ]; then
@@ -398,13 +453,18 @@ ${d_pmem:-<identical>}"
             local moved est_c1 est_c2 saved pct_saved
             moved=$(awk '$1 != NR-1' "$wdir/order.txt" | wc -l | tr -d ' ')
             read -r est_c1 est_c2 < "$wdir/reorder.stdout"
-            echo "$SEED_I,$ITER_LEN,$MEM_PCT,$CTRL_PCT,$FWD,$STATS_VM,$s1,$s2,${est_c1:-0},${est_c2:-0},$moved,$reorder_ms" >> "$w_metrics"
+            echo "$SEED_I,$ITER_LEN,$MEM_PCT,$CTRL_PCT,$FWD,$STATS_VM,$s1,$s2,${est_c1:-0},${est_c2:-0},$moved,$reorder_ms,$PROFILE,$indep_pairs,$profile_ms" >> "$w_metrics"
 
             saved=$((c1 - c2))
             pct_saved=$(awk -v s="$saved" -v c="$c1" 'BEGIN { printf "%.2f%%", (s / c) * 100.0 }')
 
-            printf '[PASS] #%d (w%d) seed=%d mem=%s | cycles: %s -> %s (saved %d, %s)\n' \
-                "$i" "$wid" "$SEED_I" "$first_base" "$c1" "$c2" "$saved" "$pct_saved"
+            if [ "$PROFILE" = "1" ]; then
+                printf '[PASS] #%d (w%d) seed=%d mem=%s pairs=%s | cycles: %s -> %s (saved %d, %s)\n' \
+                    "$i" "$wid" "$SEED_I" "$first_base" "$indep_pairs" "$c1" "$c2" "$saved" "$pct_saved"
+            else
+                printf '[PASS] #%d (w%d) seed=%d mem=%s | cycles: %s -> %s (saved %d, %s)\n' \
+                    "$i" "$wid" "$SEED_I" "$first_base" "$c1" "$c2" "$saved" "$pct_saved"
+            fi
 
             if [ "${SAVE_REGRESSIONS:-0}" = "1" ] && [ "$c2" -gt "$c1" ]; then
                 local reg_dir="$FAIL_DIR/../regressions"
@@ -413,6 +473,7 @@ ${d_pmem:-<identical>}"
                 cp "$code1" "$rbase.code1.s"
                 cp "$code2" "$rbase.code2.s"
                 cp "$wdir/order.txt" "$rbase.order.txt"
+                [ -f "$wdir/load_store_dep.txt" ] && cp "$wdir/load_store_dep.txt" "$rbase.ld_sd.txt"
                 diff -u "$run1/info.txt" "$run2/info.txt" > "$rbase.info.diff"
             fi
         else
@@ -420,11 +481,12 @@ ${d_pmem:-<identical>}"
             local base="$FAIL_DIR/test_number_${i}_${reason}"
             cp "$code1" "$base.s" 2>/dev/null
             [ -s "$code2" ] && cp "$code2" "$base.code2.s"
+            [ -f "$wdir/load_store_dep.txt" ] && cp "$wdir/load_store_dep.txt" "$base.ld_sd.txt"
             {
                 echo "reason:    $reason"
                 echo "seed:      $SEED_I   (regenerate: $GEN ${ITER_LEN:-200} $SEED_I $MEM_PCT $CTRL_PCT$GEN_EXTRA_FLAGS)"
                 echo "mem_bases: $mem_bases"
-                echo "fwd:       $FWD   mem_pct: $MEM_PCT   ctrl_pct: $CTRL_PCT   vm: ${VM:-default}"
+                echo "fwd:       $FWD   profile: $PROFILE (pairs=$indep_pairs)   mem_pct: $MEM_PCT   ctrl_pct: $CTRL_PCT   vm: ${VM:-default}"
                 echo "$detail"
             } > "$base.log"
             printf '[FAIL] #%d (w%d) seed=%d mem=%s  %s  -> %s\n' "$i" "$wid" "$SEED_I" "$first_base" "$reason" "$base.s"
@@ -438,7 +500,7 @@ ${d_pmem:-<identical>}"
     echo "$w_pass $w_fail" > "$wdir/counts"
 }
 
-echo "base seed $SEED | $ITERATIONS iteration(s) | $JOBS worker(s) | ${ITER_LEN} instr | mem=${MEM_PCT}% | ctrl=${CTRL_PCT}% | fwd=$FWD | vm=$VM | stats_vm=$STATS_VM"
+echo "base seed $SEED | $ITERATIONS iteration(s) | $JOBS worker(s) | ${ITER_LEN} instr | mem=${MEM_PCT}% | ctrl=${CTRL_PCT}% | fwd=$FWD | profile=$PROFILE | vm=$VM | stats_vm=$STATS_VM"
 echo "failures: $FAIL_DIR"
 echo
 
@@ -448,7 +510,7 @@ done
 wait
 
 pass=0; fail=0
-echo "seed,instr_count,mem_pct,ctrl_pct,fwd,vm,cycle1,ipc1,cpi1,stalls1,cycle2,ipc2,cpi2,stalls2,est_cycle1,est_cycle2,moved,reorder_ms" > "$FULL_CSV"
+echo "seed,instr_count,mem_pct,ctrl_pct,fwd,vm,cycle1,ipc1,cpi1,stalls1,cycle2,ipc2,cpi2,stalls2,est_cycle1,est_cycle2,moved,reorder_ms,profile,indep_pairs,profile_ms" > "$FULL_CSV"
 for ((w = 0; w < JOBS; w++)); do
     wdir="$WORK_DIR/worker_$w"
     if [ -f "$wdir/counts" ]; then
@@ -466,7 +528,7 @@ echo "done: $pass passed, $fail failed (failing programs in $FAIL_DIR)"
 if [ "$pass" -gt 0 ] && [ -s "$FULL_CSV" ]; then
     awk -F',' '
         NR > 1 {
-            c1 += $7; c2 += $11; n++
+            c1 += $7; c2 += $11; pairs += $20; n++
             diff = $7 - $11
             if (diff > 0) improved++
             else if (diff == 0) unchanged++
@@ -480,6 +542,9 @@ if [ "$pass" -gt 0 ] && [ -s "$FULL_CSV" ]; then
             if (n > 0 && c1 > 0) {
                 printf "cycles: avg %.1f -> %.1f | total saved: %d (avg %.1f / %.2f%%)\n", c1/n, c2/n, c1-c2, (c1-c2)/n, (c1-c2)/c1*100
                 printf "outcomes: %d improved (%.1f%%), %d unchanged, %d regressed (best: +%d on seed %s)\n", improved+0, (improved/n)*100, unchanged+0, regressed+0, best_diff+0, best_seed
+                if ($19 == 1) {
+                    printf "ld-sd profile: avg %.1f independent load/store pairs per program\n", pairs/n
+                }
                 if (regressed > 0) {
                     printf "worst regression: %d cycles (%d -> %d) on seed %s\n", worst_diff, worst_c1, worst_c2, worst_seed
                 }
