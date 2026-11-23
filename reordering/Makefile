@@ -1,7 +1,7 @@
 CXX      := g++
 CXXFLAGS := -std=c++17 -Wall -Wextra -O2
 
-SRCS := parser.cpp DAG.cpp heurestic.cpp scheduler.cpp reorder_core.cpp testcase.cpp tester.cpp
+SRCS := parser.cpp DAG.cpp heurestic.cpp scheduler.cpp reorder_core.cpp ld_sd_profile.cpp ../src/common/globals.cpp testcase.cpp tester.cpp
 OBJS := $(SRCS:.cpp=.o)
 TARGET := tester
 

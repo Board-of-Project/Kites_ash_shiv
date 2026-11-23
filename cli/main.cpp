@@ -4,6 +4,7 @@
  */
 
 #include "../reordering/DAG.h"
+#include "../reordering/ld_sd_profile.h"
 #include "../reordering/parser.h"
 #include "../reordering/scheduler.h"
 #include <algorithm>
@@ -56,7 +57,7 @@ void printUsage(const char *programName)
         << "                  independent load/store pairs, then reorder using them\n"
         << "  --profile       run program step-by-step to detect non-overlapping load/store\n"
         << "                  pairs and export them to load_store_dep.txt\n"
-        << "                  (or the file named by $KITES_LD_SD_FILE)\n"
+        << "                  (or --profile-out <file>, or the file named by $KITES_LD_SD_FILE)\n"
         << "  --reorder-deps  read load_store_dep.txt, build the DAG, and print reordered code\n";
 }
 
@@ -304,6 +305,7 @@ Kites::AssembledProgram maybeReorder(const Kites::AssembledProgram &prog, Kites:
 
 int main(int argc, char *argv[])
 {
+    ldsd::setAutoProfile(false); // the CLI has its own --with-profile; never spawn itself
     if (qEnvironmentVariableIsEmpty("DISPLAY") && qEnvironmentVariableIsEmpty("WAYLAND_DISPLAY"))
     {
         qputenv("QT_QPA_PLATFORM", "offscreen");
@@ -320,6 +322,7 @@ int main(int argc, char *argv[])
     bool reorderDepsMode = false;
     bool reorder = false;
     bool withProfile = false;
+    std::string profileOutPath;
 
     for (int i = 1; i < argc; ++i)
     {
@@ -365,6 +368,16 @@ int main(int argc, char *argv[])
         {
             withProfile = true;
         }
+        else if (arg == "--profile-out")
+        {
+            if (i + 1 >= argc)
+            {
+                std::cerr << "Error: --profile-out requires a file path.\n";
+                printUsage(argv[0]);
+                return 1;
+            }
+            profileOutPath = argv[++i];
+        }
         else if (!arg.empty() && arg[0] == '-')
         {
             std::cerr << "Error: unknown argument '" << arg << "'.\n";
@@ -388,6 +401,12 @@ int main(int argc, char *argv[])
     {
         std::cerr << "Error: unknown VM type '" << processorTypeStr << "'.\n";
         printUsage(argv[0]);
+        return 1;
+    }
+
+    if (!profileOutPath.empty() && !profileMode)
+    {
+        std::cerr << "Error: --profile-out only works together with --profile.\n";
         return 1;
     }
 
@@ -486,7 +505,8 @@ int main(int argc, char *argv[])
 
         // 4. Write surviving independent pairs to load_store_dep.txt
         const char *depEnv = std::getenv("KITES_LD_SD_FILE");
-        const std::string depPath = (depEnv && *depEnv) ? depEnv : "load_store_dep.txt";
+        const std::string depPath = !profileOutPath.empty() ? profileOutPath
+                                    : ((depEnv && *depEnv) ? std::string(depEnv) : std::string("load_store_dep.txt"));
         std::ofstream dep_file(depPath);
         for (const auto &pair : independent_pairs)
         {
@@ -494,6 +514,8 @@ int main(int argc, char *argv[])
         }
         dep_file.close();
         std::cout << "Profiling complete. Independent pairs exported to " << depPath << "\n";
+        // lets callers (reordering/ld_sd_profile.cpp) verify the pairs belong to their program
+        std::cout << "KITES_PROFILE_HASH " << std::hex << ldsd::hashWords(program.text_buffer) << std::dec << "\n";
     }
     else if (reorderDepsMode)
     {

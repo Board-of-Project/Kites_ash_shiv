@@ -1,4 +1,5 @@
 #include "reorder_core.h"
+#include "ld_sd_profile.h"
 #include "DAG.h"
 #include "parser.h"
 #include "scheduler.h"
@@ -25,6 +26,12 @@ ReorderResult reorderWords(const std::vector<uint32_t> &text, bool forwarding,
 {
     parser p(toHexString(text));
     std::vector<parsed_instruction> instrs = p.instructions();
+    // No pairs supplied (e.g. the GUI): get them by running `kites-cli --profile`.
+    // On any failure, indepPairs stays null and DAG falls back to the profile file.
+    std::vector<std::pair<int, int>> autoPairs;
+    if (!indepPairs && ldsd::autoProfileEnabled() && ldsd::profileViaCli(text, autoPairs))
+        indepPairs = &autoPairs;
+
     DAG dag(instrs, forwarding, indepPairs);
     std::vector<std::vector<parsed_instruction>> blocks = dag.blocks();
     scheduler s(blocks, dag.depend_matrix_full(), forwarding);
