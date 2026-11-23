@@ -20,11 +20,12 @@ static std::string toHexString(const std::vector<uint32_t> &words)
 }
 
 ReorderResult reorderWords(const std::vector<uint32_t> &text, bool forwarding,
-                           const std::vector<long long> &instrCounts)
+                           const std::vector<long long> &instrCounts,
+                           const std::vector<std::pair<int, int>> *indepPairs)
 {
     parser p(toHexString(text));
     std::vector<parsed_instruction> instrs = p.instructions();
-    DAG dag(instrs, forwarding);
+    DAG dag(instrs, forwarding, indepPairs);
     std::vector<std::vector<parsed_instruction>> blocks = dag.blocks();
     scheduler s(blocks, dag.depend_matrix_full(), forwarding);
 

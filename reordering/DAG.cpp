@@ -2,11 +2,14 @@
 #include "DAG.h"
 #include "parser.h"
 #include <cstdio>
+#include <cstdlib>
+#include <string>
 #include <vector>
 
 using namespace std;
 
-DAG::DAG(vector<parsed_instruction> &temp, bool forw)
+DAG::DAG(vector<parsed_instruction> &temp, bool forw,
+         const std::vector<std::pair<int, int>> *indepPairs)
 {
     instr = temp;
     this->forward = forw;
@@ -15,11 +18,28 @@ DAG::DAG(vector<parsed_instruction> &temp, bool forw)
     // size the matrix first (it was never allocated, which caused the segfault)
     ld_sd_depen.assign(n, std::vector<int>(n, 0));
 
-    // pairs of load/store instructions that were profiled as independent
-    FILE* fptr = fopen("../load_store_dep.txt" , "r");
+    // pairs supplied directly by the caller (e.g. kites-cli --reorder --with-profile)
+    if (indepPairs)
+    {
+        for (const auto &pr : *indepPairs)
+        {
+            const int px = pr.first, py = pr.second;
+            if (px < 0 || py < 0 || px >= n || py >= n)
+                continue;
+            ld_sd_depen[px][py] = 1;
+            ld_sd_depen[py][px] = 1;
+        }
+        return;
+    }
+
+    // otherwise read pairs profiled as independent from a file:
+    // $KITES_LD_SD_FILE if set, else ../load_store_dep.txt
+    const char *envPath = std::getenv("KITES_LD_SD_FILE");
+    const std::string depPath = (envPath && *envPath) ? envPath : "../load_store_dep.txt";
+    FILE* fptr = fopen(depPath.c_str() , "r");
     if (!fptr)
     {
-        fprintf(stderr, "[DAG] cannot open ../load_store_dep.txt - keeping all load/store pairs dependent\n");
+        fprintf(stderr, "[DAG] cannot open %s - keeping all load/store pairs dependent\n", depPath.c_str());
         return;
     }
     int x , y;

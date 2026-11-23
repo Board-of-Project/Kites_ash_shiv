@@ -27,7 +27,11 @@ class DAG
 
 
   public:
-    explicit DAG(std::vector<parsed_instruction> &temp, bool forw);
+    // indepPairs: optional (index, index) load/store pairs known to be independent.
+    // If given, they are used directly and no profile file is read.
+    // If null, the pairs are read from $KITES_LD_SD_FILE, or ../load_store_dep.txt.
+    explicit DAG(std::vector<parsed_instruction> &temp, bool forw,
+                 const std::vector<std::pair<int, int>> *indepPairs = nullptr);
 
     dpd_format dep_type(parsed_instruction a, parsed_instruction b);
 

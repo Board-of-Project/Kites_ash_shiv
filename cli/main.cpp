@@ -41,7 +41,7 @@ void printUsage(const char *programName)
     std::cerr
         << "Usage: " << programName
         << " [assembly-file] [--vm <n>] [--mem-dump <hex_addr> <row_count>]... [--repl|-i]"
-        << " [--reorder] [--profile|--reorder-deps]\n"
+        << " [--reorder [--with-profile]] [--profile|--reorder-deps]\n"
         << "  assembly-file   optional; if given without --repl, assembles, runs to\n"
         << "                  completion, and dumps state (batch mode)\n"
         << "  --vm <n>        rvss (default) | rv5-nh-nf | rv5-h-nf | rv5-nh-f | rv5-h-f\n"
@@ -52,8 +52,11 @@ void printUsage(const char *programName)
         << "  (running with no assembly-file also enters the REPL)\n"
         << "  --reorder       reorder instructions within basic blocks to cut stalls before\n"
         << "                  running (only with rv5-h-nf / rv5-h-f)\n"
+        << "  --with-profile  with --reorder: first profile the program (on rvss) to find\n"
+        << "                  independent load/store pairs, then reorder using them\n"
         << "  --profile       run program step-by-step to detect non-overlapping load/store\n"
         << "                  pairs and export them to load_store_dep.txt\n"
+        << "                  (or the file named by $KITES_LD_SD_FILE)\n"
         << "  --reorder-deps  read load_store_dep.txt, build the DAG, and print reordered code\n";
 }
 
@@ -99,10 +102,199 @@ const std::unordered_map<std::string, Kites::ProcessorType> processorTypes = {
     {"rv5-h-f", Kites::ProcessorType::RV5Stage_H_F},
 };
 
-Kites::AssembledProgram maybeReorder(const Kites::AssembledProgram &prog, Kites::ProcessorType type)
+// Runs the (already loaded) program step by step on a single-cycle VM and returns the
+// (load, store) / (store, store) instruction-index pairs that never touched overlapping memory.
+std::set<std::pair<int, int>> profileLoop(Kites::ProcessorManager &manager,
+                                          const Kites::AssembledProgram &program,
+                                          const bool &runFailed, const bool &runFinished)
+{
+    // 1. Decode assembled machine words and get DAG blocks
+    parser p(buildHexCodeText(program));
+    std::vector<parsed_instruction> instrs = p.instructions();
+    DAG my_dag(instrs, true);
+    std::vector<std::vector<parsed_instruction>> blocks = my_dag.blocks();
+
+    // 2. Map instruction index to block ID & initialize candidate L/S and S/S pairs
+    std::unordered_map<int, int> block_of_instr;
+    std::set<std::pair<int, int>> independent_pairs;
+    std::unordered_map<int, parsed_instruction> inst_map;
+
+    for (size_t b = 0; b < blocks.size(); b++)
+    {
+        std::vector<parsed_instruction> mem_insts;
+        for (const auto &inst : blocks[b])
+        {
+            block_of_instr[inst.index] = static_cast<int>(b);
+            inst_map[inst.index] = inst;
+            if (inst.format == InstrFormat::L || inst.format == InstrFormat::S)
+            {
+                mem_insts.push_back(inst);
+            }
+        }
+
+        // Key (load, store) for L/S pairs and (min, max) for S/S pairs
+        for (size_t i = 0; i < mem_insts.size(); ++i)
+        {
+            for (size_t j = i + 1; j < mem_insts.size(); ++j)
+            {
+                const auto &m1 = mem_insts[i];
+                const auto &m2 = mem_insts[j];
+
+                if (m1.format == InstrFormat::S && m2.format == InstrFormat::S)
+                {
+                    independent_pairs.insert({std::min(m1.index, m2.index),
+                                              std::max(m1.index, m2.index)});
+                }
+                else if (m1.format == InstrFormat::L && m2.format == InstrFormat::S)
+                {
+                    independent_pairs.insert({m1.index, m2.index});
+                }
+                else if (m1.format == InstrFormat::S && m2.format == InstrFormat::L)
+                {
+                    independent_pairs.insert({m2.index, m1.index});
+                }
+            }
+        }
+    }
+
+    // 3. Iteration-Aware Execution Loop
+    std::unordered_map<int, std::vector<uint64_t>> instr_regist;
+    uint64_t current_pc = manager.getProgramCounter();
+    uint64_t start_pc = current_pc;
+    bool is_running = !instrs.empty();
+    size_t step_count = 0;
+    const size_t max_steps = 70000;
+
+    while (is_running && !runFailed)
+    {
+        int instr_index = static_cast<int>((current_pc - start_pc) / 4);
+        if (instr_index < 0 || instr_index >= static_cast<int>(instrs.size()))
+        {
+            break;
+        }
+
+        if (++step_count > max_steps)
+        {
+            std::cerr << "Profiling stopped: exceeded " << max_steps
+                      << " steps (start_pc=0x" << std::hex << start_pc
+                      << ", current_pc=0x" << current_pc << std::dec
+                      << ", instrs=" << instrs.size() << ").\n";
+            break;
+        }
+
+        int current_block =
+            block_of_instr.count(instr_index) ? block_of_instr[instr_index] : -1;
+
+        // Log all 32 GPRs BEFORE execution to prevent base register overwrite issues
+        instr_regist[instr_index] = manager.getRegisterFile()->GetGprValues();
+
+        manager.step();
+
+        uint64_t next_pc = manager.getProgramCounter();
+        int next_index = static_cast<int>((next_pc - start_pc) / 4);
+
+        // Detect exit syscall/ebreak or end-of-program PC wrap/reset
+        const auto &cur_inst = instrs[instr_index];
+        const auto &gprs = instr_regist[instr_index];
+        bool is_exit_ecall = (cur_inst.inst == "00000000000000000000000001110011" &&
+                              gprs.size() > 17 && (gprs[17] == 10 || gprs[17] == 93));
+        bool is_ebreak = (cur_inst.inst == "00000000000100000000000001110011");
+        bool hit_halt_inst = is_exit_ecall || is_ebreak;
+
+        bool is_sequential = (cur_inst.format == InstrFormat::R ||
+                              cur_inst.format == InstrFormat::I ||
+                              cur_inst.format == InstrFormat::L ||
+                              cur_inst.format == InstrFormat::S ||
+                              cur_inst.format == InstrFormat::U);
+        bool sequential_wrapped = is_sequential && (next_pc != current_pc + 4);
+
+        if (runFinished || hit_halt_inst || sequential_wrapped || next_pc == current_pc ||
+            next_index < 0 || next_index >= static_cast<int>(instrs.size()))
+        {
+            is_running = false;
+        }
+
+        int next_block = (is_running && block_of_instr.count(next_index))
+                             ? block_of_instr[next_index]
+                             : -1;
+
+        // Boundary Detection: block changed, jumped backwards (loop repeat), or execution ended
+        if (current_block != next_block || next_pc <= current_pc || !is_running)
+        {
+            for (auto it = independent_pairs.begin(); it != independent_pairs.end();)
+            {
+                int inst1 = it->first;
+                int inst2 = it->second;
+
+                if (block_of_instr[inst1] == current_block)
+                {
+                    if (instr_regist.count(inst1) && instr_regist.count(inst2))
+                    {
+                        int rs1_1 = inst_map[inst1].rs1;
+                        int rs1_2 = inst_map[inst2].rs1;
+
+                        if (rs1_1 >= 0 && rs1_1 < 32 && rs1_2 >= 0 && rs1_2 < 32)
+                        {
+                            uint64_t addr1 =
+                                instr_regist[inst1][rs1_1] +
+                                static_cast<uint64_t>(
+                                    static_cast<int64_t>(getMemOffset(inst_map[inst1])));
+                            uint64_t addr2 =
+                                instr_regist[inst2][rs1_2] +
+                                static_cast<uint64_t>(
+                                    static_cast<int64_t>(getMemOffset(inst_map[inst2])));
+
+                            int64_t diff = std::abs(static_cast<int64_t>(addr1) -
+                                                    static_cast<int64_t>(addr2));
+
+                            if (diff < 8) // Memory overlap in this iteration
+                            {
+                                it = independent_pairs.erase(it);
+                                continue;
+                            }
+                        }
+                    }
+                }
+                ++it;
+            }
+            instr_regist.clear();
+        }
+        current_pc = next_pc;
+    }
+
+    return independent_pairs;
+}
+
+// Profiles on a fresh single-cycle (rvss) VM. rvss is required because the profiler maps
+// PC -> instruction 1:1, which a stalling pipeline would break.
+std::set<std::pair<int, int>> profileProgram(const Kites::AssembledProgram &program)
+{
+    Kites::ProcessorManager manager(nullptr, Kites::ProcessorType::RVSS);
+    bool runFailed = false;
+    bool runFinished = false;
+    QObject::connect(&manager, &Kites::ProcessorManager::runErrorSignal, &manager,
+                     [&](const QString &, int) { runFailed = true; });
+    QObject::connect(&manager, &Kites::ProcessorManager::runFinishedSignal, &manager,
+                     [&]() { runFinished = true; });
+    manager.setStepDelay(0);
+    manager.loadProgram(program);
+    return profileLoop(manager, program, runFailed, runFinished);
+}
+
+Kites::AssembledProgram maybeReorder(const Kites::AssembledProgram &prog, Kites::ProcessorType type,
+                                     bool withProfile = false)
 {
     const bool fwd = (type == Kites::ProcessorType::RV5Stage_H_F);
-    Kites::ReorderResult r = Kites::reorderWords(prog.text_buffer, fwd); // static counts
+    std::vector<std::pair<int, int>> pairs;
+    const std::vector<std::pair<int, int>> *pairsPtr = nullptr;
+    if (withProfile)
+    {
+        const auto found = profileProgram(prog);
+        pairs.assign(found.begin(), found.end());
+        pairsPtr = &pairs;
+        std::cout << "Profile: " << pairs.size() << " independent load/store pair(s) found.\n";
+    }
+    Kites::ReorderResult r = Kites::reorderWords(prog.text_buffer, fwd, {}, pairsPtr); // static counts
     std::cout << "Reorder: cycles " << r.cyclesBefore << " -> " << r.cyclesAfter << " (stalls "
               << r.stallsBefore << " -> " << r.stallsAfter << ")\n";
     return Kites::applyReordering(prog, r);
@@ -127,6 +319,7 @@ int main(int argc, char *argv[])
     bool profileMode = false;
     bool reorderDepsMode = false;
     bool reorder = false;
+    bool withProfile = false;
 
     for (int i = 1; i < argc; ++i)
     {
@@ -168,6 +361,10 @@ int main(int argc, char *argv[])
         {
             reorder = true;
         }
+        else if (arg == "--with-profile")
+        {
+            withProfile = true;
+        }
         else if (!arg.empty() && arg[0] == '-')
         {
             std::cerr << "Error: unknown argument '" << arg << "'.\n";
@@ -194,6 +391,12 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    if (withProfile && !reorder)
+    {
+        std::cerr << "Error: --with-profile only works together with --reorder.\n";
+        return 1;
+    }
+
     const auto ptype = processorTypeIt->second;
     if (reorder && ptype != Kites::ProcessorType::RV5Stage_H_NF &&
         ptype != Kites::ProcessorType::RV5Stage_H_F)
@@ -214,7 +417,7 @@ int main(int argc, char *argv[])
             {
                 Kites::AssembledProgram program = Kites::assemble(assemblyFile);
                 if (reorder)
-                    program = maybeReorder(program, ptype);
+                    program = maybeReorder(program, ptype, withProfile);
 
                 manager.loadProgram(program);
                 state.currentProgram = program;
@@ -242,7 +445,7 @@ int main(int argc, char *argv[])
         {
             try
             {
-                program = maybeReorder(program, ptype);
+                program = maybeReorder(program, ptype, withProfile);
             }
             catch (const std::exception &e)
             {
@@ -278,168 +481,19 @@ int main(int argc, char *argv[])
 
     if (profileMode)
     {
-        // 1. Decode assembled machine words and get DAG blocks
-        parser p(buildHexCodeText(program));
-        std::vector<parsed_instruction> instrs = p.instructions();
-        DAG my_dag(instrs, true);
-        std::vector<std::vector<parsed_instruction>> blocks = my_dag.blocks();
-
-        // 2. Map instruction index to block ID & initialize candidate L/S and S/S pairs
-        std::unordered_map<int, int> block_of_instr;
-        std::set<std::pair<int, int>> independent_pairs;
-        std::unordered_map<int, parsed_instruction> inst_map;
-
-        for (size_t b = 0; b < blocks.size(); b++)
-        {
-            std::vector<parsed_instruction> mem_insts;
-            for (const auto &inst : blocks[b])
-            {
-                block_of_instr[inst.index] = static_cast<int>(b);
-                inst_map[inst.index] = inst;
-                if (inst.format == InstrFormat::L || inst.format == InstrFormat::S)
-                {
-                    mem_insts.push_back(inst);
-                }
-            }
-
-            // Key (load, store) for L/S pairs and (min, max) for S/S pairs
-            for (size_t i = 0; i < mem_insts.size(); ++i)
-            {
-                for (size_t j = i + 1; j < mem_insts.size(); ++j)
-                {
-                    const auto &m1 = mem_insts[i];
-                    const auto &m2 = mem_insts[j];
-
-                    if (m1.format == InstrFormat::S && m2.format == InstrFormat::S)
-                    {
-                        independent_pairs.insert({std::min(m1.index, m2.index),
-                                                  std::max(m1.index, m2.index)});
-                    }
-                    else if (m1.format == InstrFormat::L && m2.format == InstrFormat::S)
-                    {
-                        independent_pairs.insert({m1.index, m2.index});
-                    }
-                    else if (m1.format == InstrFormat::S && m2.format == InstrFormat::L)
-                    {
-                        independent_pairs.insert({m2.index, m1.index});
-                    }
-                }
-            }
-        }
-
-        // 3. Iteration-Aware Execution Loop
-        std::unordered_map<int, std::vector<uint64_t>> instr_regist;
-        uint64_t current_pc = manager.getProgramCounter();
-        uint64_t start_pc = current_pc;
-        bool is_running = !instrs.empty();
-        size_t step_count = 0;
-        const size_t max_steps = 70000;
-
-        while (is_running && !runFailed)
-        {
-            int instr_index = static_cast<int>((current_pc - start_pc) / 4);
-            if (instr_index < 0 || instr_index >= static_cast<int>(instrs.size()))
-            {
-                break;
-            }
-
-            if (++step_count > max_steps)
-            {
-                std::cerr << "Profiling stopped: exceeded " << max_steps
-                          << " steps (start_pc=0x" << std::hex << start_pc
-                          << ", current_pc=0x" << current_pc << std::dec
-                          << ", instrs=" << instrs.size() << ").\n";
-                break;
-            }
-
-            int current_block =
-                block_of_instr.count(instr_index) ? block_of_instr[instr_index] : -1;
-
-            // Log all 32 GPRs BEFORE execution to prevent base register overwrite issues
-            instr_regist[instr_index] = manager.getRegisterFile()->GetGprValues();
-
-            manager.step();
-
-            uint64_t next_pc = manager.getProgramCounter();
-            int next_index = static_cast<int>((next_pc - start_pc) / 4);
-
-            // Detect exit syscall/ebreak or end-of-program PC wrap/reset
-            const auto &cur_inst = instrs[instr_index];
-            const auto &gprs = instr_regist[instr_index];
-            bool is_exit_ecall = (cur_inst.inst == "00000000000000000000000001110011" &&
-                                  gprs.size() > 17 && (gprs[17] == 10 || gprs[17] == 93));
-            bool is_ebreak = (cur_inst.inst == "00000000000100000000000001110011");
-            bool hit_halt_inst = is_exit_ecall || is_ebreak;
-
-            bool is_sequential = (cur_inst.format == InstrFormat::R ||
-                                  cur_inst.format == InstrFormat::I ||
-                                  cur_inst.format == InstrFormat::L ||
-                                  cur_inst.format == InstrFormat::S ||
-                                  cur_inst.format == InstrFormat::U);
-            bool sequential_wrapped = is_sequential && (next_pc != current_pc + 4);
-
-            if (runFinished || hit_halt_inst || sequential_wrapped || next_pc == current_pc ||
-                next_index < 0 || next_index >= static_cast<int>(instrs.size()))
-            {
-                is_running = false;
-            }
-
-            int next_block = (is_running && block_of_instr.count(next_index))
-                                 ? block_of_instr[next_index]
-                                 : -1;
-
-            // Boundary Detection: block changed, jumped backwards (loop repeat), or execution ended
-            if (current_block != next_block || next_pc <= current_pc || !is_running)
-            {
-                for (auto it = independent_pairs.begin(); it != independent_pairs.end();)
-                {
-                    int inst1 = it->first;
-                    int inst2 = it->second;
-
-                    if (block_of_instr[inst1] == current_block)
-                    {
-                        if (instr_regist.count(inst1) && instr_regist.count(inst2))
-                        {
-                            int rs1_1 = inst_map[inst1].rs1;
-                            int rs1_2 = inst_map[inst2].rs1;
-
-                            if (rs1_1 >= 0 && rs1_1 < 32 && rs1_2 >= 0 && rs1_2 < 32)
-                            {
-                                uint64_t addr1 =
-                                    instr_regist[inst1][rs1_1] +
-                                    static_cast<uint64_t>(
-                                        static_cast<int64_t>(getMemOffset(inst_map[inst1])));
-                                uint64_t addr2 =
-                                    instr_regist[inst2][rs1_2] +
-                                    static_cast<uint64_t>(
-                                        static_cast<int64_t>(getMemOffset(inst_map[inst2])));
-
-                                int64_t diff = std::abs(static_cast<int64_t>(addr1) -
-                                                        static_cast<int64_t>(addr2));
-
-                                if (diff < 8) // Memory overlap in this iteration
-                                {
-                                    it = independent_pairs.erase(it);
-                                    continue;
-                                }
-                            }
-                        }
-                    }
-                    ++it;
-                }
-                instr_regist.clear();
-            }
-            current_pc = next_pc;
-        }
+        const std::set<std::pair<int, int>> independent_pairs =
+            profileLoop(manager, program, runFailed, runFinished);
 
         // 4. Write surviving independent pairs to load_store_dep.txt
-        std::ofstream dep_file("load_store_dep.txt");
+        const char *depEnv = std::getenv("KITES_LD_SD_FILE");
+        const std::string depPath = (depEnv && *depEnv) ? depEnv : "load_store_dep.txt";
+        std::ofstream dep_file(depPath);
         for (const auto &pair : independent_pairs)
         {
             dep_file << pair.first << " " << pair.second << "\n";
         }
         dep_file.close();
-        std::cout << "Profiling complete. Independent pairs exported to load_store_dep.txt\n";
+        std::cout << "Profiling complete. Independent pairs exported to " << depPath << "\n";
     }
     else if (reorderDepsMode)
     {

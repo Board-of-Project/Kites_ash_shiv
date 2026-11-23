@@ -1,5 +1,6 @@
 #pragma once
 #include <cstdint>
+#include <utility>
 #include <vector>
 
 namespace Kites
@@ -15,5 +16,6 @@ struct ReorderResult
 };
 
 ReorderResult reorderWords(const std::vector<uint32_t> &text, bool forwarding,
-                           const std::vector<long long> &instrCounts = {});
+                           const std::vector<long long> &instrCounts = {},
+                           const std::vector<std::pair<int, int>> *indepPairs = nullptr);
 } // namespace Kites
