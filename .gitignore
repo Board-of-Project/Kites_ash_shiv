@@ -23,3 +23,7 @@ CMakeLists.txt.user
 gtest_filter.
 .vs/
 gtest_filter.py
+build-cli/
+testing/reorder_tool
+testing/rv64i_gen
+testing/data_collector
