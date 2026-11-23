@@ -9,6 +9,7 @@
 #include <QStackedWidget>
 #include <QThread>
 #include <QWidget>
+#include "common/reorder_program.h"
 
 namespace Kites
 {
@@ -33,6 +34,7 @@ class MainWindow : public QMainWindow
         CacheTabIndex,
         CompilerTabIndex,
         ProfilerTabIndex,
+        ReorderTabIndex, // added fro reordered code 
         TabCount
     };
 
@@ -58,6 +60,9 @@ private:
     bool tryParseAndLoadProgram();
     void run(bool startPaused = false);
     void processorChangeDialog();
+    ReorderResult showReorderModel(const std::vector<uint32_t> &words, ProcessorType t,
+                                   const std::vector<long long> &counts);
+    void exportReorderTestCase();
     Ui::MainWindow *ui;
 
     // QToolBar *m_mainToolbar = nullptr;
@@ -70,6 +75,13 @@ private:
     ExecutionState     m_executionState    {ExecutionState::Stopped};
 
     std::array<KitesTab*, toIndex(TabIndex::TabCount)> m_tabs;
+    std::vector<long long> m_execCounts;     // executions per instruction number, current run
+    std::vector<uint32_t>  m_countsProgram;  // original program those counts belong to
+    bool m_countsUsable      = false;
+    bool m_loadedReordered   = false;
+    bool m_hasMeasured       = false;
+    bool m_lastRanReordered  = false;
+    MeasuredStats m_lastMeasured;
 public slots:
     void processorChanged(const ProcessorType &vmType); // this will catch the signal from processor dialog
     void runFinishedSlot();

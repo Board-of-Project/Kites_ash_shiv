@@ -1,6 +1,6 @@
+#include "processor/rv5s/rv5s_processor_base.h"
 #include "common/debug_colors.h"
 #include "common/instructions.h"
-#include "processor/rv5s/rv5s_processor_base.h"
 #include <thread>
 
 namespace Kites
@@ -17,8 +17,14 @@ void RV5StageVM_Base::Run()
 
         // if we hit a break point (and it's a new PC), we pause execution
         // This prevents firing the same breakpoint multiple times during stalls
-        if (std::find(breakpoints_.begin(), breakpoints_.end(), program_counter_) !=
-                breakpoints_.end() && program_counter_ != last_breakpoint_pc_)
+
+        // if (std::find(breakpoints_.begin(), breakpoints_.end(), program_counter_) !=
+        //         breakpoints_.end() && program_counter_ != last_breakpoint_pc_)
+
+        if (program_counter_ < program_size_ &&
+            std::find(breakpoints_.begin(), breakpoints_.end(), program_counter_) !=
+                breakpoints_.end() &&
+            program_counter_ != last_breakpoint_pc_)
         {
             pause_requested_ = true;
             last_breakpoint_pc_ = program_counter_;
@@ -64,14 +70,14 @@ bool RV5StageVM_Base::StepAndNotify()
         return false;
     }
     last_executed_pc_ = id_ex_reg_.pc; // this pc will be executed in this step,
-    //so we set it as the last executed pc before we step
+    // so we set it as the last executed pc before we step
     Step();
     SetActiveWireNames();
     cpi_ = instructions_retired_
                ? static_cast<float>(cycle_s_) / static_cast<float>(instructions_retired_)
                : 0.0f;
-    ipc_ = cycle_s_ ? static_cast<float>(instructions_retired_) / static_cast<float>(cycle_s_)
-                    : 0.0f;
+    ipc_ =
+        cycle_s_ ? static_cast<float>(instructions_retired_) / static_cast<float>(cycle_s_) : 0.0f;
 
     setProcessorState();
     emit updateCircuitStateSignal(active_wires_);
@@ -98,11 +104,12 @@ void RV5StageVM_Base::DebugRun()
 
 void RV5StageVM_Base::Reset()
 {
-    program_counter_      = 0;
+    program_counter_ = 0;
     instructions_retired_ = 0;
-    cycle_s_              = 0;
-    stall_cycles_         = 0;
-    pc_redirected_        = false;
+    cycle_s_ = 0;
+    stall_cycles_ = 0;
+    total_stall_cycles_ = 0;
+    pc_redirected_ = false;
     last_breakpoint_pc_.reset(); // Clear breakpoint tracking on reset
 
     registers_.Reset();
@@ -121,29 +128,29 @@ void RV5StageVM_Base::Reset()
 
 void RV5StageVM_Base::begin_step_delta()
 {
-    current_delta_                           = RV5StageStepDelta{};
-    current_delta_.old_pc                    = program_counter_;
-    current_delta_.old_cycle                 = cycle_s_;
-    current_delta_.old_stall_cycles          = stall_cycles_;
-    current_delta_.old_instructions_retired  = instructions_retired_;
+    current_delta_ = RV5StageStepDelta{};
+    current_delta_.old_pc = program_counter_;
+    current_delta_.old_cycle = cycle_s_;
+    current_delta_.old_stall_cycles = stall_cycles_;
+    current_delta_.old_instructions_retired = instructions_retired_;
     current_delta_.old_branch_mispredictions = branch_mispredictions_;
 
-    current_delta_.pipeline_register_change.old_if_id_reg  = if_id_reg_;
-    current_delta_.pipeline_register_change.old_id_ex_reg  = id_ex_reg_;
+    current_delta_.pipeline_register_change.old_if_id_reg = if_id_reg_;
+    current_delta_.pipeline_register_change.old_id_ex_reg = id_ex_reg_;
     current_delta_.pipeline_register_change.old_ex_mem_reg = ex_mem_reg_;
     current_delta_.pipeline_register_change.old_mem_wb_reg = mem_wb_reg_;
 }
 
 void RV5StageVM_Base::finalize_step_delta()
 {
-    current_delta_.new_pc                    = program_counter_;
-    current_delta_.new_cycle                 = cycle_s_;
-    current_delta_.new_stall_cycles          = stall_cycles_;
-    current_delta_.new_instructions_retired  = instructions_retired_;
+    current_delta_.new_pc = program_counter_;
+    current_delta_.new_cycle = cycle_s_;
+    current_delta_.new_stall_cycles = stall_cycles_;
+    current_delta_.new_instructions_retired = instructions_retired_;
     current_delta_.new_branch_mispredictions = branch_mispredictions_;
 
-    current_delta_.pipeline_register_change.new_if_id_reg  = if_id_reg_;
-    current_delta_.pipeline_register_change.new_id_ex_reg  = id_ex_reg_;
+    current_delta_.pipeline_register_change.new_if_id_reg = if_id_reg_;
+    current_delta_.pipeline_register_change.new_id_ex_reg = id_ex_reg_;
     current_delta_.pipeline_register_change.new_ex_mem_reg = ex_mem_reg_;
     current_delta_.pipeline_register_change.new_mem_wb_reg = mem_wb_reg_;
 
@@ -161,8 +168,8 @@ void RV5StageVM_Base::setProcessorState()
     // processor_state_.programCounters[toIndex(PipelineStage::EX)]  = id_ex_reg_.pc;
     // processor_state_.programCounters[toIndex(PipelineStage::MEM)] = ex_mem_reg_.pc;
     // processor_state_.programCounters[toIndex(PipelineStage::WB)]  = mem_wb_reg_.pc;
-    processor_state_.programCounters = 
-    {program_counter_, if_id_reg_.pc, id_ex_reg_.pc, ex_mem_reg_.pc, mem_wb_reg_.pc};
+    processor_state_.programCounters = {program_counter_, if_id_reg_.pc, id_ex_reg_.pc,
+                                        ex_mem_reg_.pc, mem_wb_reg_.pc};
 }
 
 void RV5StageVM_Base::pipeline_decode()
@@ -171,12 +178,12 @@ void RV5StageVM_Base::pipeline_decode()
     if (instruction == NOP)
     {
         // Pass through fields as needed
-        id_ex_reg_.pc          = if_id_reg_.pc;
+        id_ex_reg_.pc = if_id_reg_.pc;
         id_ex_reg_.instruction = instruction;
-        id_ex_reg_.imm         = 0;
-        id_ex_reg_.rs1         = id_ex_reg_.rs2 = id_ex_reg_.rd = 0;
-        id_ex_reg_.reg1_data   = 0;
-        id_ex_reg_.reg2_data   = 0;
+        id_ex_reg_.imm = 0;
+        id_ex_reg_.rs1 = id_ex_reg_.rs2 = id_ex_reg_.rd = 0;
+        id_ex_reg_.reg1_data = 0;
+        id_ex_reg_.reg2_data = 0;
 
         // Clear FPR fields so stale values don't poison forwarding
         id_ex_reg_.frs1 = id_ex_reg_.frs2 = id_ex_reg_.frs3 = id_ex_reg_.frd = 0;
@@ -185,14 +192,14 @@ void RV5StageVM_Base::pipeline_decode()
         id_ex_reg_.freg3_data = 0;
 
         // Critically: zero *all* control signals so downstream stages are idle
-        id_ex_reg_.reg_write  = false;
+        id_ex_reg_.reg_write = false;
         id_ex_reg_.freg_write = false;
-        id_ex_reg_.branch     = false;
-        id_ex_reg_.alu_src    = false;
-        id_ex_reg_.mem_read   = false;
-        id_ex_reg_.mem_write  = false;
+        id_ex_reg_.branch = false;
+        id_ex_reg_.alu_src = false;
+        id_ex_reg_.mem_read = false;
+        id_ex_reg_.mem_write = false;
         id_ex_reg_.mem_to_reg = false;
-        id_ex_reg_.alu_op     = 0;
+        id_ex_reg_.alu_op = 0;
         return;
     }
     // Control Unit: Generate signals based on the instruction
@@ -237,15 +244,15 @@ void RV5StageVM_Base::pipeline_decode()
     // Pass all control signals to the next stage.
     // reg_write = writes a GPR; freg_write = writes an FPR. They are mutually exclusive, so
     // GPR forwarding/hazard logic never acts on an FP destination and vice versa.
-    id_ex_reg_.reg_write  = is_fp ? instruction_set::fpWritesGpr(instruction)
-                                  : control_unit_.GetRegWrite();
+    id_ex_reg_.reg_write =
+        is_fp ? instruction_set::fpWritesGpr(instruction) : control_unit_.GetRegWrite();
     id_ex_reg_.freg_write = instruction_set::fpWritesFpr(instruction);
-    id_ex_reg_.branch     = control_unit_.GetBranch();
-    id_ex_reg_.alu_src    = control_unit_.GetAluSrc();
-    id_ex_reg_.mem_read   = control_unit_.GetMemRead();
-    id_ex_reg_.mem_write  = control_unit_.GetMemWrite();
+    id_ex_reg_.branch = control_unit_.GetBranch();
+    id_ex_reg_.alu_src = control_unit_.GetAluSrc();
+    id_ex_reg_.mem_read = control_unit_.GetMemRead();
+    id_ex_reg_.mem_write = control_unit_.GetMemWrite();
     id_ex_reg_.mem_to_reg = control_unit_.GetMemToReg();
-    id_ex_reg_.alu_op     = control_unit_.GetAluOp();
+    id_ex_reg_.alu_op = control_unit_.GetAluOp();
 }
 
 void RV5StageVM_Base::memory_writeback()
@@ -442,27 +449,27 @@ void RV5StageVM_Base::pipeline_memory()
     // since we are running cycle backward
     // by the time execture check this register forwarding previous results are gone
     // so we store these seperately
-    mem_wb_reg_.prev_rd          = mem_wb_reg_.rd;
-    mem_wb_reg_.prev_alu_result  = mem_wb_reg_.alu_result;
-    mem_wb_reg_.prev_mem_to_reg  = mem_wb_reg_.mem_to_reg;
-    mem_wb_reg_.prev_reg_write   = mem_wb_reg_.reg_write;
+    mem_wb_reg_.prev_rd = mem_wb_reg_.rd;
+    mem_wb_reg_.prev_alu_result = mem_wb_reg_.alu_result;
+    mem_wb_reg_.prev_mem_to_reg = mem_wb_reg_.mem_to_reg;
+    mem_wb_reg_.prev_reg_write = mem_wb_reg_.reg_write;
     mem_wb_reg_.prev_memory_data = mem_wb_reg_.memory_data;
     // Save FPR prev fields for forwarding (mirrors GPR prev fields above)
-    mem_wb_reg_.prev_frd           = mem_wb_reg_.frd;
-    mem_wb_reg_.prev_f_alu_result  = mem_wb_reg_.f_alu_result;
+    mem_wb_reg_.prev_frd = mem_wb_reg_.frd;
+    mem_wb_reg_.prev_f_alu_result = mem_wb_reg_.f_alu_result;
     mem_wb_reg_.prev_f_memory_data = mem_wb_reg_.f_memory_data;
-    mem_wb_reg_.prev_freg_write    = mem_wb_reg_.freg_write;
+    mem_wb_reg_.prev_freg_write = mem_wb_reg_.freg_write;
     // --- Standard MEM Operations ---
-    mem_wb_reg_.pc          = ex_mem_reg_.pc;
+    mem_wb_reg_.pc = ex_mem_reg_.pc;
     mem_wb_reg_.instruction = ex_mem_reg_.instruction;
-    mem_wb_reg_.alu_result  = ex_mem_reg_.alu_result;
-    mem_wb_reg_.rd          = ex_mem_reg_.rd;
-    mem_wb_reg_.reg_write   = ex_mem_reg_.reg_write;
-    mem_wb_reg_.mem_to_reg  = ex_mem_reg_.mem_to_reg;
+    mem_wb_reg_.alu_result = ex_mem_reg_.alu_result;
+    mem_wb_reg_.rd = ex_mem_reg_.rd;
+    mem_wb_reg_.reg_write = ex_mem_reg_.reg_write;
+    mem_wb_reg_.mem_to_reg = ex_mem_reg_.mem_to_reg;
     // Latch FPR fields from EX/MEM
-    mem_wb_reg_.frd          = ex_mem_reg_.frd;
+    mem_wb_reg_.frd = ex_mem_reg_.frd;
     mem_wb_reg_.f_alu_result = ex_mem_reg_.f_alu_result;
-    mem_wb_reg_.freg_write   = ex_mem_reg_.freg_write;
+    mem_wb_reg_.freg_write = ex_mem_reg_.freg_write;
 
     bool is_F_Instruction = instruction_set::isFInstruction(mem_wb_reg_.instruction);
     bool is_D_Instruction = instruction_set::isDInstruction(mem_wb_reg_.instruction);
@@ -628,7 +635,8 @@ void RV5StageVM_Base::pipeline_writeback()
         case 0b0110011: // R-Type
         case 0b0010011: // I-Type
         case 0b0010111: // AUIPC
-        case 0b0111011: // OP-32 R-type (ADDW, SUBW, MULW, DIVW, DIVUW, REMW, REMUW, SLLW, SRLW, SRAW)
+        case 0b0111011: // OP-32 R-type (ADDW, SUBW, MULW, DIVW, DIVUW, REMW, REMUW, SLLW, SRLW,
+                        // SRAW)
         case 0b0011011: // OP-32 I-type (ADDIW, SLLIW, SRLIW, SRAIW)
         {
             registers_.WriteGpr(mem_wb_reg_.rd, write_data);
@@ -1032,4 +1040,4 @@ void RV5StageVM_Base::print_pipeline_registers_debug()
 
     std::cout << "└──────────────────────────────────────────────────────────┘\n";
 }
-}//namespace Kites
+} // namespace Kites

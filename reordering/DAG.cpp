@@ -80,7 +80,7 @@ std::vector<std::vector<parsed_instruction>> DAG::blocks()
 
     for (int i = 0; i < n; i++)
     {
-        if (instr[i].format == InstrFormat::B || instr[i].format == InstrFormat::J)
+        if (instr[i].format == InstrFormat::B || instr[i].format == InstrFormat::J || instr[i].opcode==0b1100111) 
         {
             if (i + 1 < n)
                 leader[i + 1] = true; // after a branch

@@ -23,6 +23,9 @@ CMakeLists.txt.user
 gtest_filter.
 .vs/
 gtest_filter.py
+rough_work/
+trash/
+
 build-cli/
 testing/reorder_tool
 testing/rv64i_gen

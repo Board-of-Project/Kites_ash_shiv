@@ -12,9 +12,9 @@
 // Prints "before after" cycle estimates from the scheduler on stdout.
 // Exit code: 0 ok, 1 bad usage / IO, 2 scheduler output is not a valid permutation.
  
-#include "../reordering/DAG.h"
-#include "../reordering/parser.h"
-#include "../reordering/scheduler.h"
+#include "DAG.h"
+#include "parser.h"
+#include "scheduler.h"
 #include <cstdio>
 #include <cstdlib>
 #include <fstream>

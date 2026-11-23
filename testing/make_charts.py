@@ -1,8 +1,12 @@
 import glob
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
 plt.style.use("seaborn-v0_8-whitegrid")
+
+DATA_DIR = "/tmp/comp_arch"
+OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 def summarize(df, label):
@@ -27,33 +31,27 @@ def summarize(df, label):
     }
 
 
-# 1. Summary Table: Forwarding vs Non-Forwarding
+# 1. Summary Table & Chart 1: Forwarding vs Non-Forwarding
 rows = []
+fwd_dfs = []
 for name, path in [
-    ("With Forwarding (rv5-h-f)", "/tmp/comp_arch/exp_fwd1.csv"),
-    ("No Forwarding (rv5-h-nf)", "/tmp/comp_arch/exp_fwd0.csv"),
+    ("With Forwarding (rv5-h-f)", f"{DATA_DIR}/exp_fwd1.csv"),
+    ("No Forwarding (rv5-h-nf)", f"{DATA_DIR}/exp_fwd0.csv"),
 ]:
-    try:
-        rows.append(summarize(pd.read_csv(path), name))
-    except FileNotFoundError:
-        pass
+    if os.path.exists(path):
+        df = pd.read_csv(path)
+        rows.append(summarize(df, name))
+        fwd_dfs.append((name.split(" (")[0], df))
 
 if rows:
     summary_df = pd.DataFrame(rows)
     print("\n=== PRESENTATION SUMMARY TABLE ===")
     print(summary_df.to_string(index=False))
-    summary_df.to_csv("/tmp/comp_arch/presentation_summary.csv", index=False)
+    summary_df.to_csv(os.path.join(OUT_DIR, "presentation_summary.csv"), index=False)
 
-    # Chart 1: Cycles & Stall Cycles Comparison (Grouped Bar Chart)
     fig, axes = plt.subplots(1, 2, figsize=(11, 4.5), dpi=300)
-    labels = [r["Config"].split(" (")[0] for r in rows]
-    dfs = [
-        pd.read_csv(p)
-        for _, p in [
-            ("f1", "/tmp/comp_arch/exp_fwd1.csv"),
-            ("f0", "/tmp/comp_arch/exp_fwd0.csv"),
-        ]
-    ]
+    labels = [lbl for lbl, _ in fwd_dfs]
+    dfs = [d for _, d in fwd_dfs]
 
     x = range(len(dfs))
     w = 0.35
@@ -98,11 +96,12 @@ if rows:
     axes[1].legend()
 
     plt.tight_layout()
-    plt.savefig("/tmp/comp_arch/chart_fwd_comparison.png")
+    plt.savefig(os.path.join(OUT_DIR, "chart_fwd_comparison.png"))
+    plt.close(fig)
 
 # 2. Chart 2: Memory Intensity Sweep
 mem_files = sorted(
-    glob.glob("/tmp/comp_arch/exp_mem_*.csv"),
+    glob.glob(f"{DATA_DIR}/exp_mem_*.csv"),
     key=lambda s: int(s.split("_")[-1].split(".")[0]),
 )
 if mem_files:
@@ -135,15 +134,58 @@ if mem_files:
         label="Stall Reduction (%)",
     )
     ax.set_title("Scheduler Effectiveness vs. Memory Instruction Density")
-    ax.set_xlabel("Memory Instructions (ld/sd %)")
+    ax.set_xlabel("Memory Instructions (ld/lw/lh/lb/sd/sw/sh/sb %)")
     ax.set_ylabel("Improvement (%)")
     ax.legend()
     plt.tight_layout()
-    plt.savefig("/tmp/comp_arch/chart_mem_sensitivity.png")
+    plt.savefig(os.path.join(OUT_DIR, "chart_mem_sensitivity.png"))
+    plt.close(fig)
 
-# 3. Chart 3: Scalability (Program Size vs Runtime & IPC Gain)
+# 3. Chart 3: Control-Flow Density Sweep
+ctrl_files = sorted(
+    glob.glob(f"{DATA_DIR}/exp_ctrl_*.csv"),
+    key=lambda s: int(s.split("_")[-1].split(".")[0]),
+)
+if ctrl_files:
+    ctrl_pts = []
+    for f in ctrl_files:
+        d = pd.read_csv(f)
+        cpct = int(d["ctrl_pct"].iloc[0])
+        gain = ((d["ipc2"] - d["ipc1"]) / d["ipc1"] * 100).mean()
+        stall_red = (
+            (d["stalls1"] - d["stalls2"]) / d["stalls1"].replace(0, float("nan")) * 100
+        ).mean()
+        ctrl_pts.append((cpct, gain, stall_red))
+    cdf = pd.DataFrame(ctrl_pts, columns=["ctrl_pct", "ipc_gain", "stall_red"])
+
+    fig, ax = plt.subplots(figsize=(7, 4.2), dpi=300)
+    ax.plot(
+        cdf["ctrl_pct"],
+        cdf["ipc_gain"],
+        marker="o",
+        linewidth=2,
+        color="#7c3aed",
+        label="IPC Gain (%)",
+    )
+    ax.plot(
+        cdf["ctrl_pct"],
+        cdf["stall_red"],
+        marker="s",
+        linewidth=2,
+        color="#ea580c",
+        label="Stall Reduction (%)",
+    )
+    ax.set_title("Scheduler Effectiveness vs. Control-Flow Density")
+    ax.set_xlabel("Control-Flow Instructions (Branch / JAL / Loop %)")
+    ax.set_ylabel("Improvement (%)")
+    ax.legend()
+    plt.tight_layout()
+    plt.savefig(os.path.join(OUT_DIR, "chart_ctrl_sensitivity.png"))
+    plt.close(fig)
+
+# 4. Chart 4: Scalability (Program Size vs Runtime & IPC Gain)
 len_files = sorted(
-    glob.glob("/tmp/comp_arch/exp_len_*.csv"),
+    glob.glob(f"{DATA_DIR}/exp_len_*.csv"),
     key=lambda s: int(s.split("_")[-1].split(".")[0]),
 )
 if len_files:
@@ -178,10 +220,37 @@ if len_files:
     ax1.set_xlabel("Program Length (Instructions)")
     ax1.set_ylabel("IPC Gain (%)", color="#2563eb")
     ax2.set_ylabel("Reorder Tool Time (ms)", color="#dc2626")
-    ax1.set_title("IPC Gain and Scheduler Latency vs. Basic Block Size")
+    ax1.set_title("IPC Gain and Scheduler Latency vs. Program Size")
     lines = l1 + l2
     ax1.legend(lines, [l.get_label() for l in lines], loc="upper left")
     plt.tight_layout()
-    plt.savefig("/tmp/comp_arch/chart_scalability.png")
+    plt.savefig(os.path.join(OUT_DIR, "chart_scalability.png"))
+    plt.close(fig)
 
-print("Saved charts to /tmp/comp_arch/chart_*.png")
+# 5. Chart 5: Scheduler Cycle Estimator Accuracy (Predicted vs Actual Cycles)
+all_exp = [pd.read_csv(f) for f in glob.glob(f"{DATA_DIR}/exp_*.csv")]
+if all_exp:
+    combined = pd.concat(all_exp, ignore_index=True)
+    valid_est = combined[combined["est_cycle2"] > 0]
+    if not valid_est.empty:
+        fig, ax = plt.subplots(figsize=(6.2, 5.2), dpi=300)
+        ax.scatter(
+            valid_est["cycle2"],
+            valid_est["est_cycle2"],
+            alpha=0.25,
+            s=14,
+            color="#0284c7",
+            label="Benchmark Runs",
+        )
+        lo = min(valid_est["cycle2"].min(), valid_est["est_cycle2"].min())
+        hi = max(valid_est["cycle2"].max(), valid_est["est_cycle2"].max())
+        ax.plot([lo, hi], [lo, hi], "r--", linewidth=1.5, label="Ideal (y = x)")
+        ax.set_title("Scheduler Cost Model Accuracy (Predicted vs. Kites Cycles)")
+        ax.set_xlabel("Actual Kites Reordered Cycles")
+        ax.set_ylabel("Scheduler Estimated Cycles")
+        ax.legend()
+        plt.tight_layout()
+        plt.savefig(os.path.join(OUT_DIR, "chart_estimator_accuracy.png"))
+        plt.close(fig)
+
+print(f"Saved summary CSV and charts to {OUT_DIR}/")

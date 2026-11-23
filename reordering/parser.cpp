@@ -173,6 +173,7 @@ parsed_instruction parser::decoder(string s)
     inst.format = format_classifier(opcode);
     inst.inst = s;
     vector<int> Registers = operand_number_giver(s, inst.format);
+    inst.opcode = opcode;
     switch (inst.format)
     {
     case InstrFormat::R:

@@ -2,6 +2,7 @@
 #include "DAG.h"
 #include "heurestic.h"
 #include "parser.h"
+#include <utility>
 
 // helper functions
 
@@ -13,6 +14,11 @@ class scheduler
     std::vector<std::vector<parsed_instruction>> blocks;
 
   public:
+    std::vector<long long> weights;   // executions per block (empty = 1 each)
+    void set_weights(std::vector<long long> w) { weights = std::move(w); }
+    long long weighted_cycles(const std::vector<std::vector<parsed_instruction>> &prog); // new parameters to test whether to include new reoredred block or not
+
+
     scheduler(std::vector<std::vector<parsed_instruction>> blocks,
               std::vector<std::vector<std::vector<depend_description>>> given, bool tem1);
     std::vector<int> block_scheduler(const std::vector<parsed_instruction> &instrs,

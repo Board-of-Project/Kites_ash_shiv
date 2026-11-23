@@ -284,7 +284,8 @@ void ExecuteCommand(const Command &command, ProcessorManager &manager, ReplState
         int n = ParseStepCount(command.args);
         for (int i = 0; i < n; ++i)
         {
-            manager.step();
+            if (!manager.stepNoStop())
+                break;           // program finished and pipeline drained: keep the final state
         }
         break;
     }

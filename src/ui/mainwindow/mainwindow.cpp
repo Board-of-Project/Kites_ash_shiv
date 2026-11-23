@@ -1,7 +1,13 @@
 #include "mainwindow.h"
+#include "common/reorder_program.h"
+#include "ui/reorder_tab/reordertab.h"   // if not already added
+#include <cstdlib>
+#include <numeric>
 #include "assembler/assembler.h"
 #include "common/assembled_program.h"
 #include "common/globals.h"
+#include "common/instructions.h" // instruction_set::disassemble
+#include "common/reorder_program.h" // same as above
 #include "custom_pseudo_manager/custom_pseudo_manager.h"
 #include "processor/processor_manager.h"
 #include "ui/cache_tab/cachetab.h"
@@ -12,6 +18,7 @@
 #include "ui/memory_tab/memorytab.h"
 #include "ui/processor_tab/processortab.h"
 #include "ui/profiler_tab/profilertab.h"
+#include "ui/reorder_tab/reordertab.h" // added for ui for redored code
 #include "ui/theme/icon_manager.h"
 #include "ui_mainwindow.h"
 #include "utils/utils.h"
@@ -19,10 +26,10 @@
 #include <QFileDialog>
 #include <QHBoxLayout>
 #include <QLabel>
-#include <QSpinBox>
-#include <QWidgetAction>
-#include <QSplitter>
 #include <QMessageBox>
+#include <QSpinBox>
+#include <QSplitter>
+#include <QWidgetAction>
 
 namespace Kites
 {
@@ -42,7 +49,6 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     m_processorManager->moveToThread(m_processorThread);
     m_processorThread->start();
 
-            
     m_registerContainer = new RegisterContainer(this, m_processorManager->getRegisterFile());
     QWidget *central = new QWidget(this);
     QHBoxLayout *mainLayout = new QHBoxLayout(central);
@@ -80,7 +86,15 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
     connect(this, &MainWindow::debugRunProcessorSignal, m_processorManager,
             &ProcessorManager::debugRunSlot);
     // well temporarily disable the toolbar buttons when vm is running
-    connect(m_processorManager, &ProcessorManager::runFinishedSignal, this, &MainWindow::runFinishedSlot);
+    connect(m_processorManager, &ProcessorManager::runFinishedSignal, this,
+            &MainWindow::runFinishedSlot);
+
+    connect(m_processorManager, &ProcessorManager::processorClockedSignal, this,
+            [this](const ProcessorState &s) {
+                const uint64_t idx = s.lastExecutedPC / 4;
+                if (idx < m_execCounts.size())
+                    ++m_execCounts[idx];
+            });
     connect(m_processorManager, &ProcessorManager::runErrorSignal, this,
             [this](const QString &errorMessage, int sourceLine)
             {
@@ -94,7 +108,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
                 QMessageBox::critical(this, "Runtime Error", errorMessage);
             });
 
-    //TODO : instead of using lambda just connect the signal to the functions directly
+    // TODO : instead of using lambda just connect the signal to the functions directly
     connect(m_processorManager, &ProcessorManager::updateDisassemblySignal, this,
             [this](const QString &disassemblyText)
             {
@@ -105,8 +119,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
                 }
             });
     connect(m_processorManager, &ProcessorManager::updateEditorHighlightSignal, this,
-            [this](const std::vector<std::pair<int,std::string>> &editorLines, 
-            const std::vector<std::pair<int,std::string>> &disassemblyLines)
+            [this](const std::vector<std::pair<int, std::string>> &editorLines,
+                   const std::vector<std::pair<int, std::string>> &disassemblyLines)
             {
                 auto editorTab = dynamic_cast<EditorTab *>(m_tabs[TabIndex::EditorTabIndex]);
                 if (editorTab)
@@ -114,8 +128,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
                     editorTab->highlightLines(editorLines, disassemblyLines);
                 }
             });
-    connect(&ThemeManager::getInstance(), &ThemeManager::themeChangedSignal, 
-            this, &MainWindow::themeChangedSlot);
+    connect(&ThemeManager::getInstance(), &ThemeManager::themeChangedSignal, this,
+            &MainWindow::themeChangedSlot);
 }
 
 void MainWindow::setUpStatusBar()
@@ -127,14 +141,14 @@ void MainWindow::setUpStatusBar()
 
 void MainWindow::setUpToolBar()
 {
-    QToolBar *toolbar         = addToolBar("Main Toolbar");
-    QAction  *processorAction = new QAction("Processor", this);
-    QAction  *runAction       = new QAction("Run", this);
-    QAction  *pauseAction     = new QAction("Pause", this);
-    QAction  *debugAction     = new QAction("Debug Run", this);
-    QAction  *stepAction      = new QAction("Step", this);
-    QAction  *undoAction      = new QAction("Undo", this);
-    QAction  *redoAction      = new QAction("Redo", this);
+    QToolBar *toolbar = addToolBar("Main Toolbar");
+    QAction *processorAction = new QAction("Processor", this);
+    QAction *runAction = new QAction("Run", this);
+    QAction *pauseAction = new QAction("Pause", this);
+    QAction *debugAction = new QAction("Debug Run", this);
+    QAction *stepAction = new QAction("Step", this);
+    QAction *undoAction = new QAction("Undo", this);
+    QAction *redoAction = new QAction("Redo", this);
 
     stepAction->setDisabled(true);
     pauseAction->setDisabled(true);
@@ -278,6 +292,10 @@ void MainWindow::setUpSidebar()
     m_sidebar->addItem(new QListWidgetItem(iconManager.getIcon(Icon::Cache), "Cache"));
     m_sidebar->addItem(new QListWidgetItem(iconManager.getIcon(Icon::Compiler), "Compiler"));
     m_sidebar->addItem(new QListWidgetItem(iconManager.getIcon(Icon::Profiler), "Profiler"));
+    m_sidebar->addItem(
+        new QListWidgetItem(iconManager.getIcon(Icon::Compiler),
+                            "Reorder")); // for ui of redoredered code this uses a exixting icon of
+                                         // compiler no new icon is there
     m_sidebar->setIconSize(QSize(20, 20));
     m_sidebar->setMinimumWidth(48);
     m_sidebar->setCurrentRow(0);
@@ -289,17 +307,18 @@ void MainWindow::setUpSidebar()
 
 void MainWindow::setUpMenubar()
 {
-    QMenu *fileMenu     = menuBar()->addMenu("&File");
+    QMenu *fileMenu = menuBar()->addMenu("&File");
     QMenu *settingsMenu = menuBar()->addMenu("&Settings");
-    QMenu *helpMenu     = menuBar()->addMenu("&Help");
+    QMenu *helpMenu = menuBar()->addMenu("&Help");
 
     QMenu *preferencesMenu = new QMenu("Preferences", this);
-    QMenu *processorMenu   = new QMenu("Processor", this);
-    
-    QAction *openAction  = new QAction(IconManager::getInstance().getIcon(Icon::Open), "Open", this);
-    QAction *saveAction  = new QAction(IconManager::getInstance().getIcon(Icon::Save), "Save", this);
-    QAction *exitAction  = new QAction("Exit", this);
-    QAction *aboutAction = new QAction(IconManager::getInstance().getIcon(Icon::About), "About", this);
+    QMenu *processorMenu = new QMenu("Processor", this);
+
+    QAction *openAction = new QAction(IconManager::getInstance().getIcon(Icon::Open), "Open", this);
+    QAction *saveAction = new QAction(IconManager::getInstance().getIcon(Icon::Save), "Save", this);
+    QAction *exitAction = new QAction("Exit", this);
+    QAction *aboutAction =
+        new QAction(IconManager::getInstance().getIcon(Icon::About), "About", this);
 
     ///////////File Menu///////////////////
     fileMenu->addAction(openAction);
@@ -400,12 +419,14 @@ void MainWindow::setUpMenubar()
 
 void MainWindow::setUpTabs()
 {
-    m_tabs[TabIndex::EditorTabIndex]    = new EditorTab(this);
-    m_tabs[TabIndex::MemoryTabIndex]    = new MemoryTab(this, m_processorManager->getMemoryController());
-    m_tabs[TabIndex::ProcessorTabIndex] = new ProcessorTab(this, m_processorManager);                      
-    m_tabs[TabIndex::CacheTabIndex]     = new CacheTab(this, m_processorManager->getMemoryController());
-    m_tabs[TabIndex::CompilerTabIndex]  = new CompilerTab(this);
-    m_tabs[TabIndex::ProfilerTabIndex]  = new ProfilerTab(this, m_processorManager->getProfiler());
+    m_tabs[TabIndex::EditorTabIndex] = new EditorTab(this);
+    m_tabs[TabIndex::MemoryTabIndex] =
+        new MemoryTab(this, m_processorManager->getMemoryController());
+    m_tabs[TabIndex::ProcessorTabIndex] = new ProcessorTab(this, m_processorManager);
+    m_tabs[TabIndex::CacheTabIndex] = new CacheTab(this, m_processorManager->getMemoryController());
+    m_tabs[TabIndex::CompilerTabIndex] = new CompilerTab(this);
+    m_tabs[TabIndex::ProfilerTabIndex] = new ProfilerTab(this, m_processorManager->getProfiler());
+    m_tabs[TabIndex::ReorderTabIndex] = new ReorderTab(this); // tab for reordered code in ui
     // a little experiment
     connect(this, &MainWindow::processorChangedSignal,
             dynamic_cast<ProcessorTab *>(m_tabs[TabIndex::ProcessorTabIndex]),
@@ -417,22 +438,68 @@ void MainWindow::setUpTabs()
     m_stackedTabs->addWidget(m_tabs[TabIndex::CacheTabIndex]);
     m_stackedTabs->addWidget(m_tabs[TabIndex::CompilerTabIndex]);
     m_stackedTabs->addWidget(m_tabs[TabIndex::ProfilerTabIndex]);
+    m_stackedTabs->addWidget(m_tabs[TabIndex::ReorderTabIndex]); // ui tab for reoredred code
+    connect(static_cast<ReorderTab *>(m_tabs[TabIndex::ReorderTabIndex]),
+            &ReorderTab::exportRequested, this, &MainWindow::exportReorderTestCase);
+}
+
+ReorderResult MainWindow::showReorderModel(const std::vector<uint32_t> &words, ProcessorType t,
+                                           const std::vector<long long> &counts)
+{
+    ReorderResult r = reorderWords(words, t == ProcessorType::RV5Stage_H_F, counts);
+    const QByteArray raw(reinterpret_cast<const char *>(words.data()),
+                         static_cast<int>(words.size() * 4));
+    const QString key = QString::number(static_cast<int>(t)) + ":" + QString::number(qHash(raw));
+    if (auto *tab = dynamic_cast<ReorderTab *>(m_tabs[TabIndex::ReorderTabIndex]))
+    {
+        std::vector<ReorderedLine> lines;
+        lines.reserve(r.words.size());
+        for (size_t k = 0; k < r.words.size(); ++k)
+        {
+            ReorderedLine line;
+            line.from = k < r.origIndex.size() ? r.origIndex[k] : static_cast<int>(k);
+            line.address = static_cast<quint64>(k) * 4;
+            line.word = r.words[k];
+            line.text = QString::fromStdString(instruction_set::disassemble(r.words[k]));
+            lines.push_back(line);
+        }
+
+        // Original program for the left pane: row k is original instruction k, and "from"
+        // holds the slot it moved to (inverse of origIndex).
+        std::vector<ReorderedLine> original(words.size());
+        for (size_t k = 0; k < words.size(); ++k)
+        {
+            original[k].from = static_cast<int>(k); // unmoved unless overwritten below
+            original[k].address = static_cast<quint64>(k) * 4;
+            original[k].word = words[k];
+            original[k].text = QString::fromStdString(instruction_set::disassemble(words[k]));
+        }
+        for (size_t slot = 0; slot < r.origIndex.size(); ++slot)
+        {
+            const int o = r.origIndex[slot];
+            if (o >= 0 && static_cast<size_t>(o) < original.size())
+                original[static_cast<size_t>(o)].from = static_cast<int>(slot);
+        }
+        tab->setReordered(lines, key, r.cyclesBefore, r.cyclesAfter, r.stallsBefore,
+                          r.stallsAfter, r.weighted, original);
+    }
+    return r;
 }
 
 bool MainWindow::tryParseAndLoadProgram()
 {
-    auto* editor = dynamic_cast<EditorTab*>(m_tabs[TabIndex::EditorTabIndex]);
-    auto* profilerTab = dynamic_cast<ProfilerTab*>(m_tabs[TabIndex::ProfilerTabIndex]);
+    auto *editor = dynamic_cast<EditorTab *>(m_tabs[TabIndex::EditorTabIndex]);
+    auto *profilerTab = dynamic_cast<ProfilerTab *>(m_tabs[TabIndex::ProfilerTabIndex]);
 
-    if(!editor || !profilerTab) 
+    if (!editor || !profilerTab)
     {
         QMessageBox::critical(this, "Error", "Editor or Profiler tab not found.");
         return false;
     }
-    editor->switchToExpandedView(); // switch to the expanded view 
-                                    //to show expanded pseudoinstructions
-    editor->resetErrorLines();    // we reset previous error lines
-    editor->setCanWrite(false);   // we disable writing in editor while vm is running
+    editor->switchToExpandedView(); // switch to the expanded view
+                                    // to show expanded pseudoinstructions
+    editor->resetErrorLines();      // we reset previous error lines
+    editor->setCanWrite(false);     // we disable writing in editor while vm is running
     m_processorManager->reset();
     try
     {
@@ -441,14 +508,77 @@ bool MainWindow::tryParseAndLoadProgram()
         std::ofstream out(globals::temporary_assembly_file_path);
         out << rawText;
         out.close();
-        AssembledProgram assembledProgram = assemble(globals::temporary_assembly_file_path.string());
+        AssembledProgram assembledProgram =
+            assemble(globals::temporary_assembly_file_path.string());
+
+
+        m_loadedReordered = false;
+        const std::vector<uint32_t> originalWords = assembledProgram.text_buffer;
+        const std::vector<long long> weights =
+            (m_countsUsable && m_countsProgram == originalWords) ? m_execCounts
+                                                                 : std::vector<long long>{};
+        if (auto *reorderTab = dynamic_cast<ReorderTab *>(m_tabs[TabIndex::ReorderTabIndex]))
+        {
+            const ProcessorType t = m_processorManager->getProcessorType();
+            if (t == ProcessorType::RV5Stage_H_NF || t == ProcessorType::RV5Stage_H_F)
+            {
+                try
+                {
+                    ReorderResult r = showReorderModel(originalWords, t, weights);
+                    if (reorderTab->executeReordered())
+                    {
+                        assembledProgram = applyReordering(assembledProgram, r);
+                        m_loadedReordered = true;
+                    }
+                }
+                catch (const std::exception &)
+                {
+                    reorderTab->clear();
+                    m_loadedReordered = false;
+                }
+            }
+            else
+            {
+                reorderTab->clear();
+            }
+        }
+
+        m_countsProgram = originalWords;                  // start counting for this run
+        m_execCounts.assign(originalWords.size(), 0);
+        m_countsUsable = false;
+
+
         DumpDisasssembly(globals::disassembly_file_path, assembledProgram);
         std::ifstream in(globals::disassembly_file_path);
         std::stringstream buffer;
         buffer << in.rdbuf();
         editor->updateDisassemblyView(buffer.str());
         profilerTab->setSourceText(QString::fromStdString(rawText));
-        
+
+        // if (auto *reorderTab = dynamic_cast<ReorderTab *>(m_tabs[TabIndex::ReorderTabIndex]))
+        // {
+        //     const ProcessorType t = m_processorManager->getProcessorType();
+        //     if (t == ProcessorType::RV5Stage_H_NF || t == ProcessorType::RV5Stage_H_F)
+        //     {
+        //         try
+        //         {
+        //             ReorderResult r = reorderWords(assembledProgram.text_buffer,
+        //                                            t == ProcessorType::RV5Stage_H_F);
+        //             reorderTab->setReordered(QString::fromStdString(formatReordered(r)),
+        //                                      r.cyclesBefore, r.cyclesAfter);
+        //         }
+        //         catch (const std::exception &)
+        //         {
+        //             reorderTab->clear();   // a reorderer failure must not block loading the
+        //             program
+        //         }
+        //     }
+        //     else
+        //     {
+        //         reorderTab->clear();
+        //     }
+        // }
+
         m_processorManager->loadProgram(assembledProgram);
         m_processorManager->setBreakpoints(editor->getBreakpoints());
         return true;
@@ -556,8 +686,48 @@ void MainWindow::runFinishedSlot()
         }
     }
 
+    const long long total = std::accumulate(m_execCounts.begin(), m_execCounts.end(), 0LL);
+    const long long retired = static_cast<long long>(m_processorManager->getInstructionsRetired());
+    // an ecall stops the run while its older instructions are still in MEM/WB, so allow a small gap
+    m_countsUsable = !m_execCounts.empty() && std::llabs(total - retired) <= 4;
+
+    m_lastMeasured = MeasuredStats{static_cast<long long>(m_processorManager->getCycles()), retired,
+                                   static_cast<long long>(m_processorManager->getTotalStallCycles())};
+    m_lastRanReordered = m_loadedReordered;
+    m_hasMeasured = true;
+
+    const ProcessorType t = m_processorManager->getProcessorType();
+    if (m_countsUsable &&
+        (t == ProcessorType::RV5Stage_H_NF || t == ProcessorType::RV5Stage_H_F))
+        showReorderModel(m_countsProgram, t, m_execCounts);   // model now uses the real counts
+
+    if (auto *reorderTab = dynamic_cast<ReorderTab *>(m_tabs[TabIndex::ReorderTabIndex]))
+        reorderTab->setMeasured(m_lastRanReordered, m_processorManager->getCycles(),
+                                m_processorManager->getTotalStallCycles(), retired);
 }
 
+void MainWindow::exportReorderTestCase()
+{
+    if (m_countsProgram.empty())
+    {
+        QMessageBox::information(this, "Export", "Run a program first.");
+        return;
+    }
+    const QString path = QFileDialog::getSaveFileName(this, "Export reorder test case",
+                                                      "reorder_testcase.txt", "Text (*.txt)");
+    if (path.isEmpty())
+        return;
+    TestCase tc;
+    tc.words = m_countsProgram;
+    tc.forwarding = (m_processorManager->getProcessorType() == ProcessorType::RV5Stage_H_F);
+    if (m_countsUsable)
+        tc.counts = m_execCounts;
+    tc.hasMeasured = m_hasMeasured;
+    tc.measured = m_lastMeasured;
+    tc.ranReordered = m_lastRanReordered;
+    if (!writeTestCase(path.toStdString(), tc))
+        QMessageBox::warning(this, "Export", "Could not write the file.");
+}
 
 void MainWindow::toggleTheme(const QString &themeId)
 {
@@ -606,7 +776,8 @@ void MainWindow::themeChangedSlot([[maybe_unused]] const QString &themeId)
 
     // sidebar icons
     static const std::array<Icon, toIndex(TabIndex::TabCount)> sidebarIcons = {
-        Icon::Editor, Icon::Memory, Icon::Processor, Icon::Cache, Icon::Compiler, Icon::Profiler};
+        Icon::Editor,   Icon::Memory,   Icon::Processor, Icon::Cache,
+        Icon::Compiler, Icon::Profiler, Icon::Compiler};
     for (int row = 0; row < m_sidebar->count(); ++row)
     {
         if (row < static_cast<int>(sidebarIcons.size()))
@@ -625,12 +796,14 @@ void MainWindow::themeChangedSlot([[maybe_unused]] const QString &themeId)
         else if (action->text() == "Advanced Settings")
             action->setIcon(IconManager::getInstance().getIcon(Icon::Settings));
     }
+
+    
 }
 
 MainWindow::~MainWindow()
 {
     m_processorManager->stop();
-    if(m_processorThread->isRunning())
+    if (m_processorThread->isRunning())
     {
         m_processorThread->quit();
         m_processorThread->wait();

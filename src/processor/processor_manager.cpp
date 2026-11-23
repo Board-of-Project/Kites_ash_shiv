@@ -213,6 +213,19 @@ void ProcessorManager::step()
     }
 }
 
+bool ProcessorManager::stepNoStop()
+{
+    try
+    {
+        return m_currentProcessor->StepAndNotify();
+    }
+    catch (const std::exception &e)
+    {
+        emit runErrorSignal(QString::fromStdString(e.what()), resolveCurrentSourceLine());
+        return false;
+    }
+}
+
 void ProcessorManager::debugRun()
 {
     // Debug mode starts in paused/manual mode; user advances with Step.
@@ -308,6 +321,11 @@ unsigned int ProcessorManager::getBranchMispredictions() const
 unsigned int ProcessorManager::getStallCycles() const
 {
     return m_currentProcessor->stall_cycles_;
+}
+
+unsigned int ProcessorManager::getTotalStallCycles() const
+{
+    return m_currentProcessor->total_stall_cycles_; // gives the toatl number of stalls in teh code 
 }
 
 unsigned int ProcessorManager::getCycles() const

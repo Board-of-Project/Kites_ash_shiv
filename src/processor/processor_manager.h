@@ -42,6 +42,7 @@ public:
     void step();
     void debugRun();
     void stop();
+    bool stepNoStop(); // for tetsing correctness 
     void pause();
     void resume();
     void undo();
@@ -66,6 +67,7 @@ public:
     float getIPC() const;
     unsigned int getBranchMispredictions() const;
     unsigned int getStallCycles() const;
+    unsigned int getTotalStallCycles() const; // returns the tiotal number of stalls
     unsigned int getCycles() const;
     unsigned int getInstructionsRetired() const;
 private:

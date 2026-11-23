@@ -15,6 +15,7 @@ class heurestics {
     DAG_matrix  dpd;
     int n;
     std::vector<int> succ_count, interlocks, depth;
+    std::vector<int> order_ = {0, 1, 2, 3, 4};
 public:
     heurestics(DelayMatrix delays, DAG_matrix matr);
     int get_stalls(int i, const sched_state &st) const;
@@ -22,4 +23,7 @@ public:
     int interlocks_with_successor(int i) const { return interlocks[i]; }
     int depth_to_leaf(int i) const { return depth[i]; }
     std::vector<int> get_heurestic_tuple(int i, const sched_state &st) const;
+    void set_order(const std::vector<int>& order);
+    static std::vector<int> parse_order(const std::string& spec);
+
 };
