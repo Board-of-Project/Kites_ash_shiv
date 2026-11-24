@@ -1,0 +1,6 @@
+| file | mode | N | fwd | len | mem_pct | ctrl_pct | win_pct | cyc_before | cyc_after | cyc_red_pct | stall_red_pct | ipc_gain_pct | moved_pct | avg_pairs |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| base_fwd0_profile.csv | LD-SD Profiled (PROFILE=1) | 300 | 0 | 500 | 35 | 15 | 100.0 | 842.7 | 765.4 | 9.18 | 51.0 | 10.13 | 30.6 | 739.1 |
+| base_fwd0_static.csv | Static (PROFILE=0) | 300 | 0 | 500 | 35 | 15 | 100.0 | 842.7 | 766.5 | 9.05 | 50.26 | 9.98 | 32.1 | 0.0 |
+| base_fwd1_profile.csv | LD-SD Profiled (PROFILE=1) | 300 | 1 | 500 | 35 | 15 | 83.7 | 693.7 | 691.5 | 0.32 | 72.32 | 0.32 | 3.7 | 739.1 |
+| base_fwd1_static.csv | Static (PROFILE=0) | 300 | 1 | 500 | 35 | 15 | 82.0 | 693.7 | 691.6 | 0.3 | 68.86 | 0.31 | 3.7 | 0.0 |
