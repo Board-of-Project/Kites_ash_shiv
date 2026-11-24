@@ -1,5 +1,6 @@
 #pragma once
 #include "parser.h"
+#include <unordered_set>
 #include <utility>
 #include <vector>
 
@@ -23,7 +24,13 @@ class DAG
 {
     std::vector<parsed_instruction> instr;
     bool forward;
-    std::vector<std::vector<int>>ld_sd_depen;
+    std::unordered_set<unsigned long long> ld_sd_depen; // sparse: only the independent pairs
+    static unsigned long long pairKey(int a, int b)
+    {
+        if (a > b) std::swap(a, b);
+        return (static_cast<unsigned long long>(a) << 32) | static_cast<unsigned int>(b);
+    }
+    bool indep(int a, int b) const { return ld_sd_depen.count(pairKey(a, b)) != 0; }
 
 
   public:

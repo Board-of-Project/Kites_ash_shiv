@@ -1,4 +1,3 @@
-
 #include "DAG.h"
 #include "parser.h"
 #include <cstdio>
@@ -15,9 +14,6 @@ DAG::DAG(vector<parsed_instruction> &temp, bool forw,
     this->forward = forw;
     int n = instr.size();
 
-    // size the matrix first (it was never allocated, which caused the segfault)
-    ld_sd_depen.assign(n, std::vector<int>(n, 0));
-
     // pairs supplied directly by the caller (e.g. kites-cli --reorder --with-profile)
     if (indepPairs)
     {
@@ -26,8 +22,7 @@ DAG::DAG(vector<parsed_instruction> &temp, bool forw,
             const int px = pr.first, py = pr.second;
             if (px < 0 || py < 0 || px >= n || py >= n)
                 continue;
-            ld_sd_depen[px][py] = 1;
-            ld_sd_depen[py][px] = 1;
+            ld_sd_depen.insert(pairKey(px, py));
         }
         return;
     }
@@ -46,8 +41,7 @@ DAG::DAG(vector<parsed_instruction> &temp, bool forw,
     while(fscanf(fptr , "%d %d" , &x , &y)==2){
         if (x < 0 || y < 0 || x >= n || y >= n)
             continue; // index outside this program (stale file?)
-        ld_sd_depen[x][y] = 1;
-        ld_sd_depen[y][x] = 1;
+        ld_sd_depen.insert(pairKey(x, y));
     }
 
     fclose(fptr);
@@ -73,16 +67,16 @@ dpd_format DAG::dep_type(parsed_instruction a, parsed_instruction b)
         return dpd_format::WAR;
 
     if (a.format == InstrFormat::S && b.format == InstrFormat::S){
-        if(ld_sd_depen[a.index][b.index]==0)
+        if(!indep(a.index, b.index))
         return dpd_format::MEM;
         
     }
     if (a.format == InstrFormat::L && b.format == InstrFormat::S){
-        if(ld_sd_depen[a.index][b.index]==0)
+        if(!indep(a.index, b.index))
         return dpd_format::MEM;
     }
     if (a.format == InstrFormat::S && b.format == InstrFormat::L){
-        if(ld_sd_depen[a.index][b.index]==0)
+        if(!indep(a.index, b.index))
         return dpd_format::MEM;
     }
 
@@ -134,8 +128,6 @@ std::vector<std::vector<std::vector<depend_description>>> DAG::depend_matrix_ful
 
     
     
-    //int n = instr.size();
-    //std::vector<std::vector<int>>ld_sd_depen(n , std::vector<int>(n));
     
 
 

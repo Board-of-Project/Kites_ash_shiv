@@ -65,7 +65,8 @@ void printUsage(const char *programName)
 std::string buildHexCodeText(const Kites::AssembledProgram &program)
 {
     std::ostringstream oss;
-    auto appendWord = [&oss](const auto &word) {
+    auto appendWord = [&oss](const auto &word)
+    {
         using WordT = std::decay_t<decltype(word)>;
         if constexpr (std::is_integral_v<WordT>)
         {
@@ -143,8 +144,8 @@ std::set<std::pair<int, int>> profileLoop(Kites::ProcessorManager &manager,
 
                 if (m1.format == InstrFormat::S && m2.format == InstrFormat::S)
                 {
-                    independent_pairs.insert({std::min(m1.index, m2.index),
-                                              std::max(m1.index, m2.index)});
+                    independent_pairs.insert(
+                        {std::min(m1.index, m2.index), std::max(m1.index, m2.index)});
                 }
                 else if (m1.format == InstrFormat::L && m2.format == InstrFormat::S)
                 {
@@ -176,15 +177,13 @@ std::set<std::pair<int, int>> profileLoop(Kites::ProcessorManager &manager,
 
         if (++step_count > max_steps)
         {
-            std::cerr << "Profiling stopped: exceeded " << max_steps
-                      << " steps (start_pc=0x" << std::hex << start_pc
-                      << ", current_pc=0x" << current_pc << std::dec
+            std::cerr << "Profiling stopped: exceeded " << max_steps << " steps (start_pc=0x"
+                      << std::hex << start_pc << ", current_pc=0x" << current_pc << std::dec
                       << ", instrs=" << instrs.size() << ").\n";
             break;
         }
 
-        int current_block =
-            block_of_instr.count(instr_index) ? block_of_instr[instr_index] : -1;
+        int current_block = block_of_instr.count(instr_index) ? block_of_instr[instr_index] : -1;
 
         // Log all 32 GPRs BEFORE execution to prevent base register overwrite issues
         instr_regist[instr_index] = manager.getRegisterFile()->GetGprValues();
@@ -202,11 +201,10 @@ std::set<std::pair<int, int>> profileLoop(Kites::ProcessorManager &manager,
         bool is_ebreak = (cur_inst.inst == "00000000000100000000000001110011");
         bool hit_halt_inst = is_exit_ecall || is_ebreak;
 
-        bool is_sequential = (cur_inst.format == InstrFormat::R ||
-                              cur_inst.format == InstrFormat::I ||
-                              cur_inst.format == InstrFormat::L ||
-                              cur_inst.format == InstrFormat::S ||
-                              cur_inst.format == InstrFormat::U);
+        bool is_sequential =
+            (cur_inst.format == InstrFormat::R || cur_inst.format == InstrFormat::I ||
+             cur_inst.format == InstrFormat::L || cur_inst.format == InstrFormat::S ||
+             cur_inst.format == InstrFormat::U);
         bool sequential_wrapped = is_sequential && (next_pc != current_pc + 4);
 
         if (runFinished || hit_halt_inst || sequential_wrapped || next_pc == current_pc ||
@@ -215,9 +213,8 @@ std::set<std::pair<int, int>> profileLoop(Kites::ProcessorManager &manager,
             is_running = false;
         }
 
-        int next_block = (is_running && block_of_instr.count(next_index))
-                             ? block_of_instr[next_index]
-                             : -1;
+        int next_block =
+            (is_running && block_of_instr.count(next_index)) ? block_of_instr[next_index] : -1;
 
         // Boundary Detection: block changed, jumped backwards (loop repeat), or execution ended
         if (current_block != next_block || next_pc <= current_pc || !is_running)
@@ -236,17 +233,15 @@ std::set<std::pair<int, int>> profileLoop(Kites::ProcessorManager &manager,
 
                         if (rs1_1 >= 0 && rs1_1 < 32 && rs1_2 >= 0 && rs1_2 < 32)
                         {
-                            uint64_t addr1 =
-                                instr_regist[inst1][rs1_1] +
-                                static_cast<uint64_t>(
-                                    static_cast<int64_t>(getMemOffset(inst_map[inst1])));
-                            uint64_t addr2 =
-                                instr_regist[inst2][rs1_2] +
-                                static_cast<uint64_t>(
-                                    static_cast<int64_t>(getMemOffset(inst_map[inst2])));
+                            uint64_t addr1 = instr_regist[inst1][rs1_1] +
+                                             static_cast<uint64_t>(static_cast<int64_t>(
+                                                 getMemOffset(inst_map[inst1])));
+                            uint64_t addr2 = instr_regist[inst2][rs1_2] +
+                                             static_cast<uint64_t>(static_cast<int64_t>(
+                                                 getMemOffset(inst_map[inst2])));
 
-                            int64_t diff = std::abs(static_cast<int64_t>(addr1) -
-                                                    static_cast<int64_t>(addr2));
+                            int64_t diff =
+                                std::abs(static_cast<int64_t>(addr1) - static_cast<int64_t>(addr2));
 
                             if (diff < 8) // Memory overlap in this iteration
                             {
@@ -295,7 +290,8 @@ Kites::AssembledProgram maybeReorder(const Kites::AssembledProgram &prog, Kites:
         pairsPtr = &pairs;
         std::cout << "Profile: " << pairs.size() << " independent load/store pair(s) found.\n";
     }
-    Kites::ReorderResult r = Kites::reorderWords(prog.text_buffer, fwd, {}, pairsPtr); // static counts
+    Kites::ReorderResult r =
+        Kites::reorderWords(prog.text_buffer, fwd, {}, pairsPtr); // static counts
     std::cout << "Reorder: cycles " << r.cyclesBefore << " -> " << r.cyclesAfter << " (stalls "
               << r.stallsBefore << " -> " << r.stallsAfter << ")\n";
     return Kites::applyReordering(prog, r);
@@ -306,10 +302,8 @@ Kites::AssembledProgram maybeReorder(const Kites::AssembledProgram &prog, Kites:
 int main(int argc, char *argv[])
 {
     ldsd::setAutoProfile(false); // the CLI has its own --with-profile; never spawn itself
-    if (qEnvironmentVariableIsEmpty("DISPLAY") && qEnvironmentVariableIsEmpty("WAYLAND_DISPLAY"))
-    {
-        qputenv("QT_QPA_PLATFORM", "offscreen");
-    }
+    if (qEnvironmentVariableIsEmpty("QT_QPA_PLATFORM"))
+        qputenv("QT_QPA_PLATFORM", "offscreen"); // never connect to the display server or portal
     QApplication app(argc, argv);
 
     Kites::setupVmStateDirectory();
@@ -490,10 +484,7 @@ int main(int argc, char *argv[])
                          runErrorMsg = message.toStdString();
                      });
     QObject::connect(&manager, &Kites::ProcessorManager::runFinishedSignal, &manager,
-                     [&]()
-                     {
-                         runFinished = true;
-                     });
+                     [&]() { runFinished = true; });
 
     manager.setStepDelay(0);
     manager.loadProgram(program);
@@ -505,8 +496,10 @@ int main(int argc, char *argv[])
 
         // 4. Write surviving independent pairs to load_store_dep.txt
         const char *depEnv = std::getenv("KITES_LD_SD_FILE");
-        const std::string depPath = !profileOutPath.empty() ? profileOutPath
-                                    : ((depEnv && *depEnv) ? std::string(depEnv) : std::string("load_store_dep.txt"));
+        const std::string depPath =
+            !profileOutPath.empty()
+                ? profileOutPath
+                : ((depEnv && *depEnv) ? std::string(depEnv) : std::string("load_store_dep.txt"));
         std::ofstream dep_file(depPath);
         for (const auto &pair : independent_pairs)
         {
@@ -515,7 +508,8 @@ int main(int argc, char *argv[])
         dep_file.close();
         std::cout << "Profiling complete. Independent pairs exported to " << depPath << "\n";
         // lets callers (reordering/ld_sd_profile.cpp) verify the pairs belong to their program
-        std::cout << "KITES_PROFILE_HASH " << std::hex << ldsd::hashWords(program.text_buffer) << std::dec << "\n";
+        std::cout << "KITES_PROFILE_HASH " << std::hex << ldsd::hashWords(program.text_buffer)
+                  << std::dec << "\n";
     }
     else if (reorderDepsMode)
     {
